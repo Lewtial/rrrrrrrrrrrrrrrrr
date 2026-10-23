@@ -35,3 +35,11 @@ Los tres personajes en un fondo de Halloween, con la novia a punto de comer turr
 ![Banner de Halloween v5](banner-halloween-v5.png)
 
 [Ver PNG](banner-halloween-v5.png) · [Descargar ZIP](banner-halloween-v5.zip)
+
+## Versión 6: corrección de estilo
+
+Nueva propuesta basada en los renders originales de LoveRitmo: personajes de pie, aspecto zombi y la novia intentando comer el turrón de Doña Pepa.
+
+![Banner de Halloween v6](banner-halloween-v6.png)
+
+[Ver PNG](banner-halloween-v6.png) · [Descargar ZIP](banner-halloween-v6.zip)
