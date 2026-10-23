@@ -43,3 +43,11 @@ Nueva propuesta basada en los renders originales de LoveRitmo: personajes de pie
 ![Banner de Halloween v6](banner-halloween-v6.png)
 
 [Ver PNG](banner-halloween-v6.png) · [Descargar ZIP](banner-halloween-v6.zip)
+
+## Versión 7: nuevas poses
+
+Variación de la v6: el zombi se arrodilla junto a la mesa, la novia se sienta mientras intenta comer turrón y el segador presenta el postre. Los rostros de la v6 se mantienen como referencia.
+
+![Banner de Halloween v7](banner-halloween-v7.png)
+
+[Ver PNG](banner-halloween-v7.png) · [Descargar ZIP](banner-halloween-v7.zip)
