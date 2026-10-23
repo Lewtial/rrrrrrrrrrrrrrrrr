@@ -27,3 +27,11 @@ Nueva propuesta independiente. La fidelidad al estilo de los renders de referenc
 ![Banner de Halloween v4](banner-halloween-v4.png)
 
 [Ver PNG](banner-halloween-v4.png) · [Descargar ZIP](banner-halloween-v4.zip)
+
+## Versión 5: nueva propuesta
+
+Los tres personajes en un fondo de Halloween, con la novia a punto de comer turrón de Doña Pepa.
+
+![Banner de Halloween v5](banner-halloween-v5.png)
+
+[Ver PNG](banner-halloween-v5.png) · [Descargar ZIP](banner-halloween-v5.zip)

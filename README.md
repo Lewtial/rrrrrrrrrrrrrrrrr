@@ -10,5 +10,6 @@ Banners con tres personajes y turrón de Doña Pepa. Cada propuesta nueva se gua
 | v2 — segunda versión | [Ver PNG](versiones/banner-halloween-v2.png) | [ZIP](versiones/banner-halloween-v2.zip) |
 | v3 — tercera versión | [Ver PNG](versiones/banner-halloween-v3.png) | [ZIP](versiones/banner-halloween-v3.zip) |
 | v4 — cuarta prueba; estilo pendiente | [Ver PNG](versiones/banner-halloween-v4.png) | [ZIP](versiones/banner-halloween-v4.zip) |
+| v5 — nueva propuesta | [Ver PNG](versiones/banner-halloween-v5.png) | [ZIP](versiones/banner-halloween-v5.zip) |
 
-La fidelidad de la nueva prueba al estilo de los renders de referencia sigue pendiente.
+La fidelidad al estilo de los renders de referencia sigue pendiente de revisión.
