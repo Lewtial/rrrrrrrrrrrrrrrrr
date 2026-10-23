@@ -1,8 +1,14 @@
-# Banner de Halloween
+# Banners de Halloween
 
-Banner con tres personajes y turrón de Doña Pepa.
+Banners con tres personajes y turrón de Doña Pepa. Cada propuesta nueva se guarda con su propio número; las anteriores se conservan sin reemplazarlas.
 
-![Banner de Halloween](banner-halloween.png)
+[Ver la galería completa](versiones/README.md)
 
-- [Descargar PNG](https://github.com/Lewtial/rrrrrrrrrrrrrrrrr/raw/refs/heads/main/banner-halloween.png)
-- [Descargar ZIP](https://github.com/Lewtial/rrrrrrrrrrrrrrrrr/raw/refs/heads/main/banner-halloween.zip)
+| Versión | Imagen | Archivo |
+| --- | --- | --- |
+| v1 — primera versión | [Ver PNG](versiones/banner-halloween-v1.png) | [ZIP](versiones/banner-halloween-v1.zip) |
+| v2 — segunda versión | [Ver PNG](versiones/banner-halloween-v2.png) | [ZIP](versiones/banner-halloween-v2.zip) |
+| v3 — tercera versión | [Ver PNG](versiones/banner-halloween-v3.png) | [ZIP](versiones/banner-halloween-v3.zip) |
+| v4 — cuarta prueba; estilo pendiente | [Ver PNG](versiones/banner-halloween-v4.png) | [ZIP](versiones/banner-halloween-v4.zip) |
+
+La fidelidad de la nueva prueba al estilo de los renders de referencia sigue pendiente.

@@ -1,6 +1,6 @@
 # Versiones del banner de Halloween
 
-Cada archivo conserva una versión anterior del banner. Ninguna versión está marcada como definitiva o aprobada.
+Cada propuesta se conserva en archivos separados y numerados. Las versiones anteriores no se reemplazan. Ninguna versión está marcada como definitiva o aprobada.
 
 ## Versión 1: primera versión
 
@@ -19,3 +19,11 @@ Cada archivo conserva una versión anterior del banner. Ninguna versión está m
 ![Banner de Halloween v3](banner-halloween-v3.png)
 
 [Ver PNG](banner-halloween-v3.png) · [Descargar ZIP](banner-halloween-v3.zip)
+
+## Versión 4: cuarta prueba
+
+Nueva propuesta independiente. La fidelidad al estilo de los renders de referencia sigue pendiente.
+
+![Banner de Halloween v4](banner-halloween-v4.png)
+
+[Ver PNG](banner-halloween-v4.png) · [Descargar ZIP](banner-halloween-v4.zip)
