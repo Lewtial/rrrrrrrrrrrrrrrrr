@@ -1,0 +1,89 @@
+{
+  "validation_scope": "Static parsing, x86 disassembly, and byte-buffer apply/restore; no Windows process or Cheat Engine execution.",
+  "exe_sha256": "2ff8f56e06b3c358bfa2f0ba0aa3e79d74386dde1e38eb3f9cef38225e49c0cd",
+  "original_ct_copy_identical": true,
+  "entries": [
+    {
+      "id": 1,
+      "description": "Audition / Espacio - prueba local WOW",
+      "original_instruction_guards_pass": true,
+      "patched_instruction_guards_pass": true,
+      "repeated_enable_rejected_by_guards": true,
+      "unexpected_instruction_rejected_by_guards": true,
+      "writes_only_mov_immediates": true,
+      "written_bytes": 18,
+      "actually_changed_bytes": 12,
+      "changed_rvas": [
+        "0x46043d",
+        "0x46043e",
+        "0x460446",
+        "0x46044f",
+        "0x46046c",
+        "0x46046d",
+        "0x460475",
+        "0x46047e",
+        "0x4604a3",
+        "0x4604a4",
+        "0x4604ac",
+        "0x4604b5"
+      ],
+      "all_other_file_bytes_unchanged_in_simulation": true,
+      "disable_restores_exact_original_sha256": true
+    },
+    {
+      "id": 2,
+      "description": "Controlador base / Classic, Ladder, Meeting - prueba local WOW",
+      "original_instruction_guards_pass": true,
+      "patched_instruction_guards_pass": true,
+      "repeated_enable_rejected_by_guards": true,
+      "unexpected_instruction_rejected_by_guards": true,
+      "writes_only_mov_immediates": true,
+      "written_bytes": 18,
+      "actually_changed_bytes": 12,
+      "changed_rvas": [
+        "0x45fd74",
+        "0x45fd75",
+        "0x45fd7d",
+        "0x45fd86",
+        "0x45fda3",
+        "0x45fda4",
+        "0x45fdac",
+        "0x45fdb5",
+        "0x45fdda",
+        "0x45fddb",
+        "0x45fde3",
+        "0x45fdec"
+      ],
+      "all_other_file_bytes_unchanged_in_simulation": true,
+      "disable_restores_exact_original_sha256": true
+    }
+  ],
+  "entries_disjoint_and_combined_restore_passes": true,
+  "source_exe_unchanged": true,
+  "isolated_cpu_emulation": {
+    "passed": true,
+    "cases_per_entry": 36,
+    "total_entry_cases": 72,
+    "inputs": [
+      0.0,
+      -0.015,
+      0.015,
+      -0.03,
+      0.03,
+      -0.06,
+      0.06,
+      -0.1,
+      0.1
+    ],
+    "functions": [
+      "base",
+      "audition"
+    ],
+    "global_flag_values": [
+      0,
+      1
+    ],
+    "report": "emulation-tests.json",
+    "windows_cheat_engine_game_or_server_tested": false
+  }
+}

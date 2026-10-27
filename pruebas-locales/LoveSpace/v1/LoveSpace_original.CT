@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="52">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Auto Assemble script"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>
+[ENABLE]
+assert(LoveRitmo.exe+483C36,B8 0B 00 00)
+assert(LoveRitmo.exe+483C3F,05)
+assert(LoveRitmo.exe+483C48,07)
+
+assert(LoveRitmo.exe+483C65,D0 07 00 00)
+assert(LoveRitmo.exe+483C6E,05)
+assert(LoveRitmo.exe+483C77,06)
+
+assert(LoveRitmo.exe+483C9C,E8 03 00 00)
+assert(LoveRitmo.exe+483CA5,04)
+assert(LoveRitmo.exe+483CAE,05)
+
+LoveRitmo.exe+483C36:
+  db A0 0F 00 00
+LoveRitmo.exe+483C3F:
+  db 06
+LoveRitmo.exe+483C48:
+  db 08
+
+LoveRitmo.exe+483C65:
+  db A0 0F 00 00
+LoveRitmo.exe+483C6E:
+  db 06
+LoveRitmo.exe+483C77:
+  db 08
+
+LoveRitmo.exe+483C9C:
+  db A0 0F 00 00
+LoveRitmo.exe+483CA5:
+  db 06
+LoveRitmo.exe+483CAE:
+  db 08
+
+[DISABLE]
+LoveRitmo.exe+483C36:
+  db B8 0B 00 00
+LoveRitmo.exe+483C3F:
+  db 05
+LoveRitmo.exe+483C48:
+  db 07
+
+LoveRitmo.exe+483C65:
+  db D0 07 00 00
+LoveRitmo.exe+483C6E:
+  db 05
+LoveRitmo.exe+483C77:
+  db 06
+
+LoveRitmo.exe+483C9C:
+  db E8 03 00 00
+LoveRitmo.exe+483CA5:
+  db 04
+LoveRitmo.exe+483CAE:
+  db 05
+
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

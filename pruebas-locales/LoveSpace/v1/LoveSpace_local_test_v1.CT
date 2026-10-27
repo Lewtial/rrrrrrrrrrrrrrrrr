@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CheatTable CheatEngineTableVersion="52">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Audition / Espacio - prueba local WOW"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>
+// Prueba local. Sin Lua, autoejecucion ni autoattach.
+// EXE de referencia SHA-256: 2ff8f56e06b3c358bfa2f0ba0aa3e79d74386dde1e38eb3f9cef38225e49c0cd
+// Solo cambia inmediatos; conserva ventanas temporales y bloque cero.
+[ENABLE]
+assert(LoveRitmo.exe+46043B,C7 00 B8 0B 00 00)
+assert(LoveRitmo.exe+460444,C7 00 05 00 00 00)
+assert(LoveRitmo.exe+46044D,C7 00 07 00 00 00)
+assert(LoveRitmo.exe+46046A,C7 00 D0 07 00 00)
+assert(LoveRitmo.exe+460473,C7 00 05 00 00 00)
+assert(LoveRitmo.exe+46047C,C7 00 06 00 00 00)
+assert(LoveRitmo.exe+4604A1,C7 00 E8 03 00 00)
+assert(LoveRitmo.exe+4604AA,C7 00 04 00 00 00)
+assert(LoveRitmo.exe+4604B3,C7 00 05 00 00 00)
+
+LoveRitmo.exe+46043D:
+  db A0 0F 00 00
+LoveRitmo.exe+460446:
+  db 06
+LoveRitmo.exe+46044F:
+  db 08
+LoveRitmo.exe+46046C:
+  db A0 0F 00 00
+LoveRitmo.exe+460475:
+  db 06
+LoveRitmo.exe+46047E:
+  db 08
+LoveRitmo.exe+4604A3:
+  db A0 0F 00 00
+LoveRitmo.exe+4604AC:
+  db 06
+LoveRitmo.exe+4604B5:
+  db 08
+
+[DISABLE]
+assert(LoveRitmo.exe+46043B,C7 00 A0 0F 00 00)
+assert(LoveRitmo.exe+460444,C7 00 06 00 00 00)
+assert(LoveRitmo.exe+46044D,C7 00 08 00 00 00)
+assert(LoveRitmo.exe+46046A,C7 00 A0 0F 00 00)
+assert(LoveRitmo.exe+460473,C7 00 06 00 00 00)
+assert(LoveRitmo.exe+46047C,C7 00 08 00 00 00)
+assert(LoveRitmo.exe+4604A1,C7 00 A0 0F 00 00)
+assert(LoveRitmo.exe+4604AA,C7 00 06 00 00 00)
+assert(LoveRitmo.exe+4604B3,C7 00 08 00 00 00)
+
+LoveRitmo.exe+46043D:
+  db B8 0B 00 00
+LoveRitmo.exe+460446:
+  db 05
+LoveRitmo.exe+46044F:
+  db 07
+LoveRitmo.exe+46046C:
+  db D0 07 00 00
+LoveRitmo.exe+460475:
+  db 05
+LoveRitmo.exe+46047E:
+  db 06
+LoveRitmo.exe+4604A3:
+  db E8 03 00 00
+LoveRitmo.exe+4604AC:
+  db 04
+LoveRitmo.exe+4604B5:
+  db 05
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Controlador base / Classic, Ladder, Meeting - prueba local WOW"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>
+// Prueba local. Sin Lua, autoejecucion ni autoattach.
+// EXE de referencia SHA-256: 2ff8f56e06b3c358bfa2f0ba0aa3e79d74386dde1e38eb3f9cef38225e49c0cd
+// Solo cambia inmediatos; conserva ventanas temporales y bloque cero.
+[ENABLE]
+assert(LoveRitmo.exe+45FD72,C7 00 B8 0B 00 00)
+assert(LoveRitmo.exe+45FD7B,C7 00 05 00 00 00)
+assert(LoveRitmo.exe+45FD84,C7 00 07 00 00 00)
+assert(LoveRitmo.exe+45FDA1,C7 00 D0 07 00 00)
+assert(LoveRitmo.exe+45FDAA,C7 00 05 00 00 00)
+assert(LoveRitmo.exe+45FDB3,C7 00 06 00 00 00)
+assert(LoveRitmo.exe+45FDD8,C7 00 E8 03 00 00)
+assert(LoveRitmo.exe+45FDE1,C7 00 04 00 00 00)
+assert(LoveRitmo.exe+45FDEA,C7 00 05 00 00 00)
+
+LoveRitmo.exe+45FD74:
+  db A0 0F 00 00
+LoveRitmo.exe+45FD7D:
+  db 06
+LoveRitmo.exe+45FD86:
+  db 08
+LoveRitmo.exe+45FDA3:
+  db A0 0F 00 00
+LoveRitmo.exe+45FDAC:
+  db 06
+LoveRitmo.exe+45FDB5:
+  db 08
+LoveRitmo.exe+45FDDA:
+  db A0 0F 00 00
+LoveRitmo.exe+45FDE3:
+  db 06
+LoveRitmo.exe+45FDEC:
+  db 08
+
+[DISABLE]
+assert(LoveRitmo.exe+45FD72,C7 00 A0 0F 00 00)
+assert(LoveRitmo.exe+45FD7B,C7 00 06 00 00 00)
+assert(LoveRitmo.exe+45FD84,C7 00 08 00 00 00)
+assert(LoveRitmo.exe+45FDA1,C7 00 A0 0F 00 00)
+assert(LoveRitmo.exe+45FDAA,C7 00 06 00 00 00)
+assert(LoveRitmo.exe+45FDB3,C7 00 08 00 00 00)
+assert(LoveRitmo.exe+45FDD8,C7 00 A0 0F 00 00)
+assert(LoveRitmo.exe+45FDE1,C7 00 06 00 00 00)
+assert(LoveRitmo.exe+45FDEA,C7 00 08 00 00 00)
+
+LoveRitmo.exe+45FD74:
+  db B8 0B 00 00
+LoveRitmo.exe+45FD7D:
+  db 05
+LoveRitmo.exe+45FD86:
+  db 07
+LoveRitmo.exe+45FDA3:
+  db D0 07 00 00
+LoveRitmo.exe+45FDAC:
+  db 05
+LoveRitmo.exe+45FDB5:
+  db 06
+LoveRitmo.exe+45FDDA:
+  db E8 03 00 00
+LoveRitmo.exe+45FDE3:
+  db 04
+LoveRitmo.exe+45FDEC:
+  db 05
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols />
+</CheatTable>

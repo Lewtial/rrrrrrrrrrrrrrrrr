@@ -1,0 +1,236 @@
+{
+  "exe_sha256": "2ff8f56e06b3c358bfa2f0ba0aa3e79d74386dde1e38eb3f9cef38225e49c0cd",
+  "image_base": 4194304,
+  "entries": [
+    {
+      "id": 1,
+      "description": "Audition / Espacio - prueba local WOW",
+      "anchor_rva": 4588605,
+      "patches": [
+        {
+          "rva": 4588605,
+          "file_offset": 4585533,
+          "guard_rva": 4588603,
+          "original_instruction": "C7 00 B8 0B 00 00",
+          "patched_instruction": "C7 00 A0 0F 00 00",
+          "original_bytes": "B8 0B 00 00",
+          "patched_bytes": "A0 0F 00 00",
+          "old_value": 3000,
+          "new_value": 4000,
+          "write_width": 4
+        },
+        {
+          "rva": 4588614,
+          "file_offset": 4585542,
+          "guard_rva": 4588612,
+          "original_instruction": "C7 00 05 00 00 00",
+          "patched_instruction": "C7 00 06 00 00 00",
+          "original_bytes": "05",
+          "patched_bytes": "06",
+          "old_value": 5,
+          "new_value": 6,
+          "write_width": 1
+        },
+        {
+          "rva": 4588623,
+          "file_offset": 4585551,
+          "guard_rva": 4588621,
+          "original_instruction": "C7 00 07 00 00 00",
+          "patched_instruction": "C7 00 08 00 00 00",
+          "original_bytes": "07",
+          "patched_bytes": "08",
+          "old_value": 7,
+          "new_value": 8,
+          "write_width": 1
+        },
+        {
+          "rva": 4588652,
+          "file_offset": 4585580,
+          "guard_rva": 4588650,
+          "original_instruction": "C7 00 D0 07 00 00",
+          "patched_instruction": "C7 00 A0 0F 00 00",
+          "original_bytes": "D0 07 00 00",
+          "patched_bytes": "A0 0F 00 00",
+          "old_value": 2000,
+          "new_value": 4000,
+          "write_width": 4
+        },
+        {
+          "rva": 4588661,
+          "file_offset": 4585589,
+          "guard_rva": 4588659,
+          "original_instruction": "C7 00 05 00 00 00",
+          "patched_instruction": "C7 00 06 00 00 00",
+          "original_bytes": "05",
+          "patched_bytes": "06",
+          "old_value": 5,
+          "new_value": 6,
+          "write_width": 1
+        },
+        {
+          "rva": 4588670,
+          "file_offset": 4585598,
+          "guard_rva": 4588668,
+          "original_instruction": "C7 00 06 00 00 00",
+          "patched_instruction": "C7 00 08 00 00 00",
+          "original_bytes": "06",
+          "patched_bytes": "08",
+          "old_value": 6,
+          "new_value": 8,
+          "write_width": 1
+        },
+        {
+          "rva": 4588707,
+          "file_offset": 4585635,
+          "guard_rva": 4588705,
+          "original_instruction": "C7 00 E8 03 00 00",
+          "patched_instruction": "C7 00 A0 0F 00 00",
+          "original_bytes": "E8 03 00 00",
+          "patched_bytes": "A0 0F 00 00",
+          "old_value": 1000,
+          "new_value": 4000,
+          "write_width": 4
+        },
+        {
+          "rva": 4588716,
+          "file_offset": 4585644,
+          "guard_rva": 4588714,
+          "original_instruction": "C7 00 04 00 00 00",
+          "patched_instruction": "C7 00 06 00 00 00",
+          "original_bytes": "04",
+          "patched_bytes": "06",
+          "old_value": 4,
+          "new_value": 6,
+          "write_width": 1
+        },
+        {
+          "rva": 4588725,
+          "file_offset": 4585653,
+          "guard_rva": 4588723,
+          "original_instruction": "C7 00 05 00 00 00",
+          "patched_instruction": "C7 00 08 00 00 00",
+          "original_bytes": "05",
+          "patched_bytes": "08",
+          "old_value": 5,
+          "new_value": 8,
+          "write_width": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "description": "Controlador base / Classic, Ladder, Meeting - prueba local WOW",
+      "anchor_rva": 4586868,
+      "patches": [
+        {
+          "rva": 4586868,
+          "file_offset": 4583796,
+          "guard_rva": 4586866,
+          "original_instruction": "C7 00 B8 0B 00 00",
+          "patched_instruction": "C7 00 A0 0F 00 00",
+          "original_bytes": "B8 0B 00 00",
+          "patched_bytes": "A0 0F 00 00",
+          "old_value": 3000,
+          "new_value": 4000,
+          "write_width": 4
+        },
+        {
+          "rva": 4586877,
+          "file_offset": 4583805,
+          "guard_rva": 4586875,
+          "original_instruction": "C7 00 05 00 00 00",
+          "patched_instruction": "C7 00 06 00 00 00",
+          "original_bytes": "05",
+          "patched_bytes": "06",
+          "old_value": 5,
+          "new_value": 6,
+          "write_width": 1
+        },
+        {
+          "rva": 4586886,
+          "file_offset": 4583814,
+          "guard_rva": 4586884,
+          "original_instruction": "C7 00 07 00 00 00",
+          "patched_instruction": "C7 00 08 00 00 00",
+          "original_bytes": "07",
+          "patched_bytes": "08",
+          "old_value": 7,
+          "new_value": 8,
+          "write_width": 1
+        },
+        {
+          "rva": 4586915,
+          "file_offset": 4583843,
+          "guard_rva": 4586913,
+          "original_instruction": "C7 00 D0 07 00 00",
+          "patched_instruction": "C7 00 A0 0F 00 00",
+          "original_bytes": "D0 07 00 00",
+          "patched_bytes": "A0 0F 00 00",
+          "old_value": 2000,
+          "new_value": 4000,
+          "write_width": 4
+        },
+        {
+          "rva": 4586924,
+          "file_offset": 4583852,
+          "guard_rva": 4586922,
+          "original_instruction": "C7 00 05 00 00 00",
+          "patched_instruction": "C7 00 06 00 00 00",
+          "original_bytes": "05",
+          "patched_bytes": "06",
+          "old_value": 5,
+          "new_value": 6,
+          "write_width": 1
+        },
+        {
+          "rva": 4586933,
+          "file_offset": 4583861,
+          "guard_rva": 4586931,
+          "original_instruction": "C7 00 06 00 00 00",
+          "patched_instruction": "C7 00 08 00 00 00",
+          "original_bytes": "06",
+          "patched_bytes": "08",
+          "old_value": 6,
+          "new_value": 8,
+          "write_width": 1
+        },
+        {
+          "rva": 4586970,
+          "file_offset": 4583898,
+          "guard_rva": 4586968,
+          "original_instruction": "C7 00 E8 03 00 00",
+          "patched_instruction": "C7 00 A0 0F 00 00",
+          "original_bytes": "E8 03 00 00",
+          "patched_bytes": "A0 0F 00 00",
+          "old_value": 1000,
+          "new_value": 4000,
+          "write_width": 4
+        },
+        {
+          "rva": 4586979,
+          "file_offset": 4583907,
+          "guard_rva": 4586977,
+          "original_instruction": "C7 00 04 00 00 00",
+          "patched_instruction": "C7 00 06 00 00 00",
+          "original_bytes": "04",
+          "patched_bytes": "06",
+          "old_value": 4,
+          "new_value": 6,
+          "write_width": 1
+        },
+        {
+          "rva": 4586988,
+          "file_offset": 4583916,
+          "guard_rva": 4586986,
+          "original_instruction": "C7 00 05 00 00 00",
+          "patched_instruction": "C7 00 08 00 00 00",
+          "original_bytes": "05",
+          "patched_bytes": "08",
+          "old_value": 5,
+          "new_value": 8,
+          "write_width": 1
+        }
+      ]
+    }
+  ]
+}

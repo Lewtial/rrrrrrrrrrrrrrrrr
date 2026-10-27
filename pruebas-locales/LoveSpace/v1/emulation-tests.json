@@ -1,0 +1,1261 @@
+{
+  "exe_sha256": "2ff8f56e06b3c358bfa2f0ba0aa3e79d74386dde1e38eb3f9cef38225e49c0cd",
+  "method": "isolated bounded CPU emulation only; no Windows process, OS APIs, game or server launched",
+  "input_cases": [
+    0.0,
+    -0.015,
+    0.015,
+    -0.03,
+    0.03,
+    -0.06,
+    0.06,
+    -0.1,
+    0.1
+  ],
+  "baseline": [
+    {
+      "function": "base",
+      "flag": 0,
+      "input": 0.0,
+      "output": [
+        4000,
+        6,
+        8
+      ],
+      "instructions": 32
+    },
+    {
+      "function": "base",
+      "flag": 0,
+      "input": -0.015,
+      "output": [
+        3000,
+        5,
+        7
+      ],
+      "instructions": 27
+    },
+    {
+      "function": "base",
+      "flag": 0,
+      "input": 0.015,
+      "output": [
+        3000,
+        5,
+        7
+      ],
+      "instructions": 37
+    },
+    {
+      "function": "base",
+      "flag": 0,
+      "input": -0.03,
+      "output": [
+        2000,
+        5,
+        6
+      ],
+      "instructions": 22
+    },
+    {
+      "function": "base",
+      "flag": 0,
+      "input": 0.03,
+      "output": [
+        2000,
+        5,
+        6
+      ],
+      "instructions": 42
+    },
+    {
+      "function": "base",
+      "flag": 0,
+      "input": -0.06,
+      "output": [
+        1000,
+        4,
+        5
+      ],
+      "instructions": 17
+    },
+    {
+      "function": "base",
+      "flag": 0,
+      "input": 0.06,
+      "output": [
+        1000,
+        4,
+        5
+      ],
+      "instructions": 48
+    },
+    {
+      "function": "base",
+      "flag": 0,
+      "input": -0.1,
+      "output": [
+        0,
+        0,
+        0
+      ],
+      "instructions": 32
+    },
+    {
+      "function": "base",
+      "flag": 0,
+      "input": 0.1,
+      "output": [
+        0,
+        0,
+        0
+      ],
+      "instructions": 48
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": 0.0,
+      "output": [
+        4000,
+        6,
+        8
+      ],
+      "instructions": 32
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": -0.015,
+      "output": [
+        3000,
+        5,
+        7
+      ],
+      "instructions": 27
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": 0.015,
+      "output": [
+        3000,
+        5,
+        7
+      ],
+      "instructions": 37
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": -0.03,
+      "output": [
+        2000,
+        5,
+        6
+      ],
+      "instructions": 22
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": 0.03,
+      "output": [
+        2000,
+        5,
+        6
+      ],
+      "instructions": 42
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": -0.06,
+      "output": [
+        1000,
+        4,
+        5
+      ],
+      "instructions": 17
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": 0.06,
+      "output": [
+        1000,
+        4,
+        5
+      ],
+      "instructions": 48
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": -0.1,
+      "output": [
+        0,
+        0,
+        0
+      ],
+      "instructions": 32
+    },
+    {
+      "function": "base",
+      "flag": 1,
+      "input": 0.1,
+      "output": [
+        0,
+        0,
+        0
+      ],
+      "instructions": 48
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": 0.0,
+      "output": [
+        4000,
+        6,
+        8
+      ],
+      "instructions": 39
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": -0.015,
+      "output": [
+        3000,
+        5,
+        7
+      ],
+      "instructions": 34
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": 0.015,
+      "output": [
+        3000,
+        5,
+        7
+      ],
+      "instructions": 44
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": -0.03,
+      "output": [
+        2000,
+        5,
+        6
+      ],
+      "instructions": 29
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": 0.03,
+      "output": [
+        2000,
+        5,
+        6
+      ],
+      "instructions": 49
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": -0.06,
+      "output": [
+        1000,
+        4,
+        5
+      ],
+      "instructions": 24
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": 0.06,
+      "output": [
+        1000,
+        4,
+        5
+      ],
+      "instructions": 55
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": -0.1,
+      "output": [
+        0,
+        0,
+        0
+      ],
+      "instructions": 19
+    },
+    {
+      "function": "audition",
+      "flag": 0,
+      "input": 0.1,
+      "output": [
+        0,
+        0,
+        0
+      ],
+      "instructions": 55
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": 0.0,
+      "output": [
+        4000,
+        6,
+        8
+      ],
+      "instructions": 35
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": -0.015,
+      "output": [
+        3000,
+        5,
+        7
+      ],
+      "instructions": 30
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": 0.015,
+      "output": [
+        3000,
+        5,
+        7
+      ],
+      "instructions": 40
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": -0.03,
+      "output": [
+        2000,
+        5,
+        6
+      ],
+      "instructions": 25
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": 0.03,
+      "output": [
+        2000,
+        5,
+        6
+      ],
+      "instructions": 45
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": -0.06,
+      "output": [
+        1000,
+        4,
+        5
+      ],
+      "instructions": 20
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": 0.06,
+      "output": [
+        1000,
+        4,
+        5
+      ],
+      "instructions": 51
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": -0.1,
+      "output": [
+        0,
+        0,
+        0
+      ],
+      "instructions": 35
+    },
+    {
+      "function": "audition",
+      "flag": 1,
+      "input": 0.1,
+      "output": [
+        0,
+        0,
+        0
+      ],
+      "instructions": 51
+    }
+  ],
+  "entries": [
+    {
+      "description": "\"Audition / Espacio - prueba local WOW\"",
+      "target": "audition",
+      "enable_assert_count": 9,
+      "disable_assert_count": 9,
+      "write_count": 9,
+      "bytes_written": 18,
+      "bytes_actually_changed": 12,
+      "changed_rvas": [
+        "0x46043d",
+        "0x46043e",
+        "0x460446",
+        "0x46044f",
+        "0x46046c",
+        "0x46046d",
+        "0x460475",
+        "0x46047e",
+        "0x4604a3",
+        "0x4604a4",
+        "0x4604ac",
+        "0x4604b5"
+      ],
+      "full_restore_exact": true,
+      "before_after_restore_cases_passed": 36,
+      "after": [
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.0,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 32
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": -0.015,
+          "output": [
+            3000,
+            5,
+            7
+          ],
+          "instructions": 27
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.015,
+          "output": [
+            3000,
+            5,
+            7
+          ],
+          "instructions": 37
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": -0.03,
+          "output": [
+            2000,
+            5,
+            6
+          ],
+          "instructions": 22
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.03,
+          "output": [
+            2000,
+            5,
+            6
+          ],
+          "instructions": 42
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": -0.06,
+          "output": [
+            1000,
+            4,
+            5
+          ],
+          "instructions": 17
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.06,
+          "output": [
+            1000,
+            4,
+            5
+          ],
+          "instructions": 48
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": -0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 32
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 48
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.0,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 32
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": -0.015,
+          "output": [
+            3000,
+            5,
+            7
+          ],
+          "instructions": 27
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.015,
+          "output": [
+            3000,
+            5,
+            7
+          ],
+          "instructions": 37
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": -0.03,
+          "output": [
+            2000,
+            5,
+            6
+          ],
+          "instructions": 22
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.03,
+          "output": [
+            2000,
+            5,
+            6
+          ],
+          "instructions": 42
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": -0.06,
+          "output": [
+            1000,
+            4,
+            5
+          ],
+          "instructions": 17
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.06,
+          "output": [
+            1000,
+            4,
+            5
+          ],
+          "instructions": 48
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": -0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 32
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 48
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.0,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 39
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": -0.015,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 34
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.015,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 44
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": -0.03,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 29
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.03,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 49
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": -0.06,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 24
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.06,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 55
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": -0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 19
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 55
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.0,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 35
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": -0.015,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 30
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.015,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 40
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": -0.03,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 25
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.03,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 45
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": -0.06,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 20
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.06,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 51
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": -0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 35
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 51
+        }
+      ]
+    },
+    {
+      "description": "\"Controlador base / Classic, Ladder, Meeting - prueba local WOW\"",
+      "target": "base",
+      "enable_assert_count": 9,
+      "disable_assert_count": 9,
+      "write_count": 9,
+      "bytes_written": 18,
+      "bytes_actually_changed": 12,
+      "changed_rvas": [
+        "0x45fd74",
+        "0x45fd75",
+        "0x45fd7d",
+        "0x45fd86",
+        "0x45fda3",
+        "0x45fda4",
+        "0x45fdac",
+        "0x45fdb5",
+        "0x45fdda",
+        "0x45fddb",
+        "0x45fde3",
+        "0x45fdec"
+      ],
+      "full_restore_exact": true,
+      "before_after_restore_cases_passed": 36,
+      "after": [
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.0,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 32
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": -0.015,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 27
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.015,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 37
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": -0.03,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 22
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.03,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 42
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": -0.06,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 17
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.06,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 48
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": -0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 32
+        },
+        {
+          "function": "base",
+          "flag": 0,
+          "input": 0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 48
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.0,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 32
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": -0.015,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 27
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.015,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 37
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": -0.03,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 22
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.03,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 42
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": -0.06,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 17
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.06,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 48
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": -0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 32
+        },
+        {
+          "function": "base",
+          "flag": 1,
+          "input": 0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 48
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.0,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 39
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": -0.015,
+          "output": [
+            3000,
+            5,
+            7
+          ],
+          "instructions": 34
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.015,
+          "output": [
+            3000,
+            5,
+            7
+          ],
+          "instructions": 44
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": -0.03,
+          "output": [
+            2000,
+            5,
+            6
+          ],
+          "instructions": 29
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.03,
+          "output": [
+            2000,
+            5,
+            6
+          ],
+          "instructions": 49
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": -0.06,
+          "output": [
+            1000,
+            4,
+            5
+          ],
+          "instructions": 24
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.06,
+          "output": [
+            1000,
+            4,
+            5
+          ],
+          "instructions": 55
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": -0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 19
+        },
+        {
+          "function": "audition",
+          "flag": 0,
+          "input": 0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 55
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.0,
+          "output": [
+            4000,
+            6,
+            8
+          ],
+          "instructions": 35
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": -0.015,
+          "output": [
+            3000,
+            5,
+            7
+          ],
+          "instructions": 30
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.015,
+          "output": [
+            3000,
+            5,
+            7
+          ],
+          "instructions": 40
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": -0.03,
+          "output": [
+            2000,
+            5,
+            6
+          ],
+          "instructions": 25
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.03,
+          "output": [
+            2000,
+            5,
+            6
+          ],
+          "instructions": 45
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": -0.06,
+          "output": [
+            1000,
+            4,
+            5
+          ],
+          "instructions": 20
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.06,
+          "output": [
+            1000,
+            4,
+            5
+          ],
+          "instructions": 51
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": -0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 35
+        },
+        {
+          "function": "audition",
+          "flag": 1,
+          "input": 0.1,
+          "output": [
+            0,
+            0,
+            0
+          ],
+          "instructions": 51
+        }
+      ]
+    }
+  ]
+}
