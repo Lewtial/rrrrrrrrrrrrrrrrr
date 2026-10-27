@@ -27,3 +27,12 @@ queda pendiente probarla con Cheat Engine, el juego y el servidor en Windows.
 - [Descargar el paquete completo (.ZIP)](pruebas-locales/LoveSpace/LoveSpace_local_test_v1.zip?raw=true)
 - [Leer las instrucciones](pruebas-locales/LoveSpace/v1/README.txt)
 - [Consultar la tabla original](pruebas-locales/LoveSpace/v1/LoveSpace_original.CT)
+
+## Estudio LoveRitmo 2020 — mejoras v1
+
+Editor por sección de flechas y SPACE, BPM x1–x4 y descansos sin misiones.
+
+- [Descargar actualización pequeña](estudio/mejoras-v1/actualizacion-v1.zip?raw=true)
+- [Descargar Estudio completo mejorado](Estudio_LoveRitmo_2020_mejorado_v1.zip?raw=true)
+- [Instrucciones, novedades y validación](estudio/mejoras-v1/README.md)
+- [ZIP original conservado](Estudio_LoveRitmo_2020.zip?raw=true)
