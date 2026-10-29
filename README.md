@@ -36,3 +36,11 @@ Editor por sección de flechas y SPACE, BPM x1–x4 y descansos sin misiones.
 - [Descargar Estudio completo mejorado](Estudio_LoveRitmo_2020_mejorado_v1.zip?raw=true)
 - [Instrucciones, novedades y validación](estudio/mejoras-v1/README.md)
 - [ZIP original conservado](Estudio_LoveRitmo_2020.zip?raw=true)
+
+## musictable.PAK — extraído y descifrado
+
+30 archivos SLK extraídos, con sus tablas en CSV para Excel y el PAK original intacto.
+
+- [Descargar el paquete desempaquetado](archivos/musictable_desempaquetado_v1.zip?raw=true)
+- [Contenido e instrucciones](archivos/musictable-pak-v1/README.md)
+- [Ver las tablas CSV](archivos/musictable-pak-v1/csv)

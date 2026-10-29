@@ -1,0 +1,583 @@
+{
+  "formato": "QPACK 1.0",
+  "entradas": 30,
+  "sha256_original": "431eadb575c1c97ada91ab6eb06221d95631bc7820201b61a9bcfdce6b2cf16b",
+  "bytes_original": 296029,
+  "cabecera_y_indice_bytes": 15621,
+  "codificacion_slk": "cp949",
+  "codificacion_csv": "UTF-8 con BOM",
+  "paquete_reconstruido_identico": true,
+  "recifrado_identico": true,
+  "archivos": [
+    {
+      "nombre": "extramusictableinfo.slk",
+      "bytes": 7272,
+      "offset": 15621,
+      "sha256_extraido": "cbf7ccd91edb6f78dd9823fa85d26c39c44143bb4a66091174e366faeae0fa55",
+      "sha256_slk": "f58f9339b8ebda631ad621c8665ad721325f7cd81f11b700508fe885963731e0",
+      "sha256_csv": "ab8075d7f8f55e51a8f13831cac2ed97abac5fa0010b0b44b7391b3fb32b223e",
+      "padding_cero_final": 1,
+      "filas_datos": 13,
+      "columnas": 5,
+      "celdas": 70,
+      "cabecera": [
+        "SN",
+        "Random Slot Name",
+        "Button FileName",
+        "ServerType",
+        "MusicTableFileName"
+      ]
+    },
+    {
+      "nombre": "fam - aha.slk",
+      "bytes": 22768,
+      "offset": 22893,
+      "sha256_extraido": "ecfb3236e5b45c52dc1a42ad41507f1910df33290f1c5522b51edb421e537554",
+      "sha256_slk": "19aba5bd44f4b7cb9fb84d4249cc9139d3f89bda3e15bb69798aa2a759651358",
+      "sha256_csv": "1b9326cbbe3411713760c2b6cbedbafca2ec9f2035e8c4008d158054ab6a37c7",
+      "padding_cero_final": 1,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "fam - carol.slk",
+      "bytes": 9008,
+      "offset": 45661,
+      "sha256_extraido": "0b45fa5c55d4fc958eefcfbb2a250b1ead5f5c0ba16f6ca9063d0c19d50a0cc4",
+      "sha256_slk": "52b011fbc30eb70a63964a659d69ac636c7bbf4107b79c7aa0c9e7992336ee92",
+      "sha256_csv": "293536190c5b9a012ea64f3c4bd9cbad27ebf265fbd5f906e6b4f1a16116c6dd",
+      "padding_cero_final": 1,
+      "filas_datos": 22,
+      "columnas": 5,
+      "celdas": 115,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "fam - latest20.slk",
+      "bytes": 5552,
+      "offset": 54669,
+      "sha256_extraido": "0a02f30ac925527e3470c1f63afaa3ae7628d5a60b5bf90c88d8466a0b34d631",
+      "sha256_slk": "1fc09e173df887a278f15e5bbbb5f755a5a67d832ecbd09fd31c30335f49ae4c",
+      "sha256_csv": "ca36a4e75aa2dbb130762a26460fd81a43af3e480f8af96546c476bf6a1ee15a",
+      "padding_cero_final": 7,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "fam - new.slk",
+      "bytes": 9704,
+      "offset": 60221,
+      "sha256_extraido": "f892657c7e8c54dc9d48b6d627facf8ca197bcbed7cdf4cf9583c2e16374340e",
+      "sha256_slk": "ed9ebf5ee79531bdb4fa9c3a8a72278b50ed68c559b455dbdd3457ecd700f45f",
+      "sha256_csv": "35581ec1082db09b26ed68dc3ea99e7b4511d374846fcf74e7e847e1d158349e",
+      "padding_cero_final": 4,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "free - aha.slk",
+      "bytes": 22664,
+      "offset": 69925,
+      "sha256_extraido": "26aa53f028ed3a9c11331d2297e8f3685d99cdb1e70e4bcac6dccf431de4af82",
+      "sha256_slk": "19bd63a5758a5d48e9f9de969bc4e82be479bfa780a4c43d3dfcdb99661ce86b",
+      "sha256_csv": "1b9326cbbe3411713760c2b6cbedbafca2ec9f2035e8c4008d158054ab6a37c7",
+      "padding_cero_final": 4,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "free - latest20.slk",
+      "bytes": 5640,
+      "offset": 92589,
+      "sha256_extraido": "6d32fe8b98ab901737022d5233ce66e89b4ba0641e2f75d34470abfba65e71bf",
+      "sha256_slk": "629c683b251be90038f36f1c1af3ff8bd2b1195c11ed7ff60acf3ec06a1a577b",
+      "sha256_csv": "ca36a4e75aa2dbb130762a26460fd81a43af3e480f8af96546c476bf6a1ee15a",
+      "padding_cero_final": 3,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "free - new.slk",
+      "bytes": 7296,
+      "offset": 98229,
+      "sha256_extraido": "34297735dcee3b0f4cf25fdbc4e55f78151feae2dae4e1b4d3b3edf3673a83db",
+      "sha256_slk": "18d6cc541a7740c5e8e02bddb2685a69577b8af3e88755df4715a113d0a67eb7",
+      "sha256_csv": "73d6c6d52423d962323049ce365656421559e78d4a2c9aeea6a85a10f28d7fb9",
+      "padding_cero_final": 0,
+      "filas_datos": 12,
+      "columnas": 5,
+      "celdas": 65,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "god - aha.slk",
+      "bytes": 22424,
+      "offset": 105525,
+      "sha256_extraido": "a39e884a20be77304ebaae6f1ff9774ed6ce6689c1df914534fcaea7208487a7",
+      "sha256_slk": "a500556a51e43fcc82a07f6cfca90cd4f8e5a19699f70f3c64bd75ded6643592",
+      "sha256_csv": "02371818976acf90eba4bb021b51de44dd1968442d73b94722bcded64466928e",
+      "padding_cero_final": 7,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "god - latest20.slk",
+      "bytes": 3968,
+      "offset": 127949,
+      "sha256_extraido": "674c0b5b4a863c40ec9378ebe4f23ecc9f089b73bed7508519e5d096ca03068d",
+      "sha256_slk": "07c54f01bd843d84c9855aca700a2e4fd46bafc768b5790374f4236239884f64",
+      "sha256_csv": "6a8a5cc0e15841511c90c447a307f9a037b0d2d1c5f4247e63cb964a92a208c0",
+      "padding_cero_final": 7,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "god - new.slk",
+      "bytes": 2304,
+      "offset": 131917,
+      "sha256_extraido": "dbccc5bb158fc432100d8580c9d2d7ebea85142f4a145d9412ccb74491bf8275",
+      "sha256_slk": "a5808af43c41590f4b8593c8574475aabe659cb7e8223bb9bcf0f865588bf1a3",
+      "sha256_csv": "133b94d557331fa907b6b090fffc5b2799b6d840bba1b5385d815be346c91d43",
+      "padding_cero_final": 0,
+      "filas_datos": 2,
+      "columnas": 5,
+      "celdas": 15,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "idol - aha.slk",
+      "bytes": 10560,
+      "offset": 134221,
+      "sha256_extraido": "bf786163a9c59c47b05a5601105c4d0013d308cbd773771fcfcfdc1cfe704f3f",
+      "sha256_slk": "5b8c68dc0f22af1444404031e39a0e5d8bd1e6ff3ad4a950aeac4703d20dc732",
+      "sha256_csv": "9b568ddef8880fb439330d9209e5e12200f6c0a8f5dc25395629106076f08236",
+      "padding_cero_final": 3,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "idol - carol.slk",
+      "bytes": 7456,
+      "offset": 144781,
+      "sha256_extraido": "4c8154fa04a3046d930b089c61270ab9ede746ec648d3f891ce97e3ec1ef9f22",
+      "sha256_slk": "d78030262ac2d2a026fe9a151174a2b9d9b978de60ea686c33ededf9debed61b",
+      "sha256_csv": "46f52359fe749d1c1dc73e49e06e014c9fd0fcde915036c5f2daf9c61d252eef",
+      "padding_cero_final": 5,
+      "filas_datos": 14,
+      "columnas": 5,
+      "celdas": 75,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "idol - latest20.slk",
+      "bytes": 5304,
+      "offset": 152237,
+      "sha256_extraido": "fb94dc20c596f216f9de0293f3b11a16a9fa2386854bec314b5861f3dda346a1",
+      "sha256_slk": "a52ef521b0eb38341d4c87d1bcd1625fa20f9e4dc9bfa1ac472516f5807153f5",
+      "sha256_csv": "e618706a75fd9e2be63da0b5b3439ad9e2d28ce2f8941afa9a9e14b89e8b122a",
+      "padding_cero_final": 3,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "idol - new.slk",
+      "bytes": 9072,
+      "offset": 157541,
+      "sha256_extraido": "31580e5fbe11591b00a222519c15210ae47b3778e887b30cb308d2e462bf19b5",
+      "sha256_slk": "b40d15376046000feeb70dab70eacbca2ce57f2aabc26f23802da8b0443fc172",
+      "sha256_csv": "9ce03da070fd52e4d819fb798f118a82aef2a8ca12715dfeacacb055f23f335b",
+      "padding_cero_final": 5,
+      "filas_datos": 13,
+      "columnas": 5,
+      "celdas": 70,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "idol(6) - aha.slk",
+      "bytes": 13304,
+      "offset": 166613,
+      "sha256_extraido": "207b7d2a53c0fd61d8f53b69c40798903714e69c0d65a74c21ece8e6e65864b3",
+      "sha256_slk": "9046654d8a7f18d681860c61b7c3063fd18084a8cc7fc86bf59f08666f8b2c68",
+      "sha256_csv": "777a83e81574fc1c97b9b4a573ea6e4b1deaa99f0a2b3599ce44359bb9769c9f",
+      "padding_cero_final": 6,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "idol(6) - latest20.slk",
+      "bytes": 5944,
+      "offset": 179917,
+      "sha256_extraido": "dcce41a563966f80930837db677ad386f0940a38b747e5ca1f1f8ce4b05234db",
+      "sha256_slk": "a3056d97f28a62eb60ca0cd87fb6d04cb6a45ad063f9ccea47a80d1fb5aab5c6",
+      "sha256_csv": "4d9b3275314df1dd2e4f080ff2e95dce064c01b66b4421efd2cebfe9e9c411bb",
+      "padding_cero_final": 6,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "idol(6) - new.slk",
+      "bytes": 7136,
+      "offset": 185861,
+      "sha256_extraido": "b081b1eaf47a8473dffc76ebe6ace20e8b2eed4c8cdd4d4f0dd1fd060b26b417",
+      "sha256_slk": "1f6e8c037251ef8e66795e39ec5435d35211976adab4bf9997db045d1f2d215c",
+      "sha256_csv": "a515667c20f1c66b0d55a4bfe09395e9dfa07516acf5a5f654ad7a6d2c93ea9a",
+      "padding_cero_final": 4,
+      "filas_datos": 10,
+      "columnas": 5,
+      "celdas": 55,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "novice - carol.slk",
+      "bytes": 4688,
+      "offset": 192997,
+      "sha256_extraido": "7547b557964c19b3e166c07b7de7a6bd74dfd09648abcd3efbacb2c58358b39d",
+      "sha256_slk": "01af9502e7998d7cc0ff63dd1cbc52382199f5cf876359ac4f1ca7662c807efd",
+      "sha256_csv": "ca019d0e4bec9f9fa292235b2c74871e65f12ee27acd79cdae6e84b32b532f7d",
+      "padding_cero_final": 0,
+      "filas_datos": 8,
+      "columnas": 5,
+      "celdas": 45,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "novice - new.slk",
+      "bytes": 8336,
+      "offset": 197685,
+      "sha256_extraido": "8d74d96532ecaa1f540441efd9ec47dc560897c6cbce040089c35a68ec899cb3",
+      "sha256_slk": "272a43f4e4cf1cf1317ada4ee22720372ccba8275f42d1340f6a71612592633b",
+      "sha256_csv": "c6edf67a096ade1e5e29ae5e8ed458dbd4cd67b48130ccfc7c6d56a84aad1bc0",
+      "padding_cero_final": 1,
+      "filas_datos": 6,
+      "columnas": 5,
+      "celdas": 35,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "rookie - aha.slk",
+      "bytes": 22072,
+      "offset": 206021,
+      "sha256_extraido": "431947ff7945835df28933c571590be81a7af00c1c93966f99e9096c0654fc77",
+      "sha256_slk": "70a27a94ba391f5962c65f6270382ea95cb9fef74a0ccab2016318db686bcc37",
+      "sha256_csv": "085b8d4777fa25e3200b955efb277ef79e38c57b11ace0a6d27a9eb0288c400c",
+      "padding_cero_final": 1,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "rookie - carol.slk",
+      "bytes": 4976,
+      "offset": 228093,
+      "sha256_extraido": "ffee26af57fa755ce29c66646e302b789980384d31871b7ff163016de55b3101",
+      "sha256_slk": "0b87761f921d2d941e670de52338ee5830598fb19913e540c4f14f66a79626a3",
+      "sha256_csv": "9adcdb281c44986970d7a386aeb9c93f1ebd3514d35e42589723c188b82c23a5",
+      "padding_cero_final": 4,
+      "filas_datos": 2,
+      "columnas": 5,
+      "celdas": 15,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "rookie - latest20.slk",
+      "bytes": 5280,
+      "offset": 233069,
+      "sha256_extraido": "9826d33b3ed3489fb33b2776d515cdce995af19871602c36176e39c1df6371b7",
+      "sha256_slk": "93382a11cafd60629992725039aa158ab35516550a0c342d7a8a5714b41bd2a0",
+      "sha256_csv": "c58d8a05ab23dbcaac427b21d2ff4dd4eeb7d68f6854cf64d56ef6f888bb20dc",
+      "padding_cero_final": 1,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "rookie - new.slk",
+      "bytes": 8648,
+      "offset": 238349,
+      "sha256_extraido": "1e3c760574e92ec4d932ae33fd041ed650e7e675f7c1811a7127747fd9a050aa",
+      "sha256_slk": "57f67a7aaeca72fd34198cccc37b6240055f74b72d924b6465fac03b587d3b60",
+      "sha256_csv": "e9c56e7ce869ed0116110cd4ade253be5cecdba21871ab57bd044a3bc3a0d8c3",
+      "padding_cero_final": 7,
+      "filas_datos": 8,
+      "columnas": 5,
+      "celdas": 45,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "star - aha.slk",
+      "bytes": 1824,
+      "offset": 246997,
+      "sha256_extraido": "c577455150dd7123e881ca0c7badd2383daf3129891ed4cf1586d8322b1a92da",
+      "sha256_slk": "140fc9b7928ca44994d1dc6c53f8054333c60a50ff930d38713cf8d9e48a953c",
+      "sha256_csv": "df4c1e2bae82251ecb39bbd4117694892e8e5d83e0bb69308f4d4c1eec56a3ba",
+      "padding_cero_final": 3,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "star - latest20.slk",
+      "bytes": 6400,
+      "offset": 248821,
+      "sha256_extraido": "de1ce13c5813d36b4d1fc18d8c8e95485832dea59fbe4c32c9f9e9c7f98d8866",
+      "sha256_slk": "2a8a7011e1c90e40306e04b5dc547208e59af34f030effd95ece21d67b5219ea",
+      "sha256_csv": "7b79e00732c26ab5ed269c437bb7321c6c08afb6b2070e5533c5c1c5bad380ce",
+      "padding_cero_final": 6,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "star - new.slk",
+      "bytes": 6032,
+      "offset": 255221,
+      "sha256_extraido": "dc7a10bd75569b712d01075a02a4651038fdf12082220a50f3e52edc09bc6a5a",
+      "sha256_slk": "d26b3bd243cbbf7e4afa4a18f098adb664155baf370de39cdcda688c22fd186c",
+      "sha256_csv": "7dff43f69d81748b16228e3cce5a2223a7d58bdf9038120fa331d3a0e4d667de",
+      "padding_cero_final": 7,
+      "filas_datos": 11,
+      "columnas": 5,
+      "celdas": 60,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "suda - aha.slk",
+      "bytes": 22736,
+      "offset": 261253,
+      "sha256_extraido": "6a32910dd20b44adb3961d09d82ea94e95f7a6b3655f26a2d83025e4cfd83e94",
+      "sha256_slk": "de36069052d29f5ecb8ef61d391d27407f324ccc104c7417009ea0167f8487a6",
+      "sha256_csv": "1b9326cbbe3411713760c2b6cbedbafca2ec9f2035e8c4008d158054ab6a37c7",
+      "padding_cero_final": 0,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "suda - latest20.slk",
+      "bytes": 5552,
+      "offset": 283989,
+      "sha256_extraido": "0a02f30ac925527e3470c1f63afaa3ae7628d5a60b5bf90c88d8466a0b34d631",
+      "sha256_slk": "1fc09e173df887a278f15e5bbbb5f755a5a67d832ecbd09fd31c30335f49ae4c",
+      "sha256_csv": "ca36a4e75aa2dbb130762a26460fd81a43af3e480f8af96546c476bf6a1ee15a",
+      "padding_cero_final": 7,
+      "filas_datos": 20,
+      "columnas": 5,
+      "celdas": 105,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    },
+    {
+      "nombre": "suda - new.slk",
+      "bytes": 6488,
+      "offset": 289541,
+      "sha256_extraido": "481d46c934d7e9ff5fc5dbde91682704efdb7e8fd4ac451973cb36ed1061b0f9",
+      "sha256_slk": "be0c7eb78881290b42b3daea0a8261a0d1015133a6375200aaf3d214d296b512",
+      "sha256_csv": "73d6c6d52423d962323049ce365656421559e78d4a2c9aeea6a85a10f28d7fb9",
+      "padding_cero_final": 2,
+      "filas_datos": 12,
+      "columnas": 5,
+      "celdas": 65,
+      "cabecera": [
+        "ID",
+        "Index",
+        "Title",
+        "Singer",
+        "Difficulty"
+      ]
+    }
+  ]
+}
