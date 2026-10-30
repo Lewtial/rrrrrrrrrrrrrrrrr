@@ -4,3 +4,4 @@ archivos/musictable-pak-v1/**/*.slk -text -diff
 archivos/musictable-pak-v1/original/*.PAK -text -diff
 archivos/musictable-pak-v1/csv/*.csv -text
 archivos/musictable-pak-v1/indice.csv -text
+Estudio_LoveRitmo_2020_mejorado_v2.zip filter=lfs diff=lfs merge=lfs -text

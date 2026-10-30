@@ -44,3 +44,15 @@ Editor por sección de flechas y SPACE, BPM x1–x4 y descansos sin misiones.
 - [Descargar el paquete desempaquetado](archivos/musictable_desempaquetado_v1.zip?raw=true)
 - [Contenido e instrucciones](archivos/musictable-pak-v1/README.md)
 - [Ver las tablas CSV](archivos/musictable-pak-v1/csv)
+
+## Estudio LoveRitmo 2020 — mejoras v2
+
+Lista de todas las misiones para editarlas y copiar una sobre otra con
+**TOMAR MISIÓN → PONER EN ESTA MISIÓN**, conservando sus tiempos y duración.
+Incluye las funciones v1 y verificación del musictable después de enviar.
+
+- [Descargar actualización pequeña v2](estudio/mejoras-v2/actualizacion-v2.zip?raw=true)
+- [Descargar Estudio completo v2](Estudio_LoveRitmo_2020_mejorado_v2.zip?raw=true)
+- [Instalación, uso y validación](estudio/mejoras-v2/README.md)
+
+La versión v1 y el ZIP original se conservan con sus nombres anteriores.

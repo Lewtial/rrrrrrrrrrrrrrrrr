@@ -1,0 +1,43 @@
+{
+  "resultado": "PASS",
+  "carpeta": "/tmp/lr-roundtrip-20261029-4ti1yjfu",
+  "tabla_original": "/workspace/estudio-trabajo/Estudio_LoveRitmo_2020/Crear musica/respaldos/musictable_20261027_163103_estudio.slk.spak",
+  "exe_leido": "/workspace/attachments/731ec3ff-814a-4614-a124-2e459a3d9528/LoveRitmo.exe",
+  "filas": 836,
+  "columnas": 23,
+  "fila_id": "2003",
+  "titulo": "Raising The Bar - Envoi",
+  "misiones_antes": 34,
+  "misiones_despues": 24,
+  "arranque_antes": 10.975,
+  "arranque_despues": 16.4607142857,
+  "largo_maximo": 144,
+  "fin_antes": 202.97500000000005,
+  "fin_despues": 202.97499999998573,
+  "descansos": [
+    {
+      "desde": 10.940714285714286,
+      "hasta": 11.14642857142857,
+      "tipo": "descanso"
+    },
+    {
+      "desde": 27.432142857142857,
+      "hasta": 65.83214285714287,
+      "tipo": "descanso"
+    },
+    {
+      "desde": 197.48928571428576,
+      "hasta": 202.97500000000005,
+      "tipo": "descanso"
+    }
+  ],
+  "todas_las_celdas_conservadas": true,
+  "hashes_originales_verificados": {
+    "/workspace/estudio-trabajo/Estudio_LoveRitmo_2020/Crear musica/respaldos/musictable_20261027_163103_estudio.slk.spak": "094f6e6a90ffed812a549efd31049a25bbc05296af8290d2806e58262ad091a6",
+    "/workspace/attachments/731ec3ff-814a-4614-a124-2e459a3d9528/LoveRitmo.exe": "2ff8f56e06b3c358bfa2f0ba0aa3e79d74386dde1e38eb3f9cef38225e49c0cd",
+    "/workspace/estudio-trabajo/Estudio_LoveRitmo_2020/Crear musica/motor/musictable_tool.py": "8833bef41fe3282ff3b199623304ec2a2271192c3eda26ac7e0f4a597abc9096",
+    "/workspace/estudio-trabajo/Estudio_LoveRitmo_2020/Crear musica/motor/slk_tool.py": "cec426d02c9b313ed6e1f3734c9e4058e78f20ecc5bb576281d1dba35c165f24",
+    "/workspace/estudio-trabajo/Estudio_LoveRitmo_2020/Crear musica/secciones.py": "e6531803d41e43a9b77c31bc93b9aee19b27ca41fe83580243ec5e6caa2f1728"
+  },
+  "segundos": 7.31
+}

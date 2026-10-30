@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "checks": [
+    "All five existing missions are listed",
+    "Header identifies song ID, file and difficulty",
+    "Timeline preserves original starts",
+    "Apply edits the actual exportable source mission",
+    "Edit marks only selected difficulty dirty",
+    "Paste copies both input pattern and direction pool",
+    "Paste preserves source and clipboard",
+    "Paste preserves destination timing and length",
+    "Paste preserves dance, camera and other difficulty",
+    "Editor refresh keeps the selected destination",
+    "Undo restores actual row and displayed destination",
+    "Redo restores pasted row and displayed destination",
+    "Undo to loaded chart clears pending send",
+    "Redo to edited chart restores pending send",
+    "Copy buttons visible at default size",
+    "Send receives the actual pasted chart",
+    "Successful send clears dirty state and updates baseline",
+    "Undo after send marks restored chart pending again",
+    "Redo back to sent chart clears pending state",
+    "Copy actions survive configuration reload",
+    "Regenerate preserves copied mission content",
+    "Reopened editor lists the regenerated actual chart",
+    "No unhandled Tk callback or error popup",
+    "All application writes stayed in isolated temporary state"
+  ],
+  "messages": [
+    {
+      "tipo": "askyesno",
+      "titulo": "Enviar al juego",
+      "mensaje": "Voy a escribir el musictable con 1 filas cambiadas.\n\nAntes hago un respaldo con fecha en:\n/tmp/estudio-gui-v2/isolated-state/respaldos\n\nSigo?"
+    },
+    {
+      "tipo": "showinfo",
+      "titulo": "Listo",
+      "mensaje": "El musictable se guardó y se verificó leyendo de nuevo sus filas.\nDestino:\n/tmp/estudio-gui-v2/isolated-state/musictable-disabled\n\nRespaldo:\nrespaldo-fixture.json\n\nFixture: no se escribe al juego ni al servidor.\n\nCerrá por completo LoveRitmo.exe y volvé a abrirlo antes de probar. Reiniciá también el servidor si estaba corriendo."
+    }
+  ],
+  "windows_game_or_server_tested": false,
+  "platform": "Linux, Tk real; tabla, audio y rejilla sintéticos; guardado interceptado",
+  "screenshots": [
+    "editor-misiones-copia.png",
+    "mapa-con-copia-regenerada.png"
+  ]
+}
