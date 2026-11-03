@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "checks": [
+    "Both existing difficulties have independent adoption controls",
+    "Destination and source IDs are visible",
+    "No adoption before preview",
+    "Preview does not mutate either chart or configuration",
+    "Same BPM preview explains two-arrow cap at six stars",
+    "Cancel preserves charts and configuration",
+    "Stale source rejects the previously reviewed plan",
+    "Stale preview leaves destination unchanged and dialog open",
+    "Manual star change invalidates reviewed plan",
+    "Nine stars preview permits three-arrow groups",
+    "Apply stays visible at 900 by 560",
+    "Adoption only changes target chart, not source",
+    "Adopted same-BPM structure matches source exactly",
+    "Target ID, BPM, stars and song identity are preserved",
+    "All groups capped at two arrows",
+    "Source SPACE positions survive adoption",
+    "Only destination is pending and selected for later generation",
+    "Adoption snapshot persists with source identity and rest",
+    "Send receives adopted target and unchanged source",
+    "Send clears dirty state",
+    "Regenerate preserves adopted input arrangement",
+    "Reopened map retains source mission starts",
+    "Mission editor lists the actual adopted groups",
+    "Different BPM preview reports adaptation and dropped second hand",
+    "Different BPM adoption preserves target BPM and adjusts lengths",
+    "Different BPM preserves feasible absolute mission starts",
+    "Different BPM rest stays free of inputs",
+    "Different BPM regeneration preserves adopted geometry",
+    "Manual target star change is applied without modifying source",
+    "Undo restores rows, stars and persistent adoption",
+    "Redo restores raised difficulty and source remains fixed",
+    "Configuration reload preserves adoption snapshot and edits",
+    "No unhandled Tk callback or unexpected error",
+    "Application writes stayed isolated in temporary workspace",
+    "Adoption clears unrelated legacy marks without an open map",
+    "Regeneration with former legacy marks matches reviewed chart",
+    "Marking repetition makes source map pending generation",
+    "Adoption blocks ungenerated source repetition",
+    "Rejected pending-source preview has no applicable plan",
+    "Generate synchronizes source map to actual generated chart",
+    "Generated source is immediately adoptable while map remains open",
+    "Applying adoption clears legacy marks and retains generated source",
+    "Generate after source repetition adoption preserves reviewed destination"
+  ],
+  "expected_messages": [
+    {
+      "tipo": "showerror",
+      "titulo": "Adoptar versión",
+      "mensaje": "El chart o sus opciones cambiaron desde la vista previa. Prepará otra antes de aplicar."
+    },
+    {
+      "tipo": "showerror",
+      "titulo": "Adoptar versión",
+      "mensaje": "El mapa de la fila 29990 tiene cambios sin generar. Pulsá GENERAR EL CHART en ese mapa antes de adoptar."
+    }
+  ],
+  "messages": [
+    {
+      "tipo": "askyesno",
+      "titulo": "Enviar al juego",
+      "mensaje": "Voy a escribir el musictable con 1 filas cambiadas.\n\nAntes hago un respaldo con fecha en:\n/tmp/estudio-gui-v3/isolated-state/respaldos\n\nSigo?"
+    },
+    {
+      "tipo": "showinfo",
+      "titulo": "Listo",
+      "mensaje": "El musictable se guardó y se verificó leyendo de nuevo sus filas.\nDestino:\n/tmp/estudio-gui-v3/isolated-state/musictable-disabled\n\nRespaldo:\nbackup-fixture.json\n\nFixture: juego y servidor deshabilitados.\n\nCerrá por completo LoveRitmo.exe y volvé a abrirlo antes de probar. Reiniciá también el servidor si estaba corriendo."
+    }
+  ],
+  "screenshots": [
+    "adoptar-mismo-bpm-vista-previa.png",
+    "adoptar-editor-destino.png",
+    "adoptar-distinto-bpm-vista-previa.png"
+  ],
+  "windows_game_or_server_tested": false,
+  "platform": "Linux Tk real; synthetic charts/audio; game save intercepted"
+}

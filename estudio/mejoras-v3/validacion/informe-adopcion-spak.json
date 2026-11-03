@@ -1,0 +1,428 @@
+{
+  "resultado": "PASS",
+  "filas": 836,
+  "columnas": 23,
+  "origen": {
+    "ID": "2558",
+    "estrellas": "10",
+    "BPM": "256"
+  },
+  "destino": {
+    "ID": "2557",
+    "estrellas": "6",
+    "BPM": "256"
+  },
+  "todas_las_celdas_reexportadas_coinciden": true,
+  "origen_conservado": true,
+  "respaldo_identico_al_original": true,
+  "originales_intactos": {
+    "/workspace/estudio-trabajo/Estudio_LoveRitmo_2020/Crear musica/respaldos/musictable_20261027_163103_estudio.slk.spak": "094f6e6a90ffed812a549efd31049a25bbc05296af8290d2806e58262ad091a6",
+    "/workspace/attachments/731ec3ff-814a-4614-a124-2e459a3d9528/LoveRitmo.exe": "2ff8f56e06b3c358bfa2f0ba0aa3e79d74386dde1e38eb3f9cef38225e49c0cd"
+  },
+  "resumen_adopcion": {
+    "bpm_origen": 256.0,
+    "bpm_destino": 256.0,
+    "mismo_bpm": true,
+    "estrellas": 6,
+    "tope_flechas": 2,
+    "misiones_origen": 41,
+    "misiones_destino": 41,
+    "grupos_reducidos": 126,
+    "flechas_retiradas": 126,
+    "segundas_retiradas": 0,
+    "misiones_omitidas": 0,
+    "inicio_origen": 16.681,
+    "inicio_destino": 16.681,
+    "fin_origen": 174.181,
+    "fin_destino": 174.181,
+    "error_max_segundos": 0.0,
+    "ajustes": [
+      {
+        "mision_origen": 1,
+        "inicio_origen": 16.681,
+        "inicio_destino": 16.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 2,
+        "inicio_origen": 20.431,
+        "inicio_destino": 20.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 3,
+        "inicio_origen": 24.181,
+        "inicio_destino": 24.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 4,
+        "inicio_origen": 27.931,
+        "inicio_destino": 27.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 5,
+        "inicio_origen": 31.681,
+        "inicio_destino": 31.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 6,
+        "inicio_origen": 35.431,
+        "inicio_destino": 35.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 7,
+        "inicio_origen": 39.181,
+        "inicio_destino": 39.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 8,
+        "inicio_origen": 42.931,
+        "inicio_destino": 42.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 9,
+        "inicio_origen": 46.681,
+        "inicio_destino": 46.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 10,
+        "inicio_origen": 50.431,
+        "inicio_destino": 50.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 11,
+        "inicio_origen": 54.181,
+        "inicio_destino": 54.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 12,
+        "inicio_origen": 57.931,
+        "inicio_destino": 57.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 13,
+        "inicio_origen": 61.681,
+        "inicio_destino": 61.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 32,
+        "largo_destino": 32,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 14,
+        "inicio_origen": 69.181,
+        "inicio_destino": 69.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 15,
+        "inicio_origen": 72.931,
+        "inicio_destino": 72.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 16,
+        "inicio_origen": 76.681,
+        "inicio_destino": 76.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 17,
+        "inicio_origen": 80.431,
+        "inicio_destino": 80.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 18,
+        "inicio_origen": 84.181,
+        "inicio_destino": 84.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 19,
+        "inicio_origen": 87.931,
+        "inicio_destino": 87.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 20,
+        "inicio_origen": 91.681,
+        "inicio_destino": 91.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 21,
+        "inicio_origen": 95.431,
+        "inicio_destino": 95.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 22,
+        "inicio_origen": 99.181,
+        "inicio_destino": 99.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 23,
+        "inicio_origen": 102.931,
+        "inicio_destino": 102.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 24,
+        "inicio_origen": 106.681,
+        "inicio_destino": 106.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 25,
+        "inicio_origen": 110.431,
+        "inicio_destino": 110.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 26,
+        "inicio_origen": 114.181,
+        "inicio_destino": 114.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 27,
+        "inicio_origen": 117.931,
+        "inicio_destino": 117.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 28,
+        "inicio_origen": 121.681,
+        "inicio_destino": 121.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 29,
+        "inicio_origen": 125.431,
+        "inicio_destino": 125.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 30,
+        "inicio_origen": 129.181,
+        "inicio_destino": 129.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 31,
+        "inicio_origen": 132.931,
+        "inicio_destino": 132.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 32,
+        "inicio_origen": 136.681,
+        "inicio_destino": 136.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 33,
+        "inicio_origen": 140.431,
+        "inicio_destino": 140.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 34,
+        "inicio_origen": 144.181,
+        "inicio_destino": 144.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 35,
+        "inicio_origen": 147.931,
+        "inicio_destino": 147.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 36,
+        "inicio_origen": 151.681,
+        "inicio_destino": 151.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 37,
+        "inicio_origen": 155.431,
+        "inicio_destino": 155.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 38,
+        "inicio_origen": 159.181,
+        "inicio_destino": 159.181,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 39,
+        "inicio_origen": 162.931,
+        "inicio_destino": 162.931,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 40,
+        "inicio_origen": 166.681,
+        "inicio_destino": 166.681,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      },
+      {
+        "mision_origen": 41,
+        "inicio_origen": 170.431,
+        "inicio_destino": 170.431,
+        "desvio_segundos": 0.0,
+        "largo_origen": 16,
+        "largo_destino": 16,
+        "segunda_retirada": false
+      }
+    ],
+    "omisiones": [],
+    "advertencias": [],
+    "descansos": [],
+    "regla": "Máximo 2 flechas por casillero; 6 estrellas a 256.00 BPM.",
+    "error_fin_segundos": 0.0,
+    "misiones_ajustadas": 0,
+    "duracion_origen": 157.5,
+    "duracion_destino": 157.5
+  },
+  "verificacion_envio": {
+    "correcto": true,
+    "filas": 836,
+    "filas_correctas": 836,
+    "campos": 23,
+    "ruta": "/tmp/lr-adopcion-v3-avfprdj1/adoptado.slk.spak",
+    "sha256": "a74032ae1635059b5b913faa033a4fb2f9866c154c49dc3eef6c485dcc3cc870"
+  },
+  "juego_o_servidor_ejecutados": false
+}

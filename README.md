@@ -56,3 +56,16 @@ Incluye las funciones v1 y verificación del musictable después de enviar.
 - [Instalación, uso y validación](estudio/mejoras-v2/README.md)
 
 La versión v1 y el ZIP original se conservan con sus nombres anteriores.
+
+## Estudio LoveRitmo 2020 — mejoras v3
+
+**ADOPTAR VERSIÓN**: usa el chart editado de otra dificultad del mismo bkg,
+conservando sus misiones y SPACE y limitando los grupos según estrellas/BPM.
+Incluye vista previa y adaptación cuando los BPM son distintos.
+
+- [Descargar actualización pequeña v3](estudio/mejoras-v3/actualizacion-v3.zip?raw=true)
+- [Descargar Estudio completo v3](Estudio_LoveRitmo_2020_mejorado_v3.zip?raw=true)
+- [Instalación, reglas y validación](estudio/mejoras-v3/README.md)
+
+El original y las versiones v1/v2 se conservan. Crear nuevas misiones sigue
+pendiente; la adopción trabaja sobre las dificultades existentes.

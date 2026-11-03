@@ -1,0 +1,43 @@
+PASS: Both existing difficulties have independent adoption controls
+PASS: Destination and source IDs are visible
+PASS: No adoption before preview
+PASS: Preview does not mutate either chart or configuration
+PASS: Same BPM preview explains two-arrow cap at six stars
+PASS: Cancel preserves charts and configuration
+PASS: Stale source rejects the previously reviewed plan
+PASS: Stale preview leaves destination unchanged and dialog open
+PASS: Manual star change invalidates reviewed plan
+PASS: Nine stars preview permits three-arrow groups
+PASS: Apply stays visible at 900 by 560
+PASS: Adoption only changes target chart, not source
+PASS: Adopted same-BPM structure matches source exactly
+PASS: Target ID, BPM, stars and song identity are preserved
+PASS: All groups capped at two arrows
+PASS: Source SPACE positions survive adoption
+PASS: Only destination is pending and selected for later generation
+PASS: Adoption snapshot persists with source identity and rest
+PASS: Send receives adopted target and unchanged source
+PASS: Send clears dirty state
+PASS: Regenerate preserves adopted input arrangement
+PASS: Reopened map retains source mission starts
+PASS: Mission editor lists the actual adopted groups
+PASS: Different BPM preview reports adaptation and dropped second hand
+PASS: Different BPM adoption preserves target BPM and adjusts lengths
+PASS: Different BPM preserves feasible absolute mission starts
+PASS: Different BPM rest stays free of inputs
+PASS: Different BPM regeneration preserves adopted geometry
+PASS: Manual target star change is applied without modifying source
+PASS: Undo restores rows, stars and persistent adoption
+PASS: Redo restores raised difficulty and source remains fixed
+PASS: Configuration reload preserves adoption snapshot and edits
+PASS: No unhandled Tk callback or unexpected error
+PASS: Application writes stayed isolated in temporary workspace
+PASS: Adoption clears unrelated legacy marks without an open map
+PASS: Regeneration with former legacy marks matches reviewed chart
+PASS: Marking repetition makes source map pending generation
+PASS: Adoption blocks ungenerated source repetition
+PASS: Rejected pending-source preview has no applicable plan
+PASS: Generate synchronizes source map to actual generated chart
+PASS: Generated source is immediately adoptable while map remains open
+PASS: Applying adoption clears legacy marks and retains generated source
+PASS: Generate after source repetition adoption preserves reviewed destination
