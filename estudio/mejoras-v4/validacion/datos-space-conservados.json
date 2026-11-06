@@ -1,0 +1,190 @@
+[
+  {
+    "length_fuente": 16,
+    "segunda_fuente": "0",
+    "bpm_fuente": 120,
+    "bpm_destino": 120,
+    "mission1": "157,1,157",
+    "mission2": "0,0,0",
+    "length_destino": "16,16,16",
+    "spaces_mision": 4,
+    "inicio_spaces": 12.0,
+    "descansos": []
+  },
+  {
+    "length_fuente": 16,
+    "segunda_fuente": "0",
+    "bpm_fuente": 120,
+    "bpm_destino": 240,
+    "mission1": "157,1,157",
+    "mission2": "0,0,0",
+    "length_destino": "32,32,32",
+    "spaces_mision": 4,
+    "inicio_spaces": 12.0,
+    "descansos": []
+  },
+  {
+    "length_fuente": 16,
+    "segunda_fuente": "0",
+    "bpm_fuente": 120,
+    "bpm_destino": 60,
+    "mission1": "157,1,157",
+    "mission2": "0,0,0",
+    "length_destino": "8,8,8",
+    "spaces_mision": 4,
+    "inicio_spaces": 12.0,
+    "descansos": []
+  },
+  {
+    "length_fuente": 16,
+    "segunda_fuente": "1",
+    "bpm_fuente": 120,
+    "bpm_destino": 120,
+    "mission1": "157,1,157",
+    "mission2": "0,1,0",
+    "length_destino": "16,16,16",
+    "spaces_mision": 8,
+    "inicio_spaces": 12.0,
+    "descansos": []
+  },
+  {
+    "length_fuente": 16,
+    "segunda_fuente": "1",
+    "bpm_fuente": 120,
+    "bpm_destino": 240,
+    "mission1": "157,1,157",
+    "mission2": "0,1,0",
+    "length_destino": "32,32,32",
+    "spaces_mision": 8,
+    "inicio_spaces": 12.0,
+    "descansos": []
+  },
+  {
+    "length_fuente": 16,
+    "segunda_fuente": "1",
+    "bpm_fuente": 120,
+    "bpm_destino": 60,
+    "mission1": "157,1,157",
+    "mission2": "0,0,0",
+    "length_destino": "8,8,8",
+    "spaces_mision": 4,
+    "inicio_spaces": 12.0,
+    "descansos": []
+  },
+  {
+    "length_fuente": 32,
+    "segunda_fuente": "0",
+    "bpm_fuente": 120,
+    "bpm_destino": 120,
+    "mission1": "157,1,157",
+    "mission2": "0,0,0",
+    "length_destino": "16,32,16",
+    "spaces_mision": 4,
+    "inicio_spaces": 12.0,
+    "descansos": []
+  },
+  {
+    "length_fuente": 32,
+    "segunda_fuente": "0",
+    "bpm_fuente": 120,
+    "bpm_destino": 240,
+    "mission1": "157,1,157",
+    "mission2": "0,0,0",
+    "length_destino": "32,64,32",
+    "spaces_mision": 4,
+    "inicio_spaces": 12.0,
+    "descansos": [
+      {
+        "desde": 20.0,
+        "hasta": 28.0,
+        "tipo": "descanso"
+      },
+      {
+        "tipo": "descanso",
+        "desde": 20.0,
+        "hasta": 28.0
+      }
+    ]
+  },
+  {
+    "length_fuente": 32,
+    "segunda_fuente": "0",
+    "bpm_fuente": 120,
+    "bpm_destino": 60,
+    "mission1": "157,1,157",
+    "mission2": "0,0,0",
+    "length_destino": "8,16,8",
+    "spaces_mision": 4,
+    "inicio_spaces": 12.0,
+    "descansos": [
+      {
+        "desde": 20.0,
+        "hasta": 28.0,
+        "tipo": "descanso"
+      },
+      {
+        "tipo": "descanso",
+        "desde": 20.0,
+        "hasta": 28.0
+      }
+    ]
+  },
+  {
+    "length_fuente": 32,
+    "segunda_fuente": "1",
+    "bpm_fuente": 120,
+    "bpm_destino": 120,
+    "mission1": "157,1,157",
+    "mission2": "0,1,0",
+    "length_destino": "16,32,16",
+    "spaces_mision": 8,
+    "inicio_spaces": 12.0,
+    "descansos": []
+  },
+  {
+    "length_fuente": 32,
+    "segunda_fuente": "1",
+    "bpm_fuente": 120,
+    "bpm_destino": 240,
+    "mission1": "157,1,157",
+    "mission2": "0,1,0",
+    "length_destino": "32,64,32",
+    "spaces_mision": 8,
+    "inicio_spaces": 12.0,
+    "descansos": [
+      {
+        "desde": 20.0,
+        "hasta": 28.0,
+        "tipo": "descanso"
+      },
+      {
+        "tipo": "descanso",
+        "desde": 20.0,
+        "hasta": 28.0
+      }
+    ]
+  },
+  {
+    "length_fuente": 32,
+    "segunda_fuente": "1",
+    "bpm_fuente": 120,
+    "bpm_destino": 60,
+    "mission1": "157,1,157",
+    "mission2": "0,1,0",
+    "length_destino": "8,16,8",
+    "spaces_mision": 8,
+    "inicio_spaces": 12.0,
+    "descansos": [
+      {
+        "desde": 20.0,
+        "hasta": 28.0,
+        "tipo": "descanso"
+      },
+      {
+        "tipo": "descanso",
+        "desde": 20.0,
+        "hasta": 28.0
+      }
+    ]
+  }
+]

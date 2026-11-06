@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "checks": [
+    "Adoption preserves source and SPACE mission content",
+    "Header describes solo SPACE instead of calladas",
+    "4 SPACE remain actual inputs",
+    "4 SPACE block is active turquoise",
+    "4 SPACE hover describes active mission",
+    "4 SPACE hover counts keyboard inputs",
+    "4 SPACE playback status stays active",
+    "8 SPACE remain actual inputs",
+    "8 SPACE block is active turquoise",
+    "8 SPACE hover describes active mission",
+    "8 SPACE hover counts keyboard inputs",
+    "8 SPACE playback status stays active",
+    "Regeneration preserves adopted SPACE chart",
+    "4 SPACE remain actual inputs",
+    "4 SPACE block is active turquoise",
+    "4 SPACE hover describes active mission",
+    "4 SPACE hover counts keyboard inputs",
+    "4 SPACE playback status stays active",
+    "8 SPACE remain actual inputs",
+    "8 SPACE block is active turquoise",
+    "8 SPACE hover describes active mission",
+    "8 SPACE hover counts keyboard inputs",
+    "8 SPACE playback status stays active",
+    "Real rest removes the input mission",
+    "Real rest has its own truthful hover status",
+    "Rest has zero keyboard inputs",
+    "4 SPACE remain actual inputs",
+    "4 SPACE block is active turquoise",
+    "4 SPACE hover describes active mission",
+    "4 SPACE hover counts keyboard inputs",
+    "4 SPACE playback status stays active",
+    "Long SPACE mission calls walking a later tail",
+    "Send receives unchanged SPACE input patterns",
+    "No game executable was opened",
+    "4 SPACE remain actual inputs",
+    "4 SPACE block is active turquoise",
+    "4 SPACE hover describes active mission",
+    "4 SPACE hover counts keyboard inputs",
+    "4 SPACE playback status stays active",
+    "8 SPACE remain actual inputs",
+    "8 SPACE block is active turquoise",
+    "8 SPACE hover describes active mission",
+    "8 SPACE hover counts keyboard inputs",
+    "8 SPACE playback status stays active",
+    "Reloaded header never classifies SPACE as callada",
+    "Reloaded real rest stays without mission",
+    "No unexpected error or Tk callback failure",
+    "Application writes stayed in isolated temporary workspace"
+  ],
+  "screenshots": [
+    "space-adoptado-despues.png",
+    "space-y-descanso-real-despues.png",
+    "space-adoptado-recargado-despues.png"
+  ],
+  "messages": [
+    {
+      "tipo": "askyesno",
+      "titulo": "Enviar al juego",
+      "mensaje": "Voy a escribir el musictable con 1 filas cambiadas.\n\nAntes hago un respaldo con fecha en:\n/tmp/estudio-gui-v4/isolated-state/respaldos\n\nSigo?"
+    },
+    {
+      "tipo": "showinfo",
+      "titulo": "Listo",
+      "mensaje": "El musictable se guardó y se verificó leyendo de nuevo sus filas.\nDestino:\n/tmp/estudio-gui-v4/isolated-state/table-disabled\n\nRespaldo:\nbackup-fixture.json\n\nFixture: no game or server write\n\nCerrá por completo LoveRitmo.exe y volvé a abrirlo antes de probar. Reiniciá también el servidor si estaba corriendo."
+    }
+  ],
+  "callback_errors": [],
+  "windows_game_or_server_tested": false,
+  "platform": "Linux Tk real; synthetic charts and audio; intercepted game save"
+}

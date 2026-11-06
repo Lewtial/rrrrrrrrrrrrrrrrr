@@ -69,3 +69,15 @@ Incluye vista previa y adaptación cuando los BPM son distintos.
 
 El original y las versiones v1/v2 se conservan. Crear nuevas misiones sigue
 pendiente; la adopción trabaja sobre las dificultades existentes.
+
+## Estudio LoveRitmo 2020 — mejoras v4
+
+Corrige el mapa para que las misiones de solo SPACE, incluidas las adoptadas,
+aparezcan como **SOLO SPACE**. Se conservan sus entradas y se distinguen de los
+descansos reales.
+
+- [Descargar actualización pequeña v4](estudio/mejoras-v4/actualizacion-v4.zip?raw=true)
+- [Descargar Estudio completo v4](Estudio_LoveRitmo_2020_mejorado_v4.zip?raw=true)
+- [Instalación y validación](estudio/mejoras-v4/README.md)
+
+El original y las versiones v1, v2 y v3 se conservan.

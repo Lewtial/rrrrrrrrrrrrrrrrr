@@ -1,0 +1,232 @@
+{
+  "immediate": {
+    "ms": {
+      "n": 2,
+      "t": 8.0,
+      "ventana": 1.0,
+      "flechas": 0,
+      "space": 4,
+      "largo_t": 16,
+      "largo": 4.0,
+      "tanda2": false,
+      "grupo": 1
+    },
+    "quitada": false,
+    "marca": null,
+    "status": "0:08  ->  MISION 2 de 7: 0 flechas, 4 SPACE   |  SOLO SPACE",
+    "colors": [
+      "#2bb3a3"
+    ],
+    "ticks": [
+      {
+        "t": 8.0,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 0,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.25,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 1,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.5,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 2,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.75,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 3,
+        "mision": 1,
+        "tanda": 1
+      }
+    ],
+    "quitados": []
+  },
+  "preview_audio": {
+    "informe": {
+      "desde": 8.0,
+      "segundos": 1.0,
+      "marcas": 4,
+      "misiones": 7,
+      "bpm": 240.0,
+      "arranques": [
+        4.0,
+        8.0,
+        12.0,
+        16.0,
+        20.0,
+        24.0,
+        28.0
+      ],
+      "ventana": 1.0,
+      "flechas": 0,
+      "space": 4
+    },
+    "ticks": [
+      {
+        "t": 8.0,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 0,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.25,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 1,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.5,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 2,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.75,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 3,
+        "mision": 1,
+        "tanda": 1
+      }
+    ]
+  },
+  "regenerated": {
+    "ms": {
+      "n": 2,
+      "t": 8.0,
+      "ventana": 1.0,
+      "flechas": 0,
+      "space": 4,
+      "largo_t": 16,
+      "largo": 4.0,
+      "tanda2": false,
+      "grupo": 1
+    },
+    "quitada": false,
+    "marca": null,
+    "status": "0:08  ->  MISION 2 de 7: 0 flechas, 4 SPACE   |  SOLO SPACE",
+    "colors": [
+      "#2bb3a3"
+    ],
+    "ticks": [
+      {
+        "t": 8.0,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 0,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.25,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 1,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.5,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 2,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.75,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 3,
+        "mision": 1,
+        "tanda": 1
+      }
+    ],
+    "quitados": []
+  },
+  "reloaded": {
+    "ms": {
+      "n": 2,
+      "t": 8.0,
+      "ventana": 1.0,
+      "flechas": 0,
+      "space": 4,
+      "largo_t": 16,
+      "largo": 4.0,
+      "tanda2": false,
+      "grupo": 1
+    },
+    "quitada": false,
+    "marca": null,
+    "status": "0:08  ->  MISION 2 de 7: 0 flechas, 4 SPACE   |  SOLO SPACE",
+    "colors": [
+      "#2bb3a3"
+    ],
+    "ticks": [
+      {
+        "t": 8.0,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 0,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.25,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 1,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.5,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 2,
+        "mision": 1,
+        "tanda": 1
+      },
+      {
+        "t": 8.75,
+        "flechas": 0,
+        "space": 1,
+        "tiempo": 3,
+        "mision": 1,
+        "tanda": 1
+      }
+    ],
+    "quitados": []
+  },
+  "messages": [
+    {
+      "tipo": "askyesno",
+      "titulo": "Enviar al juego",
+      "mensaje": "Voy a escribir el musictable con 1 filas cambiadas.\n\nAntes hago un respaldo con fecha en:\n/tmp/estudio-gui-v4/isolated-state/respaldos\n\nSigo?"
+    },
+    {
+      "tipo": "showinfo",
+      "titulo": "Listo",
+      "mensaje": "El musictable se guardó y se verificó leyendo de nuevo sus filas.\nDestino:\n/tmp/estudio-gui-v4/isolated-state/table-disabled\n\nRespaldo:\nbackup-fixture.json\n\nFixture: no game or server write\n\nCerrá por completo LoveRitmo.exe y volvé a abrirlo antes de probar. Reiniciá también el servidor si estaba corriendo."
+    }
+  ],
+  "errors": []
+}

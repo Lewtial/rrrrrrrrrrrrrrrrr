@@ -1,0 +1,48 @@
+PASS: Adoption preserves source and SPACE mission content
+PASS: Header describes solo SPACE instead of calladas
+PASS: 4 SPACE remain actual inputs
+PASS: 4 SPACE block is active turquoise
+PASS: 4 SPACE hover describes active mission
+PASS: 4 SPACE hover counts keyboard inputs
+PASS: 4 SPACE playback status stays active
+PASS: 8 SPACE remain actual inputs
+PASS: 8 SPACE block is active turquoise
+PASS: 8 SPACE hover describes active mission
+PASS: 8 SPACE hover counts keyboard inputs
+PASS: 8 SPACE playback status stays active
+PASS: Regeneration preserves adopted SPACE chart
+PASS: 4 SPACE remain actual inputs
+PASS: 4 SPACE block is active turquoise
+PASS: 4 SPACE hover describes active mission
+PASS: 4 SPACE hover counts keyboard inputs
+PASS: 4 SPACE playback status stays active
+PASS: 8 SPACE remain actual inputs
+PASS: 8 SPACE block is active turquoise
+PASS: 8 SPACE hover describes active mission
+PASS: 8 SPACE hover counts keyboard inputs
+PASS: 8 SPACE playback status stays active
+PASS: Real rest removes the input mission
+PASS: Real rest has its own truthful hover status
+PASS: Rest has zero keyboard inputs
+PASS: 4 SPACE remain actual inputs
+PASS: 4 SPACE block is active turquoise
+PASS: 4 SPACE hover describes active mission
+PASS: 4 SPACE hover counts keyboard inputs
+PASS: 4 SPACE playback status stays active
+PASS: Long SPACE mission calls walking a later tail
+PASS: Send receives unchanged SPACE input patterns
+PASS: No game executable was opened
+PASS: 4 SPACE remain actual inputs
+PASS: 4 SPACE block is active turquoise
+PASS: 4 SPACE hover describes active mission
+PASS: 4 SPACE hover counts keyboard inputs
+PASS: 4 SPACE playback status stays active
+PASS: 8 SPACE remain actual inputs
+PASS: 8 SPACE block is active turquoise
+PASS: 8 SPACE hover describes active mission
+PASS: 8 SPACE hover counts keyboard inputs
+PASS: 8 SPACE playback status stays active
+PASS: Reloaded header never classifies SPACE as callada
+PASS: Reloaded real rest stays without mission
+PASS: No unexpected error or Tk callback failure
+PASS: Application writes stayed in isolated temporary workspace
