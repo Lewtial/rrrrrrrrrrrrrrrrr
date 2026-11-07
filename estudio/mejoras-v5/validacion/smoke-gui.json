@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "checks": [
+    "Copy has its own bkg and is the only existing destination difficulty",
+    "Registered copy link points to original high difficulty",
+    "Original rows stay protected and copy is editable",
+    "Adoption control is enabled for a linked copy with one difficulty",
+    "Protected original difficulty controls stay disabled",
+    "Source list contains both original difficulties only",
+    "Higher edited original is selected by default",
+    "Same-title unrelated recording is not a source",
+    "Source and destination bkg are visible",
+    "Adoption still requires reviewing a preview",
+    "Preparing linked original does not alter either chart",
+    "Preview uses six-star two-arrow limit at 290 BPM",
+    "Preview keeps actual source ID and target identity",
+    "Applying closes the reviewed dialog",
+    "Target keeps existing row ID and separate audio bkg",
+    "Target keeps chosen six-star 290 BPM settings",
+    "Same BPM copies source mission starts and lengths",
+    "Source triples are reduced to two arrows",
+    "Source first-hand SPACE positions are preserved",
+    "Source second-hand SPACE and absent tandas are preserved",
+    "Both protected originals and unrelated recording stay byte-for-byte identical",
+    "Only existing copy is marked pending send",
+    "Adoption snapshot is saved under target bkg",
+    "Map contains four-SPACE and eight-SPACE missions",
+    "Adopted copy map shows active SOLO SPACE",
+    "Regenerate preserves linked-source adoption",
+    "Regenerate leaves protected source charts untouched",
+    "Send receives adjusted existing copy and unchanged original rows",
+    "Successful send clears pending changes",
+    "No unexpected error or Tk callback failure",
+    "Reload preserves copy identity, BPM and difficulty",
+    "Reload restores linked adoption snapshot",
+    "Reloaded map keeps adopted mission geometry",
+    "Reloaded copy retains active SPACE missions",
+    "Reopened adoption still lists registered originals",
+    "No unexpected error or Tk callback failure",
+    "Application writes stayed isolated"
+  ],
+  "screenshots": [
+    "copia-adopta-original-vista-previa.png",
+    "copia-adoptada-mapa.png",
+    "copia-adoptada-recargada.png"
+  ],
+  "messages": [
+    {
+      "tipo": "askyesno",
+      "titulo": "El arranque no cae en el compas",
+      "mensaje": "Ese arranque esta a 47 ms del '1' de compas mas cercano.\nLas flechas van a entrar corridas.\n\nGenero igual?"
+    },
+    {
+      "tipo": "askyesno",
+      "titulo": "Enviar al juego",
+      "mensaje": "Voy a escribir el musictable con 1 filas cambiadas.\n\nAntes hago un respaldo con fecha en:\n/tmp/estudio-gui-v5/isolated-state/respaldos\n\nSigo?"
+    },
+    {
+      "tipo": "showinfo",
+      "titulo": "Listo",
+      "mensaje": "El musictable se guardó y se verificó leyendo de nuevo sus filas.\nDestino:\n/tmp/estudio-gui-v5/isolated-state/table-disabled\n\nRespaldo:\nbackup-fixture.json\n\nFixture: no game or server write\n\nCerrá por completo LoveRitmo.exe y volvé a abrirlo antes de probar. Reiniciá también el servidor si estaba corriendo."
+    }
+  ],
+  "callback_errors": [],
+  "windows_game_or_server_tested": false,
+  "platform": "Linux Tk real; synthetic charts/audio; game write intercepted"
+}

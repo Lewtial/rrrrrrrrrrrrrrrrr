@@ -1,0 +1,37 @@
+PASS: Copy has its own bkg and is the only existing destination difficulty
+PASS: Registered copy link points to original high difficulty
+PASS: Original rows stay protected and copy is editable
+PASS: Adoption control is enabled for a linked copy with one difficulty
+PASS: Protected original difficulty controls stay disabled
+PASS: Source list contains both original difficulties only
+PASS: Higher edited original is selected by default
+PASS: Same-title unrelated recording is not a source
+PASS: Source and destination bkg are visible
+PASS: Adoption still requires reviewing a preview
+PASS: Preparing linked original does not alter either chart
+PASS: Preview uses six-star two-arrow limit at 290 BPM
+PASS: Preview keeps actual source ID and target identity
+PASS: Applying closes the reviewed dialog
+PASS: Target keeps existing row ID and separate audio bkg
+PASS: Target keeps chosen six-star 290 BPM settings
+PASS: Same BPM copies source mission starts and lengths
+PASS: Source triples are reduced to two arrows
+PASS: Source first-hand SPACE positions are preserved
+PASS: Source second-hand SPACE and absent tandas are preserved
+PASS: Both protected originals and unrelated recording stay byte-for-byte identical
+PASS: Only existing copy is marked pending send
+PASS: Adoption snapshot is saved under target bkg
+PASS: Map contains four-SPACE and eight-SPACE missions
+PASS: Adopted copy map shows active SOLO SPACE
+PASS: Regenerate preserves linked-source adoption
+PASS: Regenerate leaves protected source charts untouched
+PASS: Send receives adjusted existing copy and unchanged original rows
+PASS: Successful send clears pending changes
+PASS: No unexpected error or Tk callback failure
+PASS: Reload preserves copy identity, BPM and difficulty
+PASS: Reload restores linked adoption snapshot
+PASS: Reloaded map keeps adopted mission geometry
+PASS: Reloaded copy retains active SPACE missions
+PASS: Reopened adoption still lists registered originals
+PASS: No unexpected error or Tk callback failure
+PASS: Application writes stayed isolated

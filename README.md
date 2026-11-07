@@ -81,3 +81,15 @@ descansos reales.
 - [Instalación y validación](estudio/mejoras-v4/README.md)
 
 El original y las versiones v1, v2 y v3 se conservan.
+
+## Estudio LoveRitmo 2020 — mejoras v5
+
+ADOPTAR VERSIÓN permite que una copia creada por el Estudio tome el chart de
+su original, conservando el ID y bkg del destino. Reconoce familias mediante
+copias.json y mantiene protegidos los originales.
+
+- [Descargar actualización pequeña v5](estudio/mejoras-v5/actualizacion-v5.zip?raw=true)
+- [Descargar Estudio completo v5](Estudio_LoveRitmo_2020_mejorado_v5.zip?raw=true)
+- [Instalación, caso de Trapped y validación](estudio/mejoras-v5/README.md)
+
+El original y las versiones v1–v4 se conservan.
