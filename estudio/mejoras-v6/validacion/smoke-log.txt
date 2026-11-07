@@ -1,0 +1,31 @@
+PASS: Source is six stars and linked target is ten stars
+PASS: Source has doubles, singles and four/eight-SPACE missions
+PASS: Upward adaptation is enabled by default
+PASS: Reviewed source and target stars are explicit
+PASS: Preview increases arrow count and includes triples
+PASS: Preview reports actual upward changes
+PASS: Upward preview preserves all SPACE slots and absent tandas
+PASS: Upward preview preserves timing and length
+PASS: Preparing does not change any table row
+PASS: Disabling upward adaptation invalidates the prior preview
+PASS: Disabled adaptation preserves source arrow groups exactly
+PASS: Disabled preview reports no added arrows
+PASS: Applying the adapted chart keeps the destination at ten stars
+PASS: Applying adds real arrows to destination rather than only changing its label
+PASS: Applied groups match the reviewed plan
+PASS: Target keeps existing ID, BPM and bkg
+PASS: Source copy and protected originals stay identical
+PASS: Enabled upward adaptation persists in target configuration
+PASS: Regenerate preserves increased arrow groups and SPACE slots
+PASS: Map shows ten-star chart and active SPACE missions
+PASS: Manual mission editing remains possible after upward adaptation
+PASS: Regenerate keeps later manual mission content above automatic scaling
+PASS: Send receives ten-star adapted chart and unchanged source rows
+PASS: Send clears pending changes
+PASS: No unexpected error or Tk callback failure
+PASS: Reload preserves target ten-star identity and its adapted arrows
+PASS: Reload restores automatic scaling and later manual edits
+PASS: Regeneration after reload preserves the exported arrangement
+PASS: Source remains six stars after reload and target regeneration
+PASS: No unexpected error or Tk callback failure
+PASS: Application writes stayed isolated in temporary state

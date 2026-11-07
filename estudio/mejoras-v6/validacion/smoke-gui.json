@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "checks": [
+    "Source is six stars and linked target is ten stars",
+    "Source has doubles, singles and four/eight-SPACE missions",
+    "Upward adaptation is enabled by default",
+    "Reviewed source and target stars are explicit",
+    "Preview increases arrow count and includes triples",
+    "Preview reports actual upward changes",
+    "Upward preview preserves all SPACE slots and absent tandas",
+    "Upward preview preserves timing and length",
+    "Preparing does not change any table row",
+    "Disabling upward adaptation invalidates the prior preview",
+    "Disabled adaptation preserves source arrow groups exactly",
+    "Disabled preview reports no added arrows",
+    "Applying the adapted chart keeps the destination at ten stars",
+    "Applying adds real arrows to destination rather than only changing its label",
+    "Applied groups match the reviewed plan",
+    "Target keeps existing ID, BPM and bkg",
+    "Source copy and protected originals stay identical",
+    "Enabled upward adaptation persists in target configuration",
+    "Regenerate preserves increased arrow groups and SPACE slots",
+    "Map shows ten-star chart and active SPACE missions",
+    "Manual mission editing remains possible after upward adaptation",
+    "Regenerate keeps later manual mission content above automatic scaling",
+    "Send receives ten-star adapted chart and unchanged source rows",
+    "Send clears pending changes",
+    "No unexpected error or Tk callback failure",
+    "Reload preserves target ten-star identity and its adapted arrows",
+    "Reload restores automatic scaling and later manual edits",
+    "Regeneration after reload preserves the exported arrangement",
+    "Source remains six stars after reload and target regeneration",
+    "No unexpected error or Tk callback failure",
+    "Application writes stayed isolated in temporary state"
+  ],
+  "screenshots": [
+    "adoptar-6-a-10-vista-previa.png",
+    "adoptar-6-a-10-copia-exacta.png",
+    "chart-10-estrellas-adaptado.png"
+  ],
+  "messages": [
+    {
+      "tipo": "askyesno",
+      "titulo": "El arranque no cae en el compas",
+      "mensaje": "Ese arranque esta a 47 ms del '1' de compas mas cercano.\nLas flechas van a entrar corridas.\n\nGenero igual?"
+    },
+    {
+      "tipo": "askyesno",
+      "titulo": "El arranque no cae en el compas",
+      "mensaje": "Ese arranque esta a 47 ms del '1' de compas mas cercano.\nLas flechas van a entrar corridas.\n\nGenero igual?"
+    },
+    {
+      "tipo": "askyesno",
+      "titulo": "Enviar al juego",
+      "mensaje": "Voy a escribir el musictable con 1 filas cambiadas.\n\nAntes hago un respaldo con fecha en:\n/tmp/estudio-gui-v6/isolated-state/respaldos\n\nSigo?"
+    },
+    {
+      "tipo": "showinfo",
+      "titulo": "Listo",
+      "mensaje": "El musictable se guardó y se verificó leyendo de nuevo sus filas.\nDestino:\n/tmp/estudio-gui-v6/isolated-state/table-disabled\n\nRespaldo:\nbackup-fixture.json\n\nFixture: no game or server write\n\nCerrá por completo LoveRitmo.exe y volvé a abrirlo antes de probar. Reiniciá también el servidor si estaba corriendo."
+    },
+    {
+      "tipo": "askyesno",
+      "titulo": "El arranque no cae en el compas",
+      "mensaje": "Ese arranque esta a 47 ms del '1' de compas mas cercano.\nLas flechas van a entrar corridas.\n\nGenero igual?"
+    }
+  ],
+  "callback_errors": [],
+  "windows_game_or_server_tested": false,
+  "platform": "Linux Tk real; synthetic charts/audio; game write intercepted"
+}

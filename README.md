@@ -93,3 +93,15 @@ copias.json y mantiene protegidos los originales.
 - [Instalación, caso de Trapped y validación](estudio/mejoras-v5/README.md)
 
 El original y las versiones v1–v4 se conservan.
+
+## Estudio LoveRitmo 2020 — mejoras v6
+
+Adoptar versión puede aumentar los grupos de flechas al subir de estrellas,
+conservando SPACE, descansos y diseño. La vista previa muestra los aumentos y
+el destino guarda su nivel real. Las adopciones anteriores se conservan.
+
+- [Descargar actualización pequeña v6](estudio/mejoras-v6/actualizacion-v6.zip?raw=true)
+- [Descargar Estudio completo v6](Estudio_LoveRitmo_2020_mejorado_v6.zip?raw=true)
+- [Cómo volver a adaptar seis hacia diez estrellas](estudio/mejoras-v6/README.md)
+
+El original y las versiones v1–v5 se conservan.
