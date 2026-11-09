@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Convierte enlaces de SoundCloud y tus archivos de audio a WAV, MP3, FLAC, OGG y AAC. Sin cuentas ni suscripciones.">
+  <title>Onda — Tu música, en tu formato</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a href="#converter" class="skip-link">Ir al conversor</a>
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="m10 13 4-4m-6.5 6.5-1 1a4.24 4.24 0 0 1-6-6l4-4a4.24 4.24 0 0 1 6 0m3 3 1-1a4.24 4.24 0 0 1 6 6l-4 4a4.24 4.24 0 0 1-6 0" transform="translate(1 0)"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 17V5l11-2v12M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="17" cy="16" rx="3" ry="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h4m4 0h8M4 17h9m4 0h3"/><circle cx="10" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 3v.1"/></symbol>
+  </svg>
+
+  <header class="site-header shell">
+    <a class="brand" href="/" aria-label="Onda, inicio"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>onda<span class="brand-dot">.</span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a class="nav-current" href="#converter">Conversor</a>
+      <a href="#how-it-works">Cómo funciona</a>
+      <a href="#faq">Preguntas frecuentes</a>
+    </nav>
+    <button id="history-toggle" class="history-toggle" type="button" aria-controls="history-panel" aria-expanded="false"><svg class="icon"><use href="#i-clock"/></svg><span>Historial</span><span id="history-count" class="history-count" hidden>0</span></button>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> UN BUEN SONIDO EMPIEZA AQUÍ</div>
+      <h1 id="hero-title">Tu música.<br>En <span class="hero-accent">tu formato<svg viewBox="0 0 390 13" aria-hidden="true"><path d="M3 8C84 1 258 0 386 7"/></svg></span>.</h1>
+      <p>De SoundCloud a tu próxima mezcla. Convierte tus pistas<br class="desktop-break"> y archivos de audio, sin cuentas ni suscripciones.</p>
+      <div class="hero-benefits"><span><svg class="icon"><use href="#i-check"/></svg>5 formatos de audio</span><span><svg class="icon"><use href="#i-check"/></svg>Descarga por lotes</span><span><svg class="icon"><use href="#i-check"/></svg>Sin planes premium</span></div>
+      <div class="hero-decoration decor-left" aria-hidden="true"><span>FLAC</span><div class="mini-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="hero-decoration decor-right" aria-hidden="true"><svg class="icon"><use href="#i-music"/></svg><span>.wav</span></div>
+    </section>
+
+    <section id="converter" class="converter-section shell" aria-label="Conversor de audio">
+      <div class="converter-card">
+        <div class="card-heading"><div><span class="section-kicker">EL CONVERSOR</span><h2>Hagamos que suene.</h2></div><span class="free-badge"><span aria-hidden="true">✦</span> Siempre sin suscripción</span></div>
+        <div class="source-tabs" role="tablist" aria-label="Origen del audio">
+          <button id="tab-url" class="source-tab active" type="button" role="tab" aria-selected="true" aria-controls="panel-url"><svg class="icon"><use href="#i-link"/></svg>Enlace de SoundCloud</button>
+          <button id="tab-file" class="source-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-file" tabindex="-1"><svg class="icon"><use href="#i-upload"/></svg>Subir archivos</button>
+        </div>
+        <form id="converter-form" novalidate>
+          <div id="panel-url" class="source-panel" role="tabpanel" aria-labelledby="tab-url">
+            <label for="source-urls" class="field-label">Enlaces de tus pistas</label>
+            <div class="url-field"><svg class="icon url-icon"><use href="#i-link"/></svg><textarea id="source-urls" rows="2" spellcheck="false" autocapitalize="none" autocomplete="off" placeholder="https://soundcloud.com/artista/tu-cancion" aria-describedby="url-help"></textarea><button id="paste-button" class="paste-button" type="button"><svg class="icon"><use href="#i-copy"/></svg>Pegar</button></div>
+            <p id="url-help" class="field-help">Una pista, una playlist o varios enlaces, uno por línea.</p>
+          </div>
+          <div id="panel-file" class="source-panel" role="tabpanel" aria-labelledby="tab-file" hidden>
+            <label class="field-label" for="source-files">Tus archivos de audio</label>
+            <label id="drop-zone" class="drop-zone" for="source-files"><span class="upload-icon"><svg class="icon"><use href="#i-upload"/></svg></span><span class="drop-title">Arrastra tu música hasta aquí</span><span class="drop-description">o <span class="text-link">elige archivos</span> de tu dispositivo</span><span id="upload-limit-help" class="drop-types">MP3, WAV, FLAC, M4A, OGG y otros formatos de audio · Máx. 200 MB por archivo y 400 MB por lote</span><input id="source-files" class="file-input" type="file" multiple accept="audio/*,.flac,.opus,.ogg,.aiff,.aif,.wma,.m4a,.aac,.wav,.mp3,.mp4,.webm"></label>
+            <div id="selected-files" class="selected-files" aria-live="polite" hidden></div>
+          </div>
+
+          <fieldset class="format-fieldset"><legend>¿En qué formato lo quieres?</legend><div class="format-grid">
+            <label class="format-option"><input type="radio" name="format" value="wav" checked><span class="format-content"><span class="format-top">WAV<span class="format-check"><svg class="icon"><use href="#i-check"/></svg></span></span><span class="format-description">Sin compresión</span></span></label>
+            <label class="format-option"><input type="radio" name="format" value="mp3"><span class="format-content"><span class="format-top">MP3<span class="format-check"><svg class="icon"><use href="#i-check"/></svg></span></span><span class="format-description">El de siempre</span></span></label>
+            <label class="format-option"><input type="radio" name="format" value="flac"><span class="format-content"><span class="format-top">FLAC<span class="format-check"><svg class="icon"><use href="#i-check"/></svg></span></span><span class="format-description">Sin pérdida</span></span></label>
+            <label class="format-option"><input type="radio" name="format" value="ogg"><span class="format-content"><span class="format-top">OGG<span class="format-check"><svg class="icon"><use href="#i-check"/></svg></span></span><span class="format-description">Más ligero</span></span></label>
+            <label class="format-option"><input type="radio" name="format" value="aac"><span class="format-content"><span class="format-top">AAC<span class="format-check"><svg class="icon"><use href="#i-check"/></svg></span></span><span class="format-description">En archivo M4A</span></span></label>
+          </div></fieldset>
+
+          <details class="advanced"><summary><span><svg class="icon"><use href="#i-sliders"/></svg>Ajustes de audio<span class="optional-label">Opcional</span></span><svg class="icon chevron"><use href="#i-chevron"/></svg></summary><div class="advanced-content"><div class="setting"><label for="sample-rate">Frecuencia de muestreo</label><select id="sample-rate"><option value="44100">44.1 kHz</option><option value="48000">48 kHz</option></select></div><div id="bit-depth-setting" class="setting"><label for="bit-depth">Profundidad de bits</label><select id="bit-depth"><option value="16">16 bits</option><option value="24">24 bits</option></select></div><label class="normalize-setting"><input id="normalize" type="checkbox"><span>Normalizar volumen<small>Equilibra el nivel de audio</small></span></label></div></details>
+
+          <div id="form-error" class="notice error-notice" role="alert" hidden></div>
+          <div id="service-notice" class="notice" role="status" hidden></div>
+          <div class="convert-action"><button id="convert-button" class="convert-button" type="submit"><span id="convert-label">Convertir a WAV</span><svg class="icon button-arrow"><use href="#i-arrow"/></svg><span class="spinner" hidden></span></button><span class="action-note"><svg class="icon"><use href="#i-shield"/></svg>Tu música. Sin registro. Sin suscripción.</span></div>
+        </form>
+      </div>
+      <p class="quality-note"><svg class="icon"><use href="#i-alert"/></svg>Un detalle: convertir a WAV no recupera la calidad que ya se perdió en el audio original.</p>
+    </section>
+
+    <section id="results" class="results-section shell" aria-labelledby="results-title" hidden>
+      <div class="results-card"><div class="results-header"><div><span class="section-kicker">TU CONVERSIÓN</span><h2 id="results-title" tabindex="-1">Preparando tu audio…</h2></div><button id="close-results" class="icon-button" type="button" aria-label="Cerrar resultados" disabled><svg class="icon"><use href="#i-close"/></svg></button></div><div class="progress-info"><span id="job-message" role="status" aria-live="polite">En cola</span><span id="progress-label">0%</span></div><div id="job-progress" class="progress-track" role="progressbar" aria-label="Progreso de conversión" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div><div id="poll-error" class="notice error-notice" role="alert" hidden></div><button id="retry-poll" class="secondary-button" type="button" hidden>Volver a comprobar</button><div id="track-list" class="track-list"></div><div id="result-actions" class="result-actions" hidden><a id="download-zip" class="secondary-button" href="#" download><svg class="icon"><use href="#i-download"/></svg>Descargar todo en ZIP</a><button id="new-conversion" class="text-button" type="button">Otra conversión<svg class="icon"><use href="#i-arrow"/></svg></button></div></div>
+    </section>
+
+    <section id="history-panel" class="history-section shell" aria-labelledby="history-title" hidden><div class="history-card"><div class="results-header"><div><span class="section-kicker">EN ESTE NAVEGADOR</span><h2 id="history-title" tabindex="-1">Tu historial</h2></div><button id="clear-history" type="button" class="text-button">Borrar historial</button></div><p id="history-retention-help" class="field-help">Tus últimas 20 conversiones. Los archivos están disponibles durante 24 horas.</p><div id="history-list"></div></div></section>
+
+    <section id="how-it-works" class="how-section shell" aria-labelledby="how-title"><div class="section-heading"><span class="section-kicker">MENOS VUELTAS. MÁS MÚSICA.</span><h2 id="how-title">Tres pasos y a darle play.</h2><p>Sin instalar nada en tu dispositivo.</p></div><div class="steps-grid"><article class="step-card"><div class="step-top"><span class="step-number">01</span><svg class="icon"><use href="#i-link"/></svg></div><h3>Trae tu música</h3><p>Pega un enlace de SoundCloud o sube los archivos que tienes guardados.</p></article><article class="step-card"><div class="step-top"><span class="step-number">02</span><svg class="icon"><use href="#i-sliders"/></svg></div><h3>Elige tu formato</h3><p>WAV para tu editor, MP3 para llevarlo contigo. Tú decides cómo escucharlo.</p></article><article class="step-card"><div class="step-top"><span class="step-number">03</span><svg class="icon"><use href="#i-download"/></svg></div><h3>Descarga y disfruta</h3><p>Guarda cada pista por separado o llévate todo junto en un archivo ZIP.</p></article></div></section>
+
+    <section id="faq" class="faq-section shell" aria-labelledby="faq-title"><div class="faq-intro"><span class="section-kicker">POR SI TE LO PREGUNTABAS</span><h2 id="faq-title">Todo claro.<br> Como tu audio.</h2><p>Unas respuestas antes de darle play.</p><div class="faq-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="faq-list"><details><summary>¿Necesito pagar o crear una cuenta?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>No. Onda no tiene cuentas, planes premium ni funciones de pago. El tamaño y la duración de los archivos pueden tener límites técnicos para que el servicio siga funcionando.</p></details><details><summary>¿Qué enlaces de SoundCloud funcionan?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>Pistas y playlists públicas que estén disponibles para el servicio. No se accede a contenido privado, protegido o que requiera una suscripción. Utiliza contenido propio o que tengas permiso para descargar.</p></details><details><summary>¿Un WAV tendrá más calidad que el original?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>WAV guarda el audio sin compresión adicional, pero no reconstruye la información que ya perdió el archivo de origen. La calidad final siempre depende de la fuente.</p></details><details><summary>¿Puedo convertir varias pistas a la vez?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>Sí. Pega varios enlaces, uno por línea, utiliza una playlist o selecciona varios archivos. Después puedes descargar las pistas individualmente o juntas en ZIP.</p></details><details><summary>¿Qué ocurre con los archivos que subo?<svg class="icon"><use href="#i-chevron"/></svg></summary><p id="privacy-copy">Se procesan en el servidor para la conversión y se eliminan automáticamente después de 24 horas. El historial se guarda solo en este navegador; borrarlo no cambia el plazo de eliminación de los archivos del servidor.</p></details></div></section>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="/" aria-label="Onda, inicio"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>onda<span class="brand-dot">.</span></a><span>Buenas ondas. Buenos formatos.</span><p>Herramienta independiente. Sin afiliación con SoundCloud.</p></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

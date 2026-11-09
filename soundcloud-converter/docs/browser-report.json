@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks": [
+    "Spanish homepage and desktop rendering",
+    "Two real MP3 uploads converted to normalized stereo WAV, 24 bit / 48 kHz",
+    "Individual WAV download and valid two-track ZIP",
+    "Conversion history survives page reload",
+    "Unsupported URL is rejected with a visible error",
+    "FAQ interaction",
+    "390 px mobile rendering without horizontal overflow"
+  ],
+  "browser_errors": [],
+  "wav": {
+    "codec_name": "pcm_s24le",
+    "sample_rate": "48000",
+    "channels": 2,
+    "bits_per_sample": 24
+  }
+}

@@ -105,3 +105,12 @@ el destino guarda su nivel real. Las adopciones anteriores se conservan.
 - [Cómo volver a adaptar seis hacia diez estrellas](estudio/mejoras-v6/README.md)
 
 El original y las versiones v1–v5 se conservan.
+
+## Onda — conversor de audio web v1
+
+Aplicación propia en español, sin cuentas ni premium, con conversión de audio,
+subida de archivos, cola, historial y descargas individuales o ZIP.
+
+- [Ver el proyecto, la vista previa y las instrucciones](soundcloud-converter/README.md)
+- [Descargar el proyecto completo](web/onda-v1.zip?raw=true)
+- [Consultar las pruebas y las limitaciones de red](soundcloud-converter/docs/VALIDACION.md)

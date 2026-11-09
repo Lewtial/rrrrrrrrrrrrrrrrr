@@ -1,0 +1,17 @@
+services:
+  onda:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      ONDA_DATA_DIR: /data
+      ONDA_MAX_UPLOAD_MB: ${ONDA_MAX_UPLOAD_MB:-200}
+      ONDA_MAX_PLAYLIST_TRACKS: ${ONDA_MAX_PLAYLIST_TRACKS:-50}
+      ONDA_JOB_TTL_HOURS: ${ONDA_JOB_TTL_HOURS:-24}
+      ONDA_MAX_WORKERS: ${ONDA_MAX_WORKERS:-2}
+    volumes:
+      - converted-audio:/data
+    restart: unless-stopped
+
+volumes:
+  converted-audio:
