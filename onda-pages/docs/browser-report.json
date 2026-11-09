@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "checks": [
+    "Spanish static homepage works below a project subpath",
+    "Offline two-file MP3 to stereo WAV24/48 kHz with measured -1 dBFS peaks",
+    "Offline UTF-8 ZIP contains both real WAVs; conversion makes no HTTP requests",
+    "IndexedDB restores actual downloadable WAV files after reload",
+    "History clears and mobile layout has no horizontal overflow",
+    "Single HTML generates/downloads a real WAV16 demo offline without extra assets or services",
+    "Broken audio reports a track failure while a valid track remains downloadable"
+  ],
+  "browser_errors": [],
+  "file_open": "blocked_by_managed_browser_policy",
+  "wav24": {
+    "bits": 24,
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration": 1.2,
+    "peak_dbfs": -1.0,
+    "bytes": 345644
+  },
+  "wav16": {
+    "bits": 16,
+    "sample_rate": 44100,
+    "channels": 2,
+    "duration": 1.8,
+    "peak_dbfs": -11.616,
+    "bytes": 317564
+  },
+  "http_requests": [
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/assets/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/assets/audio-engine.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/assets/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/assets/favicon.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/assets/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/assets/audio-engine.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/assets/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:8002/onda-pages/assets/favicon.svg",
+      "method": "GET"
+    }
+  ]
+}

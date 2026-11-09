@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Convierte tus archivos de audio a WAV directamente en el navegador. Sin subir archivos, cuentas, instalaciones ni planes premium.">
+  <title>Onda — Audio a WAV en tu navegador</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTgiIGZpbGw9IiNmYzYwMzgiLz48cGF0aCBkPSJNMTcgMjh2OG0xMC0xOHYyOG0xMC0yM3YxOG0xMC0xM3Y4IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+Cg==" type="image/svg+xml">
+  <style>
+:root{--bg:#f6f5f1;--surface:#fff;--ink:#22231f;--muted:#777970;--line:#e7e7e0;--orange:#f3653c;--orange-light:#fff1e9;--purple:#7065a2;--green:#2e7557;--red:#ad3630;--radius:22px;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);font-synthesis:none;scroll-behavior:smooth;scroll-padding-top:25px}
+*{box-sizing:border-box}body{margin:0;font-size:14px;-webkit-font-smoothing:antialiased}button,input,textarea,select{font:inherit}button,a,input,summary,label{touch-action:manipulation}button,a{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit;text-decoration:none}button{color:inherit}button:disabled{cursor:wait;opacity:.65}img,svg{display:block;max-width:100%}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #7162b0;outline-offset:4px}textarea:focus-visible{outline:none}h1,h2,h3,p{margin:0}h2,h3{letter-spacing:-.035em}p{line-height:1.65}button{border:0;background:none}input,textarea,select{min-width:0}textarea{resize:vertical}fieldset{margin:0;padding:0;border:0}legend{padding:0}input[type=checkbox]{accent-color:var(--orange)}[hidden]{display:none!important}.shell{width:min(1080px,calc(100% - 64px));margin-inline:auto}.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-library{position:absolute;width:0;height:0;overflow:hidden}.skip-link{position:fixed;top:-80px;left:20px;background:var(--ink);color:#fff;padding:12px 18px;z-index:100;border-radius:10px}.skip-link:focus{top:15px}
+.site-header{height:104px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{font-size:34px;font-weight:800;letter-spacing:-2px;display:inline-flex;align-items:center;flex-shrink:0;line-height:1}.brand-dot{color:var(--orange)}.brand-symbol{height:30px;display:flex;align-items:center;gap:3px;margin-right:9px}.brand-symbol i{width:4px;height:13px;background:var(--orange);border-radius:5px}.brand-symbol i:nth-child(2){height:27px}.brand-symbol i:nth-child(3){height:20px}.brand-symbol i:nth-child(4){height:10px}.desktop-nav{display:flex;gap:28px;align-items:center;font-size:13px;font-weight:600;color:var(--muted);padding-left:35px}.desktop-nav a{position:relative;padding:8px 0}.desktop-nav a:hover,.desktop-nav .nav-current{color:var(--ink)}.nav-current:after{content:"";position:absolute;width:4px;height:4px;background:var(--orange);border-radius:50%;bottom:-1px;left:50%;transform:translateX(-50%)}.history-toggle{border:1px solid #ddded6;border-radius:50px;display:flex;align-items:center;gap:9px;padding:11px 17px;font-size:12px;font-weight:600;background:#ffffff45}.history-toggle:hover{background:#fff;border-color:#bcbeb2}.history-toggle .icon{width:16px;height:16px}.history-count{display:inline-grid;place-items:center;background:var(--orange-light);color:#bc4d29;font-size:10px;min-width:18px;height:18px;border-radius:50%}
+.hero{position:relative;text-align:center;padding:42px 0 37px}.eyebrow{font-size:10px;letter-spacing:1.9px;color:#76786e;font-weight:700;display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:20px}.live-dot{width:6px;height:6px;background:var(--orange);border-radius:50%;box-shadow:0 0 0 4px #f3653c12}.hero h1{font-size:67px;line-height:1.055;letter-spacing:-4px;font-weight:750}.hero-accent{color:var(--orange);position:relative;white-space:nowrap;display:inline-block}.hero-accent svg{position:absolute;bottom:-8px;left:0;width:100%;height:11px;overflow:visible}.hero-accent svg path{fill:none;stroke:#f3653c70;stroke-width:4;stroke-linecap:round}.hero>p{color:var(--muted);font-size:15px;margin:23px auto 20px;line-height:1.7}.hero-benefits{display:flex;gap:24px;justify-content:center;color:#73766c;font-size:11px}.hero-benefits span{display:flex;align-items:center;gap:5px}.hero-benefits .icon{color:var(--green);width:13px;height:13px;stroke-width:2}.hero-decoration{position:absolute;pointer-events:none;box-shadow:0 9px 20px #32312805}.decor-left{top:124px;left:27px;background:#fff;border:1px solid #e9e9e2;transform:rotate(-9deg);border-radius:13px;padding:13px 15px;display:flex;gap:12px;align-items:center}.decor-left>span{font-weight:700;font-size:12px;letter-spacing:.4px}.mini-wave{height:27px;display:flex;gap:3px;align-items:center}.mini-wave i{width:3px;height:9px;background:var(--purple);border-radius:4px}.mini-wave i:nth-child(2n){height:17px}.mini-wave i:nth-child(3n){height:26px}.decor-right{right:38px;top:160px;background:#edeaf4;border:1px solid #e0daed;transform:rotate(10deg);padding:13px 18px;border-radius:13px;display:flex;align-items:center;gap:10px;color:#6c5b94;font-weight:700;font-size:19px}.decor-right .icon{width:23px;height:23px}
+.converter-section{max-width:850px}.converter-card{background:var(--surface);border:1px solid #e6e6df;border-radius:var(--radius);padding:30px 34px 25px;box-shadow:0 7px 15px #38392802,0 28px 80px #2b311006}.card-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:25px}.section-kicker{font-size:9px;letter-spacing:1.8px;line-height:1.5;font-weight:700;color:#939589;display:block;margin-bottom:7px}.card-heading h2,.results-card h2,.history-card h2{font-size:23px;line-height:1.2;font-weight:700}.free-badge{background:#f4f5ef;border:1px solid #ebede2;border-radius:30px;padding:8px 11px;color:#7a8068;font-size:10px;white-space:nowrap}.free-badge>span{color:#8c9974;font-size:12px;margin-right:3px}.source-tabs{display:flex;padding:4px;background:#f5f5f1;border:1px solid #eeeee7;border-radius:11px;margin-bottom:23px;gap:5px}.source-tab{border:1px solid transparent;padding:12px 15px;flex:1;display:flex;align-items:center;justify-content:center;gap:9px;border-radius:8px;color:#818377;font-size:12px;font-weight:600;line-height:1.25;transition:background .15s,box-shadow .15s}.source-tab .icon{width:16px;height:16px}.source-tab.active{background:#fff;border-color:#e8e8e1;color:var(--ink);box-shadow:0 1px 4px #292b1510}.source-tab.active .icon{color:var(--orange)}.source-tab:hover:not(.active){background:#eceee5}.field-label,.format-fieldset legend{font-size:12px;font-weight:600;display:block;line-height:1.3;margin-bottom:10px}.url-field{display:flex;align-items:flex-start;position:relative;border:1px solid #ddddD5;border-radius:10px;background:#fbfbf8;transition:border-color .15s,box-shadow .15s}.url-field:focus-within{border-color:var(--orange);box-shadow:0 0 0 3px #f3653c12}.url-icon{width:18px;height:18px;color:#a0a396;margin:17px 0 0 16px}.url-field textarea{flex:1;border:0;background:none;padding:16px 12px;line-height:1.7;min-height:77px;font-size:12px;color:var(--ink);max-height:260px}.url-field textarea::placeholder{color:#a0a398;opacity:1}.paste-button{margin:12px 11px 0 0;padding:7px 9px;border:1px solid #e1e2d8;border-radius:7px;background:#fff;display:flex;align-items:center;gap:5px;font-size:10px;flex-shrink:0}.paste-button .icon{width:12px;height:12px;color:#7b7f71}.paste-button:hover{background:#f4f5ec}.field-help{font-size:10px;color:#939589;margin-top:9px;line-height:1.6}.format-fieldset{margin-top:24px}.format-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.format-option{position:relative;cursor:pointer;min-width:0}.format-option>input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;z-index:1}.format-content{display:flex;flex-direction:column;border:1px solid #e5e6de;border-radius:10px;padding:13px 12px 12px;min-height:72px;transition:background .15s,border-color .15s}.format-top{display:flex;justify-content:space-between;align-items:center;font-size:15px;line-height:18px;font-weight:700;letter-spacing:-.3px}.format-description{font-size:9px;color:#999b91;margin-top:7px;white-space:nowrap}.format-check{width:14px;height:14px;background:transparent;border-radius:50%;display:grid;place-items:center}.format-check .icon{width:9px;height:9px;stroke-width:3;display:none}.format-option>input:checked+.format-content{background:var(--orange-light);border-color:#f4a68e}.format-option>input:checked+.format-content .format-top{color:#d65b34}.format-option>input:checked+.format-content .format-description{color:#b8836f}.format-option>input:checked+.format-content .format-check{background:var(--orange);color:#fff}.format-option>input:checked+.format-content .format-check .icon{display:block}.format-option>input:focus-visible+.format-content{outline:3px solid #7162b0;outline-offset:3px}.format-option:hover .format-content{border-color:#c3c7b6}.advanced{margin-top:21px;border-top:1px solid #f0f0e9;border-bottom:1px solid #f0f0e9}.advanced>summary{padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:#64685b;font-size:11px}.advanced>summary::-webkit-details-marker,.faq-list summary::-webkit-details-marker{display:none}.advanced>summary>span{display:flex;align-items:center;gap:8px}.advanced>summary .icon{width:15px;height:15px}.optional-label{font-size:9px;color:#a3a697;background:#f3f4ed;padding:2px 5px;border-radius:4px;font-weight:400}.chevron{transition:transform .15s}.advanced[open] .chevron{transform:rotate(180deg)}.advanced-content{display:flex;gap:18px;align-items:center;padding:5px 0 20px;flex-wrap:wrap}.setting{display:flex;flex-direction:column;gap:6px;flex:1;min-width:140px}.setting label{font-size:10px;color:#818574}.setting select{border:1px solid #e2e5d8;border-radius:7px;padding:9px 28px 9px 10px;background:#fbfcf7;color:#4e5540;font-size:11px;width:100%}.normalize-setting{display:flex;align-items:center;gap:8px;flex:1;min-width:170px;font-size:10px;line-height:1.4;margin-top:17px;cursor:pointer}.normalize-setting input{margin:0;width:15px;height:15px}.normalize-setting small{display:block;color:#9a9f8f;font-size:9px;margin-top:3px}.convert-action{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:23px}.convert-button{background:var(--ink);color:#fff;min-height:46px;border-radius:9px;padding:13px 22px;display:flex;gap:25px;align-items:center;justify-content:space-between;min-width:225px;transition:background .15s,transform .15s;font-size:12px;font-weight:600;letter-spacing:.1px}.convert-button:hover:not(:disabled){background:#424739;transform:translateY(-1px)}.convert-button .icon{width:16px;height:16px;stroke-width:1.9}.action-note{display:flex;gap:6px;align-items:center;font-size:9px;color:#979b8d;line-height:1.5}.action-note .icon{width:13px;height:13px;color:#989f8a}.spinner{width:15px;height:15px;border:2px solid #ffffff45;border-top-color:#fff;border-radius:50%;animation:spin .75s linear infinite}.quality-note{display:flex;justify-content:center;gap:6px;align-items:center;color:#979b8c;font-size:9px;margin:14px 8px 0;text-align:center;line-height:1.5}.quality-note .icon{width:12px;height:12px}.notice{padding:11px 13px;border-radius:8px;background:#f3f3ed;color:#626750;line-height:1.6;margin-top:15px;font-size:11px;overflow-wrap:anywhere}.error-notice{background:#fff1ee;color:var(--red);border:1px solid #f4d3cb}.drop-zone{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px dashed #d4d8c8;border-radius:11px;background:#fbfcf8;padding:23px 15px;cursor:pointer;text-align:center;transition:border-color .15s,background .15s;min-height:173px}.drop-zone:hover,.drop-zone.drag-over{border-color:var(--orange);background:#fff6ef}.drop-zone:focus-within{outline:3px solid #7162b0;outline-offset:4px}.upload-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:#f0f2e8;color:#8a9674;margin-bottom:10px}.upload-icon .icon{width:17px;height:17px}.drop-title{font-size:12px;font-weight:600}.drop-description{font-size:11px;color:#969c89;margin-top:5px}.text-link{color:var(--orange);text-decoration:underline;text-underline-offset:3px}.drop-types{font-size:9px;color:#a3a893;margin-top:12px;line-height:1.5}.file-input{position:absolute;width:1px;height:1px;overflow:hidden;opacity:0}.selected-files{display:flex;flex-direction:column;gap:7px;margin-top:12px}.selected-file{display:flex;align-items:center;gap:9px;background:#f8f9f3;border:1px solid #e9ecdf;padding:8px 9px;border-radius:7px;font-size:11px}.selected-file>.icon{width:15px;height:15px;color:#8a9674}.selected-file-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.selected-file-size{font-size:9px;color:#9a9f8e}.selected-file button{padding:3px;color:#9a9e91}.selected-file button .icon{width:12px;height:12px}
+.results-section,.history-section{max-width:850px;margin-top:25px}.results-card,.history-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px 30px}.results-header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:21px}.icon-button{border:1px solid #e4e7da;border-radius:8px;padding:6px;color:#8d9480}.icon-button .icon{width:15px;height:15px}.progress-info{display:flex;justify-content:space-between;gap:20px;font-size:11px;color:#878f78;line-height:1.5}.progress-info #job-message{overflow-wrap:anywhere}#progress-label{font-variant-numeric:tabular-nums;color:var(--orange);font-weight:600}.progress-track{height:5px;background:#f1f2eb;border-radius:4px;overflow:hidden;margin-top:9px}.progress-track>span{display:block;width:0;height:100%;background:var(--orange);transition:width .3s}.track-list{margin-top:20px}.track-row{display:flex;align-items:center;gap:11px;border-top:1px solid #f1f2e9;padding:13px 0}.track-icon{width:34px;height:34px;border-radius:8px;background:#f4f2f9;color:#8b7ca8;display:grid;place-items:center;flex-shrink:0}.track-icon .icon{width:16px;height:16px}.track-info{flex:1;min-width:0}.track-title{font-size:12px;font-weight:600;overflow-wrap:anywhere}.track-subtitle{font-size:10px;color:#969e88;margin-top:4px;line-height:1.5;overflow-wrap:anywhere}.track-error{color:var(--red)}.track-download{display:flex;align-items:center;gap:6px;color:#d6613b;background:#fff3ed;border:1px solid #fae2d4;border-radius:7px;padding:8px 10px;font-size:10px;white-space:nowrap}.track-download .icon{width:13px;height:13px}.track-status{font-size:10px;color:#99a188;flex-shrink:0}.track-status.failed{color:var(--red)}.result-actions{margin-top:13px;padding-top:17px;border-top:1px solid #ecefe3;display:flex;justify-content:space-between;gap:13px;align-items:center}.secondary-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 13px;border-radius:8px;border:1px solid #dedfD4;background:#fff;font-size:11px;font-weight:600;line-height:1.3}.secondary-button:hover{background:#f7f8f2}.secondary-button .icon{width:14px;height:14px}.text-button{color:#858f73;display:inline-flex;align-items:center;gap:8px;padding:5px 0;font-size:11px;line-height:1.4}.text-button:hover{color:var(--ink)}.text-button .icon{width:14px;height:14px}#retry-poll{margin-top:12px}.history-empty{padding:20px 0 3px;font-size:12px;color:#9ba48a}.history-item{display:flex;align-items:center;width:100%;gap:12px;text-align:left;border-top:1px solid #eef0e7;padding:15px 0}.history-item:first-child{margin-top:15px}.history-item:hover .history-job-title{color:var(--orange)}.history-job-title{display:block;font-size:12px;font-weight:600;overflow-wrap:anywhere}.history-job-meta{display:block;color:#9ba38d;font-size:10px;margin-top:5px;line-height:1.6}.history-item .icon{width:15px;height:15px;color:#a0a892;flex-shrink:0}.history-item>span{flex:1;min-width:0}.history-card>.field-help{margin-top:-9px}
+.how-section{padding-top:75px}.section-heading{text-align:center}.section-heading .section-kicker{margin-bottom:10px}.section-heading h2{font-size:31px;line-height:1.2}.section-heading>p{color:#929787;font-size:12px;margin-top:10px}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:31px}.step-card{padding:25px 25px 28px;border:1px solid #e5e7dd;background:#ffffff55;border-radius:15px}.step-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:23px}.step-number{font-size:11px;color:#adb59e;font-weight:600;letter-spacing:1px}.step-top>.icon{width:19px;height:19px;color:#9ca88c}.step-card:nth-child(2) .step-top>.icon{color:#aa9eb8}.step-card:nth-child(3) .step-top>.icon{color:#d69f7c}.step-card h3{font-size:16px;letter-spacing:-.4px}.step-card p{font-size:11px;color:#909984;margin-top:10px;line-height:1.8;max-width:245px}.faq-section{display:grid;grid-template-columns:1fr 1.35fr;gap:90px;padding:80px 0 75px}.faq-intro .section-kicker{margin-bottom:12px}.faq-intro h2{font-size:34px;line-height:1.13;letter-spacing:-1.3px}.faq-intro>p{font-size:11px;color:#919b85;margin-top:15px}.faq-wave{display:flex;gap:4px;align-items:center;height:42px;margin-top:25px}.faq-wave i{width:3px;height:13px;border-radius:3px;background:#d4dac9}.faq-wave i:nth-child(2n){height:25px;background:#c7d1ba}.faq-wave i:nth-child(3n){height:38px;background:#b9c7a8}.faq-wave i:nth-child(4n){height:18px}.faq-list details{border-bottom:1px solid #e0e4d6}.faq-list summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:12px;font-weight:600;padding:18px 0;line-height:1.5}.faq-list summary .icon{width:14px;height:14px;color:#909c81;transition:transform .15s}.faq-list details[open] summary .icon{transform:rotate(180deg)}.faq-list details p{font-size:11px;color:#87947a;padding:0 25px 18px 0;line-height:1.85}.site-footer{border-top:1px solid #e0e5d6;display:flex;align-items:center;gap:22px;padding-top:25px;padding-bottom:29px}.site-footer .brand{font-size:25px}.site-footer .brand-symbol{height:23px;margin-right:6px;gap:2px}.site-footer .brand-symbol i{width:3px;height:9px}.site-footer .brand-symbol i:nth-child(2){height:20px}.site-footer .brand-symbol i:nth-child(3){height:15px}.site-footer>span{color:#98a48a;font-size:10px}.site-footer p{margin-left:auto;font-size:9px;color:#a3ad97}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);max-width:calc(100% - 35px);border-radius:10px;background:#303a26;color:white;padding:12px 18px;font-size:12px;box-shadow:0 8px 24px #26321c25;z-index:50;line-height:1.5;text-align:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(min-width:1400px){.hero{padding-top:55px;padding-bottom:43px}.hero h1{font-size:74px}.hero>p{font-size:16px}.converter-section,.results-section,.history-section{max-width:890px}.converter-card{padding:32px 38px 27px}}
+@media(max-width:1000px){.desktop-nav{gap:20px;padding-left:0}.hero-decoration{display:none}.hero h1{font-size:61px}.faq-section{gap:45px}.site-footer{gap:16px}}
+@media(max-width:760px){.shell{width:calc(100% - 36px)}.site-header{height:83px;gap:10px}.brand{font-size:30px}.desktop-nav{display:none}.history-toggle{padding:9px 12px;font-size:11px;gap:6px}.hero{padding-top:28px;padding-bottom:30px}.eyebrow{font-size:8px;letter-spacing:1.5px;margin-bottom:19px}.hero h1{font-size:49px;letter-spacing:-2.7px}.hero>p{font-size:13px;margin-top:22px}.hero-benefits{gap:15px;font-size:9px;flex-wrap:wrap;row-gap:8px}.hero-benefits .icon{width:12px;height:12px}.converter-card{padding:24px 22px 23px;border-radius:18px}.card-heading{gap:10px;margin-bottom:20px}.card-heading h2{font-size:21px}.section-kicker{font-size:8px;letter-spacing:1.5px}.free-badge{font-size:8px;padding:6px 8px}.free-badge>span{font-size:10px}.source-tabs{margin-bottom:20px}.source-tab{padding:11px 9px;font-size:10px;gap:6px}.source-tab .icon{width:15px;height:15px}.format-grid{gap:6px}.format-content{padding:11px 8px 10px;min-height:67px}.format-top{font-size:13px}.format-description{font-size:8px;letter-spacing:-.1px}.format-check{width:12px;height:12px}.convert-action{flex-direction:column;align-items:stretch;gap:13px;margin-top:20px}.convert-button{min-height:47px;justify-content:center;gap:14px;width:100%;font-size:12px}.action-note{justify-content:center;font-size:9px}.quality-note{font-size:8px;align-items:flex-start;max-width:400px;margin-inline:auto;padding:0 15px}.quality-note .icon{margin-top:1px;flex-shrink:0}.how-section{padding-top:55px}.section-heading h2{font-size:27px}.steps-grid{gap:11px;margin-top:24px}.step-card{padding:18px 15px}.step-top{margin-bottom:20px}.step-card h3{font-size:14px;line-height:1.3}.step-card p{font-size:10px;margin-top:9px}.step-top .icon{width:17px;height:17px}.faq-section{padding-top:55px;grid-template-columns:1fr;gap:20px;padding-bottom:45px}.faq-intro h2{font-size:29px}.faq-intro h2 br{display:none}.faq-intro>p{margin-top:10px}.faq-wave{display:none}.faq-list summary{font-size:12px;padding:17px 0}.faq-list details p{font-size:11px}.site-footer{flex-wrap:wrap;row-gap:15px;padding-top:24px;padding-bottom:25px}.site-footer>span{font-size:9px;margin-left:auto}.site-footer p{width:100%;margin-left:0;font-size:9px;text-align:center}.results-card,.history-card{padding:24px 22px;border-radius:18px}.track-row{gap:8px}.track-download{font-size:9px;padding:8px}.result-actions{flex-wrap:wrap}.advanced-content{gap:12px}.setting{min-width:120px}.normalize-setting{min-width:170px;flex-basis:100%;margin-top:4px}}
+@media(max-width:430px){.shell{width:calc(100% - 28px)}.hero h1{font-size:42px;letter-spacing:-2.4px}.hero>p{font-size:12px;padding:0 5px}.desktop-break{display:none}.hero-benefits{gap:12px;font-size:8px}.converter-card{padding:22px 16px 21px}.card-heading h2{font-size:19px}.free-badge{font-size:7px;padding:5px 6px}.free-badge>span{font-size:9px}.source-tab{font-size:9px;gap:5px;padding:10px 6px}.source-tab .icon{width:14px;height:14px}.url-field textarea{font-size:10px;padding-left:8px;padding-top:16px}.url-icon{width:15px;height:15px;margin-left:11px;margin-top:17px}.paste-button{font-size:9px;padding:6px;margin-right:8px;margin-top:13px}.paste-button .icon{width:10px;height:10px}.field-label,.format-fieldset legend{font-size:11px}.field-help{font-size:9px}.format-grid{gap:5px}.format-content{padding:10px 6px 9px;min-height:63px}.format-top{font-size:12px}.format-description{font-size:7px;letter-spacing:-.2px}.format-check{width:10px;height:10px}.format-check .icon{width:7px;height:7px}.format-fieldset{margin-top:21px}.advanced{margin-top:18px}.advanced>summary{font-size:10px}.steps-grid{grid-template-columns:1fr;gap:10px}.step-card{position:relative;padding:19px 20px 19px 65px}.step-top{margin:0}.step-number{position:absolute;left:20px;top:20px}.step-top>.icon{position:absolute;left:20px;top:43px;width:17px;height:17px}.step-card p{max-width:none;font-size:11px;margin-top:6px}.step-card h3{font-size:15px}.results-card,.history-card{padding:21px 16px}.track-title{font-size:11px}.track-subtitle{font-size:9px}.track-download span{display:none}.track-download{padding:8px}.track-download .icon{width:14px;height:14px}.track-icon{width:29px;height:29px}.results-card h2,.history-card h2{font-size:20px}.result-actions>.secondary-button{font-size:10px}.text-button{font-size:10px}.drop-types{font-size:8px}.drop-title{font-size:11px}.drop-description{font-size:10px}.selected-file{font-size:10px}.selected-file-size{font-size:8px}}
+@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+.skip-link{position:absolute}.demo-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;color:#7a826c;font-size:10px}.demo-button{display:inline-flex;align-items:center;gap:6px;font-size:10px;color:#c6522c;padding:7px 10px;background:#fff3eb;border:1px solid #f4dfd1;border-radius:7px;white-space:nowrap}.demo-button:hover:not(:disabled){background:#ffe9db}.demo-button .icon{width:13px;height:13px}.local-format{display:flex;align-items:center;gap:12px;padding:15px 16px;margin-top:23px;background:#fff2ea;border:1px solid #f3d1bf;border-radius:11px}.local-format-icon{display:grid;place-items:center;flex-shrink:0;width:34px;height:34px;background:#ffe2cf;color:#d06439;border-radius:8px}.local-format-icon .icon{width:17px;height:17px}.local-format>div{display:flex;flex-direction:column;gap:5px}.local-format strong{font-size:16px;color:#cb5e31;letter-spacing:-.3px}.local-format>div>span{font-size:10px;color:#9c715c}.local-format-tag{font-size:8px;letter-spacing:1px;color:#ad846d;margin-left:auto;white-space:nowrap}.edition-note{text-align:center;font-size:11px;line-height:1.7;color:#6c7460;background:#ecefe4;border:1px solid #e1e6d5;border-radius:9px;padding:12px 16px;margin-top:16px}.audio-preview{display:block;width:235px;max-width:100%;height:31px;margin-top:10px}.track-row:has(.audio-preview){align-items:flex-start}.track-row:has(.audio-preview)>.track-download{margin-top:2px}.cancel-button{display:block;margin-top:20px;color:#a25238}.results-card .notice{margin-top:16px}.track-list{margin-top:18px}#download-zip[aria-disabled=true]{opacity:.65;cursor:wait}
+@media(max-width:760px){.local-format{padding:13px 12px;gap:9px}.local-format>div>span{font-size:9px}.edition-note{font-size:10px;padding:11px 13px}.demo-row{font-size:9px}.demo-button{font-size:9px;padding:7px 9px}.audio-preview{width:210px;height:30px}.local-format-tag{font-size:7px;letter-spacing:.6px}}
+@media(max-width:430px){.hero h1{font-size:39px}.local-format-tag{display:none}.demo-row{align-items:flex-start;gap:8px;flex-wrap:wrap}.demo-row>span{line-height:28px}.demo-button{margin-left:auto}.audio-preview{width:190px;height:30px}.edition-note{font-size:9px}.track-row:has(.audio-preview){gap:7px}.local-format>div>span{font-size:9px}}
+
+</style>
+
+
+</head>
+<body>
+  <a href="#converter" class="skip-link">Ir al conversor</a>
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 17V5l11-2v12M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="17" cy="16" rx="3" ry="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h4m4 0h8M4 17h9m4 0h3"/><circle cx="10" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 3v.1"/></symbol>
+  </svg>
+
+  <header class="site-header shell">
+    <a class="brand" href="#" aria-label="Onda, inicio"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>onda<span class="brand-dot">.</span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal"><a class="nav-current" href="#converter">Conversor</a><a href="#how-it-works">Cómo funciona</a><a href="#faq">Preguntas frecuentes</a></nav>
+    <button id="history-toggle" class="history-toggle" type="button" aria-controls="history-panel" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Historial</span><span id="history-count" class="history-count" hidden>0</span></button>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> 100% EN TU NAVEGADOR</div>
+      <h1 id="hero-title">Tu música.<br>En <span class="hero-accent">WAV, contigo<svg viewBox="0 0 390 13" aria-hidden="true"><path d="M3 8C84 1 258 0 386 7"/></svg></span>.</h1>
+      <p>Convierte tus archivos de audio sin instalar nada.<br class="desktop-break"> Tu música se queda en tu dispositivo.</p>
+      <div class="hero-benefits"><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sin subir tus archivos</span><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sin cuentas ni premium</span><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Funciona en GitHub Pages</span></div>
+      <div class="hero-decoration decor-left" aria-hidden="true"><span>LOCAL</span><div class="mini-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="hero-decoration decor-right" aria-hidden="true"><svg class="icon"><use href="#i-music"/></svg><span>.wav</span></div>
+    </section>
+
+    <section id="converter" class="converter-section shell" aria-label="Conversor local a WAV">
+      <div class="converter-card">
+        <div class="card-heading"><div><span class="section-kicker">EL CONVERSOR LOCAL</span><h2>Hagamos que suene.</h2></div><span class="free-badge"><span aria-hidden="true">✦</span> Sin servidor. Sin suscripción.</span></div>
+        <form id="converter-form" novalidate>
+          <label class="field-label" for="source-files">Tus archivos de audio</label>
+          <label id="drop-zone" class="drop-zone" for="source-files"><span class="upload-icon"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></span><span class="drop-title">Arrastra tu música hasta aquí</span><span class="drop-description">o <span class="text-link">elige archivos</span> de tu dispositivo</span><span id="upload-limit-help" class="drop-types">Hasta 10 archivos · 25 MiB por archivo · 100 MiB por lote</span><input id="source-files" class="file-input" type="file" multiple accept="audio/*,.mp3,.wav,.flac,.ogg,.opus,.m4a,.aac,.webm"></label>
+          <div class="demo-row"><span>¿Quieres ver cómo funciona?</span><button id="demo-button" class="demo-button" type="button"><svg class="icon" aria-hidden="true"><use href="#i-music"/></svg>Probar con un ejemplo</button></div>
+          <div id="selected-files" class="selected-files" aria-live="polite" hidden></div>
+
+          <div class="local-format"><span class="local-format-icon"><svg class="icon" aria-hidden="true"><use href="#i-music"/></svg></span><div><strong>WAV</strong><span>Audio PCM sin compresión · Estéreo</span></div><span class="local-format-tag">FORMATO DE SALIDA</span></div>
+          <details class="advanced"><summary><span><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg>Ajustes de audio<span class="optional-label">Opcional</span></span><svg class="icon chevron" aria-hidden="true"><use href="#i-chevron"/></svg></summary><div class="advanced-content"><div class="setting"><label for="sample-rate">Frecuencia de muestreo</label><select id="sample-rate"><option value="44100">44.1 kHz</option><option value="48000">48 kHz</option></select></div><div class="setting"><label for="bit-depth">Profundidad de bits</label><select id="bit-depth"><option value="16">16 bits</option><option value="24">24 bits</option></select></div><label class="normalize-setting"><input id="normalize" type="checkbox"><span>Normalizar picos<small>Ajusta el pico máximo a −1 dB</small></span></label></div></details>
+
+          <div id="form-error" class="notice error-notice" role="alert" hidden></div><div id="service-notice" class="notice" role="status" hidden></div>
+          <div class="convert-action"><button id="convert-button" class="convert-button" type="submit"><span id="convert-label">Convertir a WAV</span><svg class="icon button-arrow" aria-hidden="true"><use href="#i-arrow"/></svg><span class="spinner" hidden></span></button><span class="action-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Sin subir archivos. El proceso es local.</span></div>
+        </form>
+      </div>
+      <p class="quality-note"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Convertir a WAV no recupera la información perdida en un audio comprimido.</p>
+      <p class="edition-note">Esta edición convierte archivos de tu dispositivo. Los enlaces de SoundCloud necesitan un servidor aparte.</p>
+    </section>
+
+    <section id="results" class="results-section shell" aria-labelledby="results-title" hidden><div class="results-card"><div class="results-header"><div><span class="section-kicker">TU CONVERSIÓN LOCAL</span><h2 id="results-title" tabindex="-1">Preparando tu audio…</h2></div><button id="close-results" class="icon-button" type="button" aria-label="Cerrar resultados" disabled><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div class="progress-info"><span id="job-message" role="status" aria-live="polite">Preparando…</span><span id="progress-label">0%</span></div><div id="job-progress" class="progress-track" role="progressbar" aria-label="Progreso de conversión" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div><div id="storage-notice" class="notice" role="status" hidden></div><div id="track-list" class="track-list"></div><div id="result-actions" class="result-actions" hidden><a id="download-zip" class="secondary-button" href="#" download="onda-audios.zip"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span id="zip-label">Descargar todo en ZIP</span></a><button id="new-conversion" class="text-button" type="button">Otra conversión<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div><button id="cancel-conversion" class="text-button cancel-button" type="button" hidden>Cancelar conversión</button></div></section>
+
+    <section id="history-panel" class="history-section shell" aria-labelledby="history-title" hidden><div class="history-card"><div class="results-header"><div><span class="section-kicker">SOLO EN ESTE NAVEGADOR</span><h2 id="history-title" tabindex="-1">Tu historial</h2></div><button id="clear-history" type="button" class="text-button">Borrar historial</button></div><p class="field-help">Hasta 10 conversiones y 50 MiB de audio guardados en este dispositivo. Puedes recuperar sus descargas después de recargar la página.</p><div id="history-notice" class="notice" role="status" hidden></div><div id="history-list"></div></div></section>
+
+    <section id="how-it-works" class="how-section shell" aria-labelledby="how-title"><div class="section-heading"><span class="section-kicker">MENOS VUELTAS. MÁS MÚSICA.</span><h2 id="how-title">Tres pasos y a darle play.</h2><p>Sin instalaciones. Sin servidores de conversión.</p></div><div class="steps-grid"><article class="step-card"><div class="step-top"><span class="step-number">01</span><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></div><h3>Elige tu música</h3><p>Arrastra tus archivos o prueba el ejemplo. Se leen directamente desde tu dispositivo.</p></article><article class="step-card"><div class="step-top"><span class="step-number">02</span><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg></div><h3>Dale tu formato</h3><p>Elige WAV de 16 o 24 bits, ajusta la frecuencia y normaliza los picos si quieres.</p></article><article class="step-card"><div class="step-top"><span class="step-number">03</span><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></div><h3>Descarga y disfruta</h3><p>Escucha el resultado y guarda las pistas por separado o juntas en un archivo ZIP.</p></article></div></section>
+
+    <section id="faq" class="faq-section shell" aria-labelledby="faq-title"><div class="faq-intro"><span class="section-kicker">POR SI TE LO PREGUNTABAS</span><h2 id="faq-title">Todo claro.<br> Como tu audio.</h2><p>Unas respuestas antes de darle play.</p><div class="faq-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="faq-list"><details><summary>¿Necesito instalar algo o pagar?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>No. Abre la página en un navegador actual y convierte tus archivos. No hay cuentas, suscripciones ni funciones premium. Todo el procesamiento ocurre en tu dispositivo.</p></details><details><summary>¿Puedo pegar un enlace de SoundCloud?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Esta edición para GitHub Pages convierte archivos locales. Los enlaces de SoundCloud necesitan un servidor aparte; GitHub Pages solo aloja la página estática. Si ya tienes el audio en tu dispositivo, puedes convertirlo aquí.</p></details><details><summary>¿Qué archivos puedo convertir?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Los formatos que pueda decodificar tu navegador: normalmente MP3, WAV, AAC/M4A y, según el navegador, OGG, Opus o FLAC. La salida es siempre WAV estéreo de 16 o 24 bits, a 44.1 o 48 kHz.</p></details><details><summary>¿Cuáles son los límites de esta edición?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Hasta 10 archivos por lote, 25 MiB por archivo, 100 MiB de entrada en total y 10 minutos por archivo. Los WAV de un lote pueden ocupar hasta 200 MiB. Estos límites ayudan a cuidar la memoria de tu dispositivo.</p></details><details><summary>¿Dónde se guardan mis archivos?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Nunca se suben a un servidor. Se procesan en memoria y, cuando hay espacio, los resultados se guardan en el almacenamiento de este navegador: hasta 10 conversiones y 50 MiB. Puedes borrar el historial para eliminarlos. Si el navegador no permite guardarlos, puedes descargarlos durante la sesión.</p></details><details><summary>¿WAV o 24 bits mejorarán la calidad original?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>WAV evita otra compresión con pérdida, pero no reconstruye el detalle que ya perdió la fuente. Cambiar a 24 bits o 48 kHz tampoco añade información que no existía en el audio original.</p></details></div></section>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="#" aria-label="Onda, inicio"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>onda<span class="brand-dot">.</span></a><span>Buenas ondas. Tus archivos, contigo.</span><p>Edición estática para GitHub Pages · WAV en tu navegador</p></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var AudioContextType = window.AudioContext || window.webkitAudioContext;
+  var OfflineContextType = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+  var limits = Object.freeze({
+    maxFileBytes: 25 * 1024 * 1024,
+    maxFiles: 10,
+    maxTotalInputBytes: 100 * 1024 * 1024,
+    maxOutputBytes: 200 * 1024 * 1024,
+    maxDuration: 600
+  });
+  var supported = !!(AudioContextType && OfflineContextType && window.Worker && window.Blob &&
+    window.FileReader && window.TextEncoder && window.URL && window.URL.createObjectURL);
+
+  function abortError() {
+    try { return new DOMException("La conversión se canceló.", "AbortError"); }
+    catch (_) { var error = new Error("La conversión se canceló."); error.name = "AbortError"; return error; }
+  }
+
+  function checkAbort(signal) {
+    if (signal && signal.aborted) throw abortError();
+  }
+
+  function report(callback, progress, stage) {
+    if (typeof callback !== "function") return;
+    // A presentation callback must not leave a worker or decoder orphaned.
+    try { callback({ progress: Math.max(0, Math.min(100, Math.round(progress))), stage: stage }); }
+    catch (_) { /* Conversion lifetime is independent from UI callbacks. */ }
+  }
+
+  function cleanName(value, fallback) {
+    var name = String(value || "").split(/[\\/]/).pop();
+    if (name.normalize) name = name.normalize("NFC");
+    name = name.replace(/[\u0000-\u001f\u007f<>:"/\\|?*]/g, "_")
+      .replace(/^[.\s]+|[.\s]+$/g, "");
+    name = Array.from(name).slice(0, 120).join("");
+    if (!name) name = fallback || "audio";
+    if (/^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(name)) name = "_" + name;
+    return name;
+  }
+
+  function waveName(original) {
+    var name = cleanName(original, "audio").replace(/\.[^.]+$/, "");
+    return cleanName(name, "audio") + ".wav";
+  }
+
+  function metadata(file, signal) {
+    return new Promise(function (resolve, reject) {
+      checkAbort(signal);
+      var audio = document.createElement("audio");
+      var url = URL.createObjectURL(file);
+      var done = false;
+      var timer;
+      function finish(error, duration) {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        audio.onloadedmetadata = null;
+        audio.onerror = null;
+        if (signal) signal.removeEventListener("abort", cancel);
+        audio.removeAttribute("src");
+        try { audio.load(); } catch (_) { /* Resource release is best effort. */ }
+        URL.revokeObjectURL(url);
+        if (error) reject(error); else resolve(duration);
+      }
+      function cancel() { finish(abortError()); }
+      audio.preload = "metadata";
+      audio.onloadedmetadata = function () {
+        var duration = audio.duration;
+        if (Number.isFinite(duration) && duration > limits.maxDuration) {
+          finish(new Error("El audio supera los 10 minutos. Selecciona un archivo más corto."));
+        } else {
+          finish(null, Number.isFinite(duration) && duration > 0 ? duration : null);
+        }
+      };
+      audio.onerror = function () {
+        finish(new Error("El navegador no reconoce este audio. Prueba con un archivo WAV, MP3, M4A u OGG compatible."));
+      };
+      if (signal) signal.addEventListener("abort", cancel, { once: true });
+      timer = setTimeout(function () {
+        finish(new Error("No se pudo leer el audio. Comprueba que el archivo esté completo y use un formato compatible."));
+      }, 12000);
+      audio.src = url;
+    });
+  }
+
+  function readFile(file, signal, callback) {
+    return new Promise(function (resolve, reject) {
+      checkAbort(signal);
+      var reader = new FileReader();
+      function cleanup() {
+        reader.onload = reader.onerror = reader.onabort = reader.onprogress = null;
+        if (signal) signal.removeEventListener("abort", cancel);
+      }
+      function cancel() { reader.abort(); }
+      reader.onload = function () { var result = reader.result; cleanup(); resolve(result); };
+      reader.onerror = function () { cleanup(); reject(new Error("No se pudo leer el archivo seleccionado.")); };
+      reader.onabort = function () { cleanup(); reject(abortError()); };
+      reader.onprogress = function (event) {
+        if (event.lengthComputable) report(callback, 5 + event.loaded / event.total * 10, "Leyendo archivo");
+      };
+      if (signal) signal.addEventListener("abort", cancel, { once: true });
+      reader.readAsArrayBuffer(file);
+    });
+  }
+
+  function abortable(promise, signal, onAbort) {
+    if (!signal) return promise;
+    return new Promise(function (resolve, reject) {
+      var settled = false;
+      function cancel() {
+        if (settled) return;
+        settled = true;
+        signal.removeEventListener("abort", cancel);
+        if (onAbort) { try { onAbort(); } catch (_) { /* Already stopped. */ } }
+        reject(abortError());
+      }
+      if (signal.aborted) { cancel(); return; }
+      signal.addEventListener("abort", cancel, { once: true });
+      promise.then(function (value) {
+        if (settled) return;
+        settled = true;
+        signal.removeEventListener("abort", cancel);
+        resolve(value);
+      }, function (error) {
+        if (settled) return;
+        settled = true;
+        signal.removeEventListener("abort", cancel);
+        reject(error);
+      });
+    });
+  }
+
+  function closeContext(context) {
+    if (!context || typeof context.close !== "function" || context.state === "closed") return;
+    try {
+      var result = context.close();
+      if (result && typeof result.catch === "function") result.catch(function () {});
+    } catch (_) { /* Old WebKit can throw for an already closed context. */ }
+  }
+
+  function decode(context, bytes) {
+    // Both the callback-based WebKit API and current Promise API are supported.
+    return new Promise(function (resolve, reject) {
+      var completed = false;
+      function success(value) { if (!completed) { completed = true; resolve(value); } }
+      function failure(error) { if (!completed) { completed = true; reject(error); } }
+      try {
+        var result = context.decodeAudioData(bytes, success, failure);
+        if (result && typeof result.then === "function") result.then(success, failure);
+      } catch (error) { failure(error); }
+    });
+  }
+
+  function pcmWorkerMain() {
+    "use strict";
+    self.onmessage = function (event) {
+      try {
+        var data = event.data;
+        var left = new Float32Array(data.left);
+        var right = new Float32Array(data.right);
+        var frames = left.length;
+        var bytesPerSample = data.bitDepth / 8;
+        var dataBytes = frames * 2 * bytesPerSample;
+        var totalBytes = 44 + dataBytes;
+        if (!frames || right.length !== frames || !Number.isSafeInteger(totalBytes) || totalBytes > data.maxOutputBytes) {
+          throw new Error("El WAV supera el espacio disponible para este lote.");
+        }
+        var lastProgress = -1;
+        function progress(value, stage) {
+          var rounded = Math.floor(value);
+          if (rounded !== lastProgress) {
+            lastProgress = rounded;
+            self.postMessage({ type: "progress", progress: rounded, stage: stage });
+          }
+        }
+        var gain = 1;
+        var frame;
+        if (data.normalize) {
+          var peak = 0;
+          for (frame = 0; frame < frames; frame++) {
+            var a = Number.isFinite(left[frame]) ? Math.abs(left[frame]) : 0;
+            var b = Number.isFinite(right[frame]) ? Math.abs(right[frame]) : 0;
+            if (a > peak) peak = a;
+            if (b > peak) peak = b;
+            if ((frame & 65535) === 0) progress(frame / frames * 35, "Analizando picos");
+          }
+          if (peak > 0) gain = Math.pow(10, -1 / 20) / peak;
+          progress(35, "Normalizando a −1 dBFS");
+        }
+        var output = new ArrayBuffer(totalBytes);
+        var view = new DataView(output);
+        function text(offset, value) {
+          for (var i = 0; i < value.length; i++) view.setUint8(offset + i, value.charCodeAt(i));
+        }
+        text(0, "RIFF");
+        view.setUint32(4, totalBytes - 8, true);
+        text(8, "WAVE");
+        text(12, "fmt ");
+        view.setUint32(16, 16, true);
+        view.setUint16(20, 1, true);
+        view.setUint16(22, 2, true);
+        view.setUint32(24, data.sampleRate, true);
+        view.setUint32(28, data.sampleRate * 2 * bytesPerSample, true);
+        view.setUint16(32, 2 * bytesPerSample, true);
+        view.setUint16(34, data.bitDepth, true);
+        text(36, "data");
+        view.setUint32(40, dataBytes, true);
+        var position = 44;
+        var base = data.normalize ? 35 : 0;
+        var scale = data.normalize ? 65 : 100;
+        for (frame = 0; frame < frames; frame++) {
+          for (var channel = 0; channel < 2; channel++) {
+            var sample = channel ? right[frame] : left[frame];
+            sample = Number.isFinite(sample) ? Math.max(-1, Math.min(1, sample * gain)) : 0;
+            if (data.bitDepth === 16) {
+              var pcm16 = Math.round(sample * (sample < 0 ? 32768 : 32767));
+              view.setInt16(position, pcm16, true);
+              position += 2;
+            } else {
+              var pcm24 = Math.round(sample * (sample < 0 ? 8388608 : 8388607));
+              view.setUint8(position, pcm24 & 255);
+              view.setUint8(position + 1, (pcm24 >> 8) & 255);
+              view.setUint8(position + 2, (pcm24 >> 16) & 255);
+              position += 3;
+            }
+          }
+          if ((frame & 65535) === 0) progress(base + frame / frames * scale, "Codificando WAV");
+        }
+        progress(100, "WAV codificado");
+        self.postMessage({ type: "complete", buffer: output }, [output]);
+      } catch (error) {
+        self.postMessage({ type: "error", message: error && error.message ? error.message : "No se pudo codificar el WAV." });
+      }
+    };
+  }
+
+  function encodeWave(left, right, options, callback, signal) {
+    return new Promise(function (resolve, reject) {
+      checkAbort(signal);
+      var url = URL.createObjectURL(new Blob(["(", pcmWorkerMain.toString(), ")();"], { type: "text/javascript" }));
+      var worker;
+      var settled = false;
+      function cleanup() {
+        if (signal) signal.removeEventListener("abort", cancel);
+        if (worker) {
+          worker.onmessage = worker.onerror = worker.onmessageerror = null;
+          worker.terminate();
+        }
+        URL.revokeObjectURL(url);
+      }
+      function finish(error, result) {
+        if (settled) return;
+        settled = true;
+        cleanup();
+        if (error) reject(error); else resolve(result);
+      }
+      function cancel() { finish(abortError()); }
+      try {
+        worker = new Worker(url);
+        worker.onmessage = function (event) {
+          var data = event.data || {};
+          if (data.type === "progress") report(callback, 65 + data.progress * .34, data.stage);
+          else if (data.type === "complete") finish(null, new Blob([data.buffer], { type: "audio/wav" }));
+          else if (data.type === "error") finish(new Error(data.message || "No se pudo codificar el WAV."));
+        };
+        worker.onerror = function () { finish(new Error("No se pudo iniciar la conversión en este navegador.")); };
+        worker.onmessageerror = function () { finish(new Error("No se pudo recibir el audio convertido.")); };
+        if (signal) signal.addEventListener("abort", cancel, { once: true });
+        checkAbort(signal);
+        worker.postMessage({ left: left.buffer, right: right.buffer, sampleRate: options.sampleRate,
+          bitDepth: options.bitDepth, normalize: options.normalize, maxOutputBytes: options.maxOutputBytes },
+        [left.buffer, right.buffer]);
+      } catch (error) { finish(error); }
+    });
+  }
+
+  async function convert(file, options, onProgress, signal) {
+    checkAbort(signal);
+    if (!supported) throw new Error("Este navegador no dispone de conversión de audio. Prueba con una versión reciente de Chrome, Edge, Firefox o Safari.");
+    if (!(file instanceof Blob) || !Number.isFinite(file.size) || file.size < 1) throw new Error("Selecciona un archivo de audio que no esté vacío.");
+    if (file.size > limits.maxFileBytes) throw new Error("Cada archivo puede ocupar como máximo 25 MiB.");
+    options = options || {};
+    var sampleRate = options.sampleRate === undefined ? 44100 : Number(options.sampleRate);
+    var bitDepth = options.bitDepth === undefined ? 16 : Number(options.bitDepth);
+    var maxOutputBytes = options.maxOutputBytes === undefined ? limits.maxOutputBytes : Math.floor(Number(options.maxOutputBytes));
+    if (sampleRate !== 44100 && sampleRate !== 48000) throw new Error("Selecciona una frecuencia de 44,1 o 48 kHz.");
+    if (bitDepth !== 16 && bitDepth !== 24) throw new Error("Selecciona una profundidad de 16 o 24 bits.");
+    if (!Number.isFinite(maxOutputBytes) || maxOutputBytes < 44) throw new Error("No queda espacio disponible para el WAV en este lote.");
+    maxOutputBytes = Math.min(maxOutputBytes, limits.maxOutputBytes);
+    var configuration = { sampleRate: sampleRate, bitDepth: bitDepth, normalize: !!options.normalize, maxOutputBytes: maxOutputBytes };
+    var bytesPerFrame = 2 * (bitDepth / 8);
+    function checkDuration(duration) {
+      if (!Number.isFinite(duration) || duration <= 0) throw new Error("El archivo no contiene una duración de audio válida.");
+      if (duration > limits.maxDuration) throw new Error("El audio supera los 10 minutos. Selecciona un archivo más corto.");
+      var frames = Math.ceil(duration * sampleRate);
+      if (44 + frames * bytesPerFrame > maxOutputBytes) throw new Error("El WAV supera el espacio disponible para este lote. Elige 16 bits o divide los archivos en lotes.");
+      return frames;
+    }
+    report(onProgress, 0, "Comprobando audio");
+    var originalDuration = await metadata(file, signal);
+    checkAbort(signal);
+    if (originalDuration !== null) checkDuration(originalDuration);
+    report(onProgress, 5, "Leyendo archivo");
+    var input = await readFile(file, signal, onProgress);
+    checkAbort(signal);
+    var context;
+    var decoded;
+    try {
+      try { context = new AudioContextType({ sampleRate: sampleRate }); }
+      catch (_) { context = new AudioContextType(); }
+      report(onProgress, 20, "Decodificando audio");
+      try {
+        decoded = await abortable(decode(context, input), signal, function () { closeContext(context); });
+      } catch (error) {
+        if (error && error.name === "AbortError") throw error;
+        throw new Error("El navegador no puede decodificar este archivo. El códec puede no ser compatible o el audio puede estar dañado.");
+      }
+    } finally {
+      input = null;
+      closeContext(context);
+    }
+    checkAbort(signal);
+    var frames = checkDuration(decoded.duration);
+    report(onProgress, 40, "Preparando audio estéreo");
+    var offline = new OfflineContextType(2, frames, sampleRate);
+    var source = offline.createBufferSource();
+    source.buffer = decoded;
+    source.channelInterpretation = "speakers";
+    source.connect(offline.destination);
+    source.start(0);
+    var stereo;
+    try {
+      report(onProgress, 45, "Ajustando frecuencia y canales");
+      stereo = await abortable(offline.startRendering(), signal, function () {
+        try { source.stop(); source.disconnect(); } catch (_) { /* Already rendered. */ }
+      });
+    } catch (error) {
+      if (error && error.name === "AbortError") throw error;
+      throw new Error("No se pudo preparar el audio estéreo. Prueba con un archivo más corto.");
+    } finally {
+      try { source.disconnect(); } catch (_) { /* Already disconnected. */ }
+      source.buffer = null;
+      source = null;
+      decoded = null;
+      offline = null;
+    }
+    checkAbort(signal);
+    report(onProgress, 60, "Preparando WAV");
+    var duration = stereo.length / stereo.sampleRate;
+    // Transfer independent channel copies: AudioBuffer storage is browser-owned.
+    var left = new Float32Array(stereo.getChannelData(0));
+    var right = new Float32Array(stereo.getChannelData(1));
+    stereo = null;
+    report(onProgress, 65, configuration.normalize ? "Analizando picos" : "Codificando WAV");
+    var blob = await encodeWave(left, right, configuration, onProgress, signal);
+    left = right = null;
+    checkAbort(signal);
+    report(onProgress, 100, "Listo para descargar");
+    return { blob: blob, fileName: waveName(file.name), duration: duration,
+      sampleRate: sampleRate, bitDepth: bitDepth, channels: 2 };
+  }
+
+  var crcTable;
+  function getCrcTable() {
+    if (crcTable) return crcTable;
+    crcTable = new Uint32Array(256);
+    for (var n = 0; n < 256; n++) {
+      var c = n;
+      for (var k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+      crcTable[n] = c >>> 0;
+    }
+    return crcTable;
+  }
+
+  async function blobCrc(blob, consumed, total, callback) {
+    var table = getCrcTable();
+    var crc = 0xffffffff;
+    var processed = 0;
+    var sinceYield = 0;
+    // Slice reads cap transient memory even for a 200 MiB result.
+    while (processed < blob.size) {
+      var buffer = await blob.slice(processed, Math.min(blob.size, processed + 256 * 1024)).arrayBuffer();
+      var bytes = new Uint8Array(buffer);
+      for (var i = 0; i < bytes.length; i++) crc = table[(crc ^ bytes[i]) & 255] ^ (crc >>> 8);
+      processed += bytes.length;
+      sinceYield += bytes.length;
+      report(callback, total ? (consumed + processed) / total * 95 : 95, "Preparando descarga ZIP");
+      if (sinceYield >= 2 * 1024 * 1024) {
+        sinceYield = 0;
+        await new Promise(function (resolve) { setTimeout(resolve, 0); });
+      }
+    }
+    return (crc ^ 0xffffffff) >>> 0;
+  }
+
+  function uniqueName(original, used) {
+    var name = cleanName(original, "audio.wav");
+    var initial = name;
+    var dot = initial.lastIndexOf(".");
+    var stem = dot > 0 ? initial.slice(0, dot) : initial;
+    var extension = dot > 0 ? initial.slice(dot) : "";
+    var index = 2;
+    while (used.has(name.toLowerCase())) { name = stem + " (" + index++ + ")" + extension; }
+    used.add(name.toLowerCase());
+    return name;
+  }
+
+  async function createZip(files, onProgress) {
+    if (!Array.isArray(files) || !files.length) throw new Error("No hay archivos convertidos para descargar.");
+    if (files.length > limits.maxFiles) throw new Error("Cada ZIP puede contener como máximo 10 archivos.");
+    var total = 0;
+    files.forEach(function (file) {
+      if (!file || !(file.blob instanceof Blob)) throw new Error("Uno de los archivos del ZIP no es válido.");
+      total += file.blob.size;
+    });
+    if (total > limits.maxOutputBytes) throw new Error("Los archivos superan los 200 MiB permitidos por lote.");
+    var encoder = new TextEncoder();
+    var used = new Set();
+    var localParts = [];
+    var centralParts = [];
+    var offset = 0;
+    var centralSize = 0;
+    var consumed = 0;
+    var date = new Date();
+    var dosTime = (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2);
+    var dosDate = ((Math.max(1980, Math.min(2107, date.getFullYear())) - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate();
+    report(onProgress, 0, "Preparando descarga ZIP");
+    for (var index = 0; index < files.length; index++) {
+      var file = files[index];
+      var name = encoder.encode(uniqueName(file.name, used));
+      var crc = await blobCrc(file.blob, consumed, total, onProgress);
+      consumed += file.blob.size;
+      var local = new Uint8Array(30 + name.length);
+      var header = new DataView(local.buffer);
+      header.setUint32(0, 0x04034b50, true);
+      header.setUint16(4, 20, true);
+      header.setUint16(6, 0x0800, true); // UTF-8 file names.
+      header.setUint16(8, 0, true); // Store: payloads are already WAV.
+      header.setUint16(10, dosTime, true);
+      header.setUint16(12, dosDate, true);
+      header.setUint32(14, crc, true);
+      header.setUint32(18, file.blob.size, true);
+      header.setUint32(22, file.blob.size, true);
+      header.setUint16(26, name.length, true);
+      header.setUint16(28, 0, true);
+      local.set(name, 30);
+      localParts.push(local, file.blob);
+      var central = new Uint8Array(46 + name.length);
+      var directory = new DataView(central.buffer);
+      directory.setUint32(0, 0x02014b50, true);
+      directory.setUint16(4, 20, true);
+      directory.setUint16(6, 20, true);
+      directory.setUint16(8, 0x0800, true);
+      directory.setUint16(10, 0, true);
+      directory.setUint16(12, dosTime, true);
+      directory.setUint16(14, dosDate, true);
+      directory.setUint32(16, crc, true);
+      directory.setUint32(20, file.blob.size, true);
+      directory.setUint32(24, file.blob.size, true);
+      directory.setUint16(28, name.length, true);
+      directory.setUint16(30, 0, true);
+      directory.setUint16(32, 0, true);
+      directory.setUint16(34, 0, true);
+      directory.setUint16(36, 0, true);
+      directory.setUint32(38, 0, true);
+      directory.setUint32(42, offset, true);
+      central.set(name, 46);
+      centralParts.push(central);
+      centralSize += central.length;
+      offset += local.length + file.blob.size;
+    }
+    var end = new Uint8Array(22);
+    var endView = new DataView(end.buffer);
+    endView.setUint32(0, 0x06054b50, true);
+    endView.setUint16(4, 0, true);
+    endView.setUint16(6, 0, true);
+    endView.setUint16(8, files.length, true);
+    endView.setUint16(10, files.length, true);
+    endView.setUint32(12, centralSize, true);
+    endView.setUint32(16, offset, true);
+    endView.setUint16(20, 0, true);
+    var result = new Blob(localParts.concat(centralParts, [end]), { type: "application/zip" });
+    report(onProgress, 100, "ZIP listo para descargar");
+    return result;
+  }
+
+  window.OndaAudio = Object.freeze({ convert: convert, createZip: createZip, supported: supported, limits: limits });
+})();
+
+</script>
+<script>
+(() => {
+  'use strict';
+
+  const $ = (selector) => document.querySelector(selector);
+  const MiB = 1024 * 1024;
+  const HISTORY_LIMIT = 10;
+  const HISTORY_BYTES = 50 * MiB;
+  const engine = window.OndaAudio;
+  const limits = engine?.limits || { maxFileBytes: 25 * MiB, maxFiles: 10, maxTotalInputBytes: 100 * MiB, maxOutputBytes: 200 * MiB, maxDuration: 600 };
+  const state = { files: [], tracks: [], converting: false, zipBusy: false, controller: null, urls: new Set(), zipURL: null, generation: 0, history: [], db: null, dbError: false, resultId: null, cachePending: 0 };
+  let toastTimer;
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = String(text);
+    return node;
+  }
+
+  function icon(name) {
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('class', 'icon');
+    svg.setAttribute('aria-hidden', 'true');
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttribute('href', `#i-${name}`);
+    svg.append(use);
+    return svg;
+  }
+
+  function id() { return window.crypto?.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`; }
+  function isBusy() { return state.converting || state.zipBusy; }
+  function mb(bytes) { return bytes >= MiB ? `${(bytes / MiB).toFixed(1)} MiB` : `${Math.max(1, Math.round(bytes / 1024))} KiB`; }
+  function time(seconds) { return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`; }
+
+  function toast(message) {
+    clearTimeout(toastTimer);
+    $('#toast').textContent = message;
+    $('#toast').hidden = false;
+    toastTimer = setTimeout(() => { $('#toast').hidden = true; }, 4500);
+  }
+
+  function error(message) { $('#form-error').textContent = message; $('#form-error').hidden = false; }
+  function clearError() { $('#form-error').textContent = ''; $('#form-error').hidden = true; }
+
+  function notice(message) {
+    $('#storage-notice').textContent = message;
+    $('#storage-notice').hidden = !message;
+  }
+
+  function setControls() {
+    const busy = isBusy();
+    $('#converter-form').setAttribute('aria-busy', String(busy));
+    for (const control of document.querySelectorAll('#converter-form input, #converter-form select, #converter-form button')) control.disabled = busy;
+    $('#convert-button').disabled = busy || !engine?.supported;
+    $('#convert-label').textContent = state.converting ? 'Convirtiendo…' : state.zipBusy ? 'Preparando ZIP…' : 'Convertir a WAV';
+    $('#convert-button .spinner').hidden = !busy;
+    $('#convert-button .button-arrow').hidden = busy;
+    $('#close-results').disabled = busy;
+    $('#new-conversion').disabled = busy;
+    $('#clear-history').disabled = busy || state.cachePending > 0 || !state.history.length;
+    $('#cancel-conversion').hidden = !state.converting;
+    $('#cancel-conversion').disabled = !state.converting || !!state.controller?.signal.aborted;
+    $('#cancel-conversion').textContent = state.controller?.signal.aborted ? 'Cancelando…' : 'Cancelar conversión';
+    $('#download-zip').setAttribute('aria-disabled', String(busy));
+  }
+
+  function validateFiles(files) {
+    if (files.length > limits.maxFiles) throw new Error(`Puedes seleccionar hasta ${limits.maxFiles} archivos por lote.`);
+    const large = files.find((file) => file.size > limits.maxFileBytes);
+    if (large) throw new Error(`«${large.name}» supera los ${limits.maxFileBytes / MiB} MiB por archivo.`);
+    const empty = files.find((file) => !file.size);
+    if (empty) throw new Error(`«${empty.name}» está vacío. Elige un archivo que contenga audio.`);
+    if (files.reduce((total, file) => total + file.size, 0) > limits.maxTotalInputBytes) throw new Error(`El lote puede ocupar hasta ${limits.maxTotalInputBytes / MiB} MiB de entrada. Quita algunos archivos.`);
+  }
+
+  function addFiles(fileList) {
+    if (isBusy()) return;
+    clearError();
+    const selected = [...state.files];
+    for (const file of Array.from(fileList)) {
+      if (!selected.some((other) => file.name === other.name && file.size === other.size && file.lastModified === other.lastModified)) selected.push(file);
+    }
+    try { validateFiles(selected); } catch (failure) { error(failure.message); return; }
+    state.files = selected;
+    renderFiles();
+    $('#source-files').value = '';
+  }
+
+  function renderFiles() {
+    const list = $('#selected-files');
+    list.replaceChildren();
+    list.hidden = !state.files.length;
+    for (const [index, file] of state.files.entries()) {
+      const row = el('div', 'selected-file');
+      row.append(icon('music'), el('span', 'selected-file-name', file.name), el('span', 'selected-file-size', mb(file.size)));
+      const remove = el('button');
+      remove.type = 'button';
+      remove.disabled = isBusy();
+      remove.setAttribute('aria-label', `Quitar ${file.name}`);
+      remove.append(icon('close'));
+      remove.addEventListener('click', () => { if (!isBusy()) { state.files.splice(index, 1); renderFiles(); } });
+      row.append(remove);
+      list.append(row);
+    }
+  }
+
+  function makeDemo() {
+    if (isBusy()) return;
+    const sampleRate = 22050;
+    const seconds = 1.8;
+    const length = Math.floor(sampleRate * seconds);
+    const buffer = new ArrayBuffer(44 + length * 2);
+    const view = new DataView(buffer);
+    const word = (offset, value) => { for (let i = 0; i < value.length; i++) view.setUint8(offset + i, value.charCodeAt(i)); };
+    word(0, 'RIFF'); view.setUint32(4, 36 + length * 2, true); word(8, 'WAVE'); word(12, 'fmt ');
+    view.setUint32(16, 16, true); view.setUint16(20, 1, true); view.setUint16(22, 1, true);
+    view.setUint32(24, sampleRate, true); view.setUint32(28, sampleRate * 2, true); view.setUint16(32, 2, true); view.setUint16(34, 16, true);
+    word(36, 'data'); view.setUint32(40, length * 2, true);
+    const notes = [261.6256, 329.6276, 391.9954];
+    for (let i = 0; i < length; i++) {
+      const t = i / sampleRate;
+      const local = t % 0.6;
+      const envelope = Math.min(1, local / 0.025) * Math.max(0, 1 - local / 0.6) ** 1.5;
+      const frequency = notes[Math.min(2, Math.floor(t / 0.6))];
+      const sample = Math.sin(2 * Math.PI * frequency * t) * envelope * 0.28;
+      view.setInt16(44 + i * 2, Math.round(sample * 32767), true);
+    }
+    clearError();
+    state.files = [new File([buffer], 'ejemplo-onda.wav', { type: 'audio/wav', lastModified: 0 })];
+    renderFiles();
+    toast('Ejemplo real preparado: pulsa «Convertir a WAV» para probarlo.');
+    $('#convert-button').focus();
+  }
+
+  function objectURL(blob) {
+    const url = URL.createObjectURL(blob);
+    state.urls.add(url);
+    return url;
+  }
+
+  function releaseURLs() {
+    for (const player of document.querySelectorAll('#track-list audio')) player.pause();
+    for (const url of state.urls) URL.revokeObjectURL(url);
+    state.urls.clear();
+    state.zipURL = null;
+    $('#download-zip').href = '#';
+    $('#zip-label').textContent = 'Descargar todo en ZIP';
+  }
+
+  function updateProgress(value, message) {
+    const progress = Math.max(0, Math.min(100, Number(value) || 0));
+    $('#progress-label').textContent = `${Math.floor(progress)}%`;
+    $('#progress-fill').style.width = `${progress}%`;
+    $('#job-progress').setAttribute('aria-valuenow', String(Math.floor(progress)));
+    $('#job-message').textContent = message;
+  }
+
+  function renderTrack(track) {
+    const row = el('div', 'track-row');
+    row.dataset.trackId = track.id;
+    const visual = el('span', 'track-icon');
+    visual.append(icon(track.status === 'completed' ? 'check' : track.status === 'failed' ? 'alert' : 'music'));
+    const info = el('div', 'track-info');
+    info.append(el('div', 'track-title', track.result?.fileName || track.name));
+    if (track.result) {
+      const result = track.result;
+      info.append(el('div', 'track-subtitle', `${time(result.duration)} · ${result.bitDepth} bits · ${result.sampleRate / 1000} kHz · Estéreo · ${mb(result.blob.size)}`));
+      const player = el('audio', 'audio-preview');
+      player.controls = true;
+      player.preload = 'none';
+      player.src = track.url;
+      player.setAttribute('aria-label', `Escuchar ${result.fileName}`);
+      info.append(player);
+    } else if (track.error) info.append(el('div', 'track-subtitle track-error', track.error));
+    else if (track.stage) info.append(el('div', 'track-subtitle', track.stage));
+    row.append(visual, info);
+    if (track.result) {
+      const download = el('a', 'track-download');
+      download.href = track.url;
+      download.download = track.result.fileName;
+      download.setAttribute('aria-label', `Descargar ${track.result.fileName}`);
+      download.append(icon('download'), el('span', '', 'Descargar'));
+      row.append(download);
+    } else {
+      const label = { queued: 'En cola', processing: 'Convirtiendo…', failed: 'No disponible', cancelled: 'Cancelada' };
+      row.append(el('span', `track-status ${track.status === 'failed' ? 'failed' : ''}`, label[track.status] || 'Preparando…'));
+    }
+    return row;
+  }
+
+  function refreshTrack(track) {
+    const previous = Array.from($('#track-list').children).find((node) => node.dataset.trackId === track.id);
+    const replacement = renderTrack(track);
+    if (previous) previous.replaceWith(replacement);
+    else $('#track-list').append(replacement);
+  }
+
+  function showResultState() {
+    const completed = state.tracks.filter((track) => track.result).length;
+    const failed = state.tracks.filter((track) => track.status === 'failed').length;
+    const cancelled = state.tracks.some((track) => track.status === 'cancelled');
+    $('#results-title').textContent = cancelled ? 'Conversión detenida' : !completed ? 'No pudimos convertir este audio' : failed ? 'Tu audio está listo, con avisos' : 'Tu audio, listo para sonar.';
+    $('#progress-fill').style.background = completed ? 'var(--green)' : 'var(--red)';
+    if (!cancelled) updateProgress(100, `${completed} ${completed === 1 ? 'pista lista' : 'pistas listas'}${failed ? ` · ${failed} no se pudieron convertir` : ''}`);
+    else $('#job-message').textContent = completed ? 'Puedes descargar las pistas que ya se convirtieron.' : 'Puedes volver a intentarlo cuando quieras.';
+    $('#result-actions').hidden = false;
+    $('#download-zip').hidden = !completed;
+  }
+
+  async function convert(event) {
+    event.preventDefault();
+    if (isBusy() || !engine?.supported) return;
+    clearError();
+    try { if (!state.files.length) throw new Error('Elige un archivo de audio o pulsa «Probar con un ejemplo».'); validateFiles(state.files); }
+    catch (failure) { error(failure.message); return; }
+    const files = [...state.files];
+    const options = { sampleRate: Number($('#sample-rate').value), bitDepth: Number($('#bit-depth').value), normalize: $('#normalize').checked };
+    releaseURLs();
+    notice('');
+    state.generation += 1;
+    state.resultId = id();
+    state.controller = new AbortController();
+    state.tracks = files.map((file) => ({ id: id(), name: file.name, status: 'queued', result: null }));
+    state.converting = true;
+    $('#results').hidden = false;
+    $('#results-title').textContent = 'Tu música está en camino…';
+    $('#progress-fill').style.background = 'var(--orange)';
+    $('#result-actions').hidden = true;
+    $('#track-list').replaceChildren(...state.tracks.map(renderTrack));
+    updateProgress(0, 'Preparando la conversión en tu navegador…');
+    setControls();
+    $('#results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    $('#results-title').focus({ preventScroll: true });
+    let bytes = 0;
+    for (let index = 0; index < files.length; index++) {
+      const track = state.tracks[index];
+      if (state.controller.signal.aborted) { track.status = 'cancelled'; refreshTrack(track); continue; }
+      track.status = 'processing';
+      track.stage = 'Leyendo el archivo';
+      refreshTrack(track);
+      try {
+        const result = await engine.convert(files[index], { ...options, maxOutputBytes: limits.maxOutputBytes - bytes }, (info) => {
+          if (state.controller.signal.aborted) return;
+          const progress = typeof info === 'number' ? info : info.progress;
+          track.stage = typeof info === 'object' ? info.stage || 'Convirtiendo…' : 'Convirtiendo…';
+          updateProgress(((index + Math.max(0, Math.min(100, Number(progress) || 0)) / 100) / files.length) * 100, `Archivo ${index + 1} de ${files.length} · ${track.stage}`);
+          refreshTrack(track);
+        }, state.controller.signal);
+        if (state.controller.signal.aborted) { track.status = 'cancelled'; }
+        else {
+          track.result = result;
+          track.status = 'completed';
+          bytes += result.blob.size;
+          track.url = objectURL(result.blob);
+        }
+      } catch (failure) {
+        track.status = failure.name === 'AbortError' || state.controller.signal.aborted ? 'cancelled' : 'failed';
+        track.error = track.status === 'failed' ? failure.message || 'El navegador no pudo decodificar este archivo. Prueba con MP3 o WAV.' : '';
+      }
+      refreshTrack(track);
+      if (!state.controller.signal.aborted) updateProgress(((index + 1) / files.length) * 100, `Archivo ${index + 1} de ${files.length} procesado`);
+    }
+    state.converting = false;
+    state.controller = null;
+    showResultState();
+    setControls();
+    await cacheCurrentResult();
+  }
+
+  async function downloadZip(event) {
+    if (state.zipURL && !isBusy()) return;
+    event.preventDefault();
+    if (isBusy()) return;
+    const tracks = state.tracks.filter((track) => track.result);
+    if (!tracks.length) return;
+    const generation = state.generation;
+    state.zipBusy = true;
+    setControls();
+    $('#zip-label').textContent = 'Preparando ZIP…';
+    try {
+      const blob = await engine.createZip(tracks.map((track) => ({ name: track.result.fileName, blob: track.result.blob })), (info) => {
+        const progress = typeof info === 'number' ? info : info?.progress;
+        if (Number.isFinite(progress)) $('#zip-label').textContent = `Preparando ZIP… ${Math.floor(progress)}%`;
+      });
+      if (generation !== state.generation) return;
+      state.zipURL = objectURL(blob);
+      $('#download-zip').href = state.zipURL;
+      $('#zip-label').textContent = 'Descargar todo en ZIP';
+      state.zipBusy = false;
+      setControls();
+      $('#download-zip').click();
+    } catch (failure) {
+      toast(failure.message || 'No se pudo preparar el ZIP. Puedes descargar cada pista por separado.');
+      $('#zip-label').textContent = 'Volver a preparar ZIP';
+    } finally { state.zipBusy = false; setControls(); }
+  }
+
+  function reset() {
+    if (isBusy()) return;
+    state.generation += 1;
+    releaseURLs();
+    state.tracks = [];
+    state.resultId = null;
+    $('#track-list').replaceChildren();
+    $('#results').hidden = true;
+    notice('');
+    $('#converter').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    $('#source-files').focus({ preventScroll: true });
+  }
+
+  function openDatabase() {
+    return new Promise((resolve, reject) => {
+      if (!window.indexedDB) return reject(new Error('El navegador no ofrece almacenamiento local.'));
+      const request = indexedDB.open('onda-local-audio', 1);
+      request.onupgradeneeded = () => { if (!request.result.objectStoreNames.contains('conversions')) request.result.createObjectStore('conversions', { keyPath: 'id' }); };
+      request.onsuccess = () => { const db = request.result; db.onversionchange = () => db.close(); resolve(db); };
+      request.onerror = () => reject(request.error || new Error('No se pudo abrir el almacenamiento local.'));
+      request.onblocked = () => reject(new Error('Otra pestaña está usando el historial.'));
+    });
+  }
+
+  function allRecords() {
+    return new Promise((resolve, reject) => {
+      const transaction = state.db.transaction('conversions', 'readonly');
+      const request = transaction.objectStore('conversions').getAll();
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+  }
+
+  async function loadHistory() {
+    try {
+      if (!state.db) state.db = await openDatabase();
+      state.history = (await allRecords()).filter((entry) => Array.isArray(entry.tracks) && entry.tracks.every((track) => track.blob instanceof Blob)).sort((a, b) => b.createdAt - a.createdAt);
+      renderHistory();
+      return true;
+    } catch {
+      state.dbError = true;
+      $('#history-notice').textContent = 'El navegador no permite guardar el historial. Tus conversiones y descargas siguen funcionando durante esta sesión.';
+      $('#history-notice').hidden = false;
+      renderHistory();
+      return false;
+    }
+  }
+
+  async function cacheCurrentResult() {
+    const currentId = state.resultId;
+    const tracks = state.tracks.filter((track) => track.result).map((track) => ({ name: track.result.fileName, blob: track.result.blob, duration: track.result.duration, sampleRate: track.result.sampleRate, bitDepth: track.result.bitDepth, channels: track.result.channels }));
+    if (!tracks.length) return;
+    const size = tracks.reduce((sum, track) => sum + track.blob.size, 0);
+    if (size > HISTORY_BYTES) {
+      notice('Este resultado supera los 50 MiB del historial. Puedes descargarlo durante esta sesión; no se guardará para después de recargar la página.');
+      return;
+    }
+    state.cachePending += 1;
+    setControls();
+    try {
+      if (!state.db) state.db = await openDatabase();
+      const records = (await allRecords()).sort((a, b) => b.createdAt - a.createdAt);
+      const keep = [];
+      let total = size;
+      for (const record of records) {
+        if (record.id === currentId) continue;
+        if (keep.length < HISTORY_LIMIT - 1 && total + Number(record.size || 0) <= HISTORY_BYTES) { keep.push(record.id); total += Number(record.size || 0); }
+      }
+      const record = { id: currentId, title: tracks.length === 1 ? tracks[0].name : `${tracks.length} pistas WAV`, createdAt: Date.now(), size, tracks };
+      await new Promise((resolve, reject) => {
+        const transaction = state.db.transaction('conversions', 'readwrite');
+        const store = transaction.objectStore('conversions');
+        for (const old of records) if (!keep.includes(old.id)) store.delete(old.id);
+        store.put(record);
+        transaction.oncomplete = resolve;
+        transaction.onerror = () => reject(transaction.error);
+        transaction.onabort = () => reject(transaction.error);
+      });
+      await loadHistory();
+      if (state.resultId === currentId) notice('Guardado en el historial de este navegador. Puedes recuperar estas descargas después de recargar la página.');
+    } catch {
+      if (state.resultId === currentId) notice('No hay espacio o permiso para guardar este resultado en el navegador. Descárgalo ahora: estará disponible mientras mantengas esta página abierta.');
+    } finally { state.cachePending -= 1; setControls(); }
+  }
+
+  function historyDate(value) {
+    try { return new Intl.DateTimeFormat('es', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(value)); } catch { return ''; }
+  }
+
+  function renderHistory() {
+    const count = $('#history-count');
+    count.textContent = String(state.history.length);
+    count.hidden = !state.history.length;
+    $('#clear-history').disabled = isBusy() || state.cachePending > 0 || !state.history.length;
+    const list = $('#history-list');
+    list.replaceChildren();
+    if (!state.history.length) { list.append(el('p', 'history-empty', 'Aquí aparecerán las conversiones que este navegador pueda guardar. Ningún archivo se sube a un servidor.')); return; }
+    for (const record of state.history) {
+      const row = el('button', 'history-item');
+      row.type = 'button';
+      row.append(icon('music'));
+      const body = el('span');
+      body.append(el('span', 'history-job-title', record.title), el('span', 'history-job-meta', `WAV · ${historyDate(record.createdAt)} · ${mb(record.size)}`));
+      row.append(body, icon('arrow'));
+      row.addEventListener('click', () => restoreHistory(record));
+      list.append(row);
+    }
+  }
+
+  function restoreHistory(record) {
+    if (isBusy()) return toast('Espera a que termine la conversión actual para abrir otra.');
+    state.generation += 1;
+    releaseURLs();
+    state.resultId = record.id;
+    state.tracks = record.tracks.map((saved) => ({ id: id(), name: saved.name, status: 'completed', url: objectURL(saved.blob), result: { blob: saved.blob, fileName: saved.name, duration: saved.duration, sampleRate: saved.sampleRate, bitDepth: saved.bitDepth, channels: saved.channels } }));
+    $('#track-list').replaceChildren(...state.tracks.map(renderTrack));
+    $('#results').hidden = false;
+    showResultState();
+    notice('Resultado recuperado del almacenamiento de este navegador. Las descargas están listas.');
+    setControls();
+    $('#results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    $('#results-title').focus({ preventScroll: true });
+  }
+
+  async function clearHistory() {
+    if (isBusy() || state.cachePending > 0 || !state.db) return;
+    try {
+      await new Promise((resolve, reject) => {
+        const transaction = state.db.transaction('conversions', 'readwrite');
+        transaction.objectStore('conversions').clear();
+        transaction.oncomplete = resolve;
+        transaction.onerror = () => reject(transaction.error);
+      });
+      reset();
+      state.history = [];
+      renderHistory();
+      toast('Historial y archivos guardados eliminados de este navegador.');
+    } catch { toast('No se pudo borrar el historial. Cierra otras pestañas de Onda e inténtalo de nuevo.'); }
+  }
+
+  $('#source-files').addEventListener('change', (event) => addFiles(event.target.files));
+  const dropZone = $('#drop-zone');
+  for (const type of ['dragenter', 'dragover']) dropZone.addEventListener(type, (event) => { event.preventDefault(); if (!isBusy()) dropZone.classList.add('drag-over'); });
+  for (const type of ['dragleave', 'drop']) dropZone.addEventListener(type, (event) => { event.preventDefault(); dropZone.classList.remove('drag-over'); });
+  dropZone.addEventListener('drop', (event) => { if (event.dataTransfer?.files) addFiles(event.dataTransfer.files); });
+  $('#demo-button').addEventListener('click', makeDemo);
+  $('#converter-form').addEventListener('submit', convert);
+  $('#cancel-conversion').addEventListener('click', () => { state.controller?.abort(); $('#cancel-conversion').disabled = true; $('#cancel-conversion').textContent = 'Cancelando…'; });
+  $('#close-results').addEventListener('click', reset);
+  $('#new-conversion').addEventListener('click', reset);
+  $('#download-zip').addEventListener('click', downloadZip);
+  $('#history-toggle').addEventListener('click', () => {
+    const panel = $('#history-panel');
+    panel.hidden = !panel.hidden;
+    $('#history-toggle').setAttribute('aria-expanded', String(!panel.hidden));
+    if (!panel.hidden) { panel.scrollIntoView({ behavior: 'smooth', block: 'start' }); $('#history-title').focus({ preventScroll: true }); }
+  });
+  $('#clear-history').addEventListener('click', clearHistory);
+  window.addEventListener('pagehide', (event) => { if (!event.persisted) { state.controller?.abort(); releaseURLs(); state.db?.close(); } });
+
+  if (!engine?.supported) {
+    $('#service-notice').textContent = 'Este navegador no ofrece las funciones de audio necesarias. Abre la página en una versión reciente de Chrome, Edge, Firefox o Safari.';
+    $('#service-notice').hidden = false;
+  }
+  setControls();
+  loadHistory();
+})();
+
+</script>
+</body>
+</html>

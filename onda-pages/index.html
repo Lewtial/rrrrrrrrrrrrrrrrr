@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Convierte tus archivos de audio a WAV directamente en el navegador. Sin subir archivos, cuentas, instalaciones ni planes premium.">
+  <title>Onda — Audio a WAV en tu navegador</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/audio-engine.js" defer></script>
+  <script src="./assets/app.js" defer></script>
+</head>
+<body>
+  <a href="#converter" class="skip-link">Ir al conversor</a>
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 17V5l11-2v12M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="17" cy="16" rx="3" ry="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h4m4 0h8M4 17h9m4 0h3"/><circle cx="10" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 3v.1"/></symbol>
+  </svg>
+
+  <header class="site-header shell">
+    <a class="brand" href="./" aria-label="Onda, inicio"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>onda<span class="brand-dot">.</span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal"><a class="nav-current" href="#converter">Conversor</a><a href="#how-it-works">Cómo funciona</a><a href="#faq">Preguntas frecuentes</a></nav>
+    <button id="history-toggle" class="history-toggle" type="button" aria-controls="history-panel" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Historial</span><span id="history-count" class="history-count" hidden>0</span></button>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> 100% EN TU NAVEGADOR</div>
+      <h1 id="hero-title">Tu música.<br>En <span class="hero-accent">WAV, contigo<svg viewBox="0 0 390 13" aria-hidden="true"><path d="M3 8C84 1 258 0 386 7"/></svg></span>.</h1>
+      <p>Convierte tus archivos de audio sin instalar nada.<br class="desktop-break"> Tu música se queda en tu dispositivo.</p>
+      <div class="hero-benefits"><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sin subir tus archivos</span><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sin cuentas ni premium</span><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Funciona en GitHub Pages</span></div>
+      <div class="hero-decoration decor-left" aria-hidden="true"><span>LOCAL</span><div class="mini-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="hero-decoration decor-right" aria-hidden="true"><svg class="icon"><use href="#i-music"/></svg><span>.wav</span></div>
+    </section>
+
+    <section id="converter" class="converter-section shell" aria-label="Conversor local a WAV">
+      <div class="converter-card">
+        <div class="card-heading"><div><span class="section-kicker">EL CONVERSOR LOCAL</span><h2>Hagamos que suene.</h2></div><span class="free-badge"><span aria-hidden="true">✦</span> Sin servidor. Sin suscripción.</span></div>
+        <form id="converter-form" novalidate>
+          <label class="field-label" for="source-files">Tus archivos de audio</label>
+          <label id="drop-zone" class="drop-zone" for="source-files"><span class="upload-icon"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></span><span class="drop-title">Arrastra tu música hasta aquí</span><span class="drop-description">o <span class="text-link">elige archivos</span> de tu dispositivo</span><span id="upload-limit-help" class="drop-types">Hasta 10 archivos · 25 MiB por archivo · 100 MiB por lote</span><input id="source-files" class="file-input" type="file" multiple accept="audio/*,.mp3,.wav,.flac,.ogg,.opus,.m4a,.aac,.webm"></label>
+          <div class="demo-row"><span>¿Quieres ver cómo funciona?</span><button id="demo-button" class="demo-button" type="button"><svg class="icon" aria-hidden="true"><use href="#i-music"/></svg>Probar con un ejemplo</button></div>
+          <div id="selected-files" class="selected-files" aria-live="polite" hidden></div>
+
+          <div class="local-format"><span class="local-format-icon"><svg class="icon" aria-hidden="true"><use href="#i-music"/></svg></span><div><strong>WAV</strong><span>Audio PCM sin compresión · Estéreo</span></div><span class="local-format-tag">FORMATO DE SALIDA</span></div>
+          <details class="advanced"><summary><span><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg>Ajustes de audio<span class="optional-label">Opcional</span></span><svg class="icon chevron" aria-hidden="true"><use href="#i-chevron"/></svg></summary><div class="advanced-content"><div class="setting"><label for="sample-rate">Frecuencia de muestreo</label><select id="sample-rate"><option value="44100">44.1 kHz</option><option value="48000">48 kHz</option></select></div><div class="setting"><label for="bit-depth">Profundidad de bits</label><select id="bit-depth"><option value="16">16 bits</option><option value="24">24 bits</option></select></div><label class="normalize-setting"><input id="normalize" type="checkbox"><span>Normalizar picos<small>Ajusta el pico máximo a −1 dB</small></span></label></div></details>
+
+          <div id="form-error" class="notice error-notice" role="alert" hidden></div><div id="service-notice" class="notice" role="status" hidden></div>
+          <div class="convert-action"><button id="convert-button" class="convert-button" type="submit"><span id="convert-label">Convertir a WAV</span><svg class="icon button-arrow" aria-hidden="true"><use href="#i-arrow"/></svg><span class="spinner" hidden></span></button><span class="action-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Sin subir archivos. El proceso es local.</span></div>
+        </form>
+      </div>
+      <p class="quality-note"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Convertir a WAV no recupera la información perdida en un audio comprimido.</p>
+      <p class="edition-note">Esta edición convierte archivos de tu dispositivo. Los enlaces de SoundCloud necesitan un servidor aparte.</p>
+    </section>
+
+    <section id="results" class="results-section shell" aria-labelledby="results-title" hidden><div class="results-card"><div class="results-header"><div><span class="section-kicker">TU CONVERSIÓN LOCAL</span><h2 id="results-title" tabindex="-1">Preparando tu audio…</h2></div><button id="close-results" class="icon-button" type="button" aria-label="Cerrar resultados" disabled><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div class="progress-info"><span id="job-message" role="status" aria-live="polite">Preparando…</span><span id="progress-label">0%</span></div><div id="job-progress" class="progress-track" role="progressbar" aria-label="Progreso de conversión" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div><div id="storage-notice" class="notice" role="status" hidden></div><div id="track-list" class="track-list"></div><div id="result-actions" class="result-actions" hidden><a id="download-zip" class="secondary-button" href="#" download="onda-audios.zip"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span id="zip-label">Descargar todo en ZIP</span></a><button id="new-conversion" class="text-button" type="button">Otra conversión<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div><button id="cancel-conversion" class="text-button cancel-button" type="button" hidden>Cancelar conversión</button></div></section>
+
+    <section id="history-panel" class="history-section shell" aria-labelledby="history-title" hidden><div class="history-card"><div class="results-header"><div><span class="section-kicker">SOLO EN ESTE NAVEGADOR</span><h2 id="history-title" tabindex="-1">Tu historial</h2></div><button id="clear-history" type="button" class="text-button">Borrar historial</button></div><p class="field-help">Hasta 10 conversiones y 50 MiB de audio guardados en este dispositivo. Puedes recuperar sus descargas después de recargar la página.</p><div id="history-notice" class="notice" role="status" hidden></div><div id="history-list"></div></div></section>
+
+    <section id="how-it-works" class="how-section shell" aria-labelledby="how-title"><div class="section-heading"><span class="section-kicker">MENOS VUELTAS. MÁS MÚSICA.</span><h2 id="how-title">Tres pasos y a darle play.</h2><p>Sin instalaciones. Sin servidores de conversión.</p></div><div class="steps-grid"><article class="step-card"><div class="step-top"><span class="step-number">01</span><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></div><h3>Elige tu música</h3><p>Arrastra tus archivos o prueba el ejemplo. Se leen directamente desde tu dispositivo.</p></article><article class="step-card"><div class="step-top"><span class="step-number">02</span><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg></div><h3>Dale tu formato</h3><p>Elige WAV de 16 o 24 bits, ajusta la frecuencia y normaliza los picos si quieres.</p></article><article class="step-card"><div class="step-top"><span class="step-number">03</span><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></div><h3>Descarga y disfruta</h3><p>Escucha el resultado y guarda las pistas por separado o juntas en un archivo ZIP.</p></article></div></section>
+
+    <section id="faq" class="faq-section shell" aria-labelledby="faq-title"><div class="faq-intro"><span class="section-kicker">POR SI TE LO PREGUNTABAS</span><h2 id="faq-title">Todo claro.<br> Como tu audio.</h2><p>Unas respuestas antes de darle play.</p><div class="faq-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="faq-list"><details><summary>¿Necesito instalar algo o pagar?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>No. Abre la página en un navegador actual y convierte tus archivos. No hay cuentas, suscripciones ni funciones premium. Todo el procesamiento ocurre en tu dispositivo.</p></details><details><summary>¿Puedo pegar un enlace de SoundCloud?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Esta edición para GitHub Pages convierte archivos locales. Los enlaces de SoundCloud necesitan un servidor aparte; GitHub Pages solo aloja la página estática. Si ya tienes el audio en tu dispositivo, puedes convertirlo aquí.</p></details><details><summary>¿Qué archivos puedo convertir?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Los formatos que pueda decodificar tu navegador: normalmente MP3, WAV, AAC/M4A y, según el navegador, OGG, Opus o FLAC. La salida es siempre WAV estéreo de 16 o 24 bits, a 44.1 o 48 kHz.</p></details><details><summary>¿Cuáles son los límites de esta edición?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Hasta 10 archivos por lote, 25 MiB por archivo, 100 MiB de entrada en total y 10 minutos por archivo. Los WAV de un lote pueden ocupar hasta 200 MiB. Estos límites ayudan a cuidar la memoria de tu dispositivo.</p></details><details><summary>¿Dónde se guardan mis archivos?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Nunca se suben a un servidor. Se procesan en memoria y, cuando hay espacio, los resultados se guardan en el almacenamiento de este navegador: hasta 10 conversiones y 50 MiB. Puedes borrar el historial para eliminarlos. Si el navegador no permite guardarlos, puedes descargarlos durante la sesión.</p></details><details><summary>¿WAV o 24 bits mejorarán la calidad original?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>WAV evita otra compresión con pérdida, pero no reconstruye el detalle que ya perdió la fuente. Cambiar a 24 bits o 48 kHz tampoco añade información que no existía en el audio original.</p></details></div></section>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="./" aria-label="Onda, inicio"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>onda<span class="brand-dot">.</span></a><span>Buenas ondas. Tus archivos, contigo.</span><p>Edición estática para GitHub Pages · WAV en tu navegador</p></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

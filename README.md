@@ -114,3 +114,13 @@ subida de archivos, cola, historial y descargas individuales o ZIP.
 - [Ver el proyecto, la vista previa y las instrucciones](soundcloud-converter/README.md)
 - [Descargar el proyecto completo](web/onda-v1.zip?raw=true)
 - [Consultar las pruebas y las limitaciones de red](soundcloud-converter/docs/VALIDACION.md)
+
+## Onda — edición sin servidor para GitHub Pages
+
+Conversión a WAV dentro del navegador, sin instalar programas ni subir audio.
+Incluye un ejemplo para probar, opciones de 16/24 bits, lotes, ZIP e historial
+local. Los enlaces de SoundCloud corresponden a la edición con servidor.
+
+- [Ver la web, las instrucciones y la vista previa](onda-pages/README.md)
+- [Descargar la web en un solo HTML](web/onda-sin-instalar-v1.html?raw=true)
+- [Consultar las pruebas de conversión sin conexión](onda-pages/docs/VALIDACION.md)
